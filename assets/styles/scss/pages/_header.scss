@@ -1,0 +1,141 @@
+header {
+    z-index: 100;
+
+    .headerClass {
+        margin-top: 24px;
+        border-bottom: #111111 1px solid;
+        padding-bottom: 10px;
+
+        .headLeft {
+            width: 32.3333%z;
+            .headerLogo {
+                display: flex;
+                width: 124px;
+                height: 24px;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 22.55px;
+                    line-height: 23.95px;
+                }
+
+                .headerLogoLeft {
+                    color: #111111;
+                }
+
+                .headerLogoRight {
+                    color: #FF3A00;
+                }
+            }
+        }
+
+        .headRight {
+            justify-content: space-between;
+            align-items: center;
+
+            .headNavbar {
+                width: 380px;
+                height: 24px;
+
+                ul {
+                    display: flex;
+                    width: 100%;
+                    max-width: 100%;
+
+                    li {
+                        flex: none;
+                        width: 103px !important;
+                        max-width: 103px !important;
+                        height: 24px;
+                        text-align: center;
+                        margin-right: 16px;
+
+                        a {
+                            display: block; // Vacib
+
+                            width: 100%;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+
+                        .activeNavbar {
+                            color: #FF3A00;
+
+                        }
+                    }
+                }
+            }
+
+            .loginClass {
+                text-align: -webkit-right;
+
+                .loginClassButtons {
+                    width: 265px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    a {
+                        padding: 0px;
+                    }
+
+                    .loginButton {
+                        width: 51px;
+                        height: 18px;
+                        color: #656565;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 18px;
+
+                    }
+
+                    .registerButton {
+                        width: 139px;
+                        color: #F2F2F2;
+                        margin-left: 14px;
+                        background-color: #666666;
+                        border-radius: 10px;
+                        padding: 10px 8px;
+                        width: 200px;
+                        height: 40px;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+
+
+            }
+
+            .userClass {
+                display: flex;
+                justify-content: end;
+
+                a {
+                    width: 124px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        max-width: 100%;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

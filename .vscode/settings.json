@@ -1,3 +1,4 @@
+// .vscode/settings.json
 {
   "liveSassCompile.settings.formats": [
     {
@@ -6,10 +7,10 @@
       "savePath": "assets/styles/css"
     }
   ],
-  "liveSassCompile.settings.includeItems": [
-    "**/assets/styles/scss/style.scss"
-  ],
+  "liveSassCompile.settings.watchOnStart": true,      
+  "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.excludeList": [
-    "**/assets/styles/scss/pages/**"
+    "**/node_modules/**",
+    ".vscode/**"
   ]
 }

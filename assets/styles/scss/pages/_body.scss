@@ -1,0 +1,13 @@
+.container {
+    width: 1230px;
+
+    .row {
+        --bs-gutter-x: 0px !important;
+        --bs-gutter-y: 0px !important;
+    }
+
+    .container {
+        --bs-gutter-x: 0px !important;
+        --bs-gutter-y: 0px !important;
+    }
+}
