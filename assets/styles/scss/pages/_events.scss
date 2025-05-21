@@ -1,0 +1,118 @@
+#events {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .eventTitle {
+
+                margin-bottom: 24px;
+
+                h2 {
+                    font-size: 36px;
+                    color: #000;
+                    line-height: 40px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .eventBoxs {
+            display: flex;
+            justify-content: center;
+
+            .eventBox {
+                width: 381px;
+                height: 275px;
+                background-color: red;
+                position: relative;
+
+
+                .eventDate {
+                    z-index: 1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 30px 40px;
+                    background-color: #FF3A00;
+                    padding: 17px 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #f2f2f2;
+                        line-height: 18px;
+                        text-align: center;
+                    }
+                }
+
+                .eventImageBox {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        object-fit: cover;
+                    }
+                }
+
+                .eventTextBoxs {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(70px);
+                    height: 105px;
+                    width: 100%;
+
+                    .eventTextBox {
+                        max-width: 271px; 
+
+                        h4 {
+                            color: #f2f2f2;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 500;
+                            margin: 10px 0px 4px 11px;
+                        }
+
+                        p {
+                            line-height: 18px;
+                            font-weight: 400;
+                            margin-left: 11px;
+
+                        }
+                    }
+
+
+                }
+
+                .eventButtonBox {
+                    position: absolute;
+                    bottom: 39px;
+                    right: 15px;
+
+                    button {
+                        background-color: #666;
+                        color: #f2f2f2;
+                        border-radius: 6.27px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        padding: 5px 28px;
+                    }
+
+                    button:hover {
+                        background-color: #FF3A00;
+                    }
+                }
+            }
+        }
+    }
+}

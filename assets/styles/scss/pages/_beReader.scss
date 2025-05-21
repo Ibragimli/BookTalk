@@ -1,0 +1,40 @@
+#beReader {
+    margin-bottom: 40px;
+    background-color: #930100;
+    padding: 131px 0px;
+
+    .container {
+
+        .row {
+
+            .beReaderText {
+                max-width: 429px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h2 {}
+            }
+
+            .beReaderBtn {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+
+                    background-color: #B2B2B2;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    padding: 9px 48px;
+
+                }
+            }
+        }
+    }
+
+}

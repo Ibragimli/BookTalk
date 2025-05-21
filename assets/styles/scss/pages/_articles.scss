@@ -1,0 +1,124 @@
+#articles {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .articleTitle {
+                margin-bottom: 28px;
+
+                h3 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: #000;
+                    border-bottom: 1px solid #FF3A00;
+                    display: inline;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+
+        .articleBoxs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 38px;
+            justify-content: center;
+
+            .articleBox {
+                background-color: #000;
+                width: calc((100% - 2 * 38px) / 3); // 3-lü düzülüş üçün
+                height: 277px;
+                position: relative;
+
+                .articleType {
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    .articleColorBox {
+                        background-color: #FF3A00;
+                        width: 16px;
+                        height: 54px;
+                    }
+
+                    h4 {
+                        margin-top: 15px;
+                        margin-left: 4px;
+                        color: #FF3A00;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                }
+
+                .articleDesc {
+                    margin-bottom: 14px;
+                    margin-left: 16px;
+
+                    h2 {
+                        font-size: 28px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        color: #F2F2F2;
+                    }
+                }
+
+                .articleDate {
+                    margin-left: 16px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        color: #F2F2F2;
+                    }
+                }
+
+                .articleBtn {
+                    position: absolute;
+                    bottom: 16px;
+                    left: 13px;
+
+                    button {
+                        background-color: #666666;
+                        color: #F2F2F2;
+                        border-radius: 10px;
+                        padding: 7px 33px;
+                    }
+
+                    button:hover {
+                        background-color: #FF3A00;
+                    }
+                }
+
+                  @media (max-width: 1200px) {
+
+                    .articleDesc {
+                        h2 {
+                            margin: 0 8px;
+                        }
+
+                    }
+                }
+
+
+                @media (max-width: 996px) {
+                    width: calc((100% - 38px) / 2);
+
+                    .articleDesc {
+                        h2 {
+                            margin: 0 5px;
+                        }
+
+                    }
+                }
+
+
+                @media (max-width: 768px) {
+                    width: 90%;
+
+
+                }
+            }
+        }
+    }
+}

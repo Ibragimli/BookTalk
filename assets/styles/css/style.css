@@ -343,6 +343,18 @@ header .headerClass .headRight .userClass a p {
   .footerLogo ul {
     width: 200px;
   }
+  #events .eventBoxs {
+    gap: 10px !important;
+  }
+  #events .eventBoxs .eventTextBox {
+    width: 150px !important;
+  }
+  #events .eventBoxs .eventTextBox h4 {
+    font-size: 16px !important;
+  }
+  #events .eventBoxs .eventTextBox p {
+    font-size: 12px !important;
+  }
 }
 @media (max-width: 768px) {
   .readerBox {
@@ -419,6 +431,18 @@ header .headerClass .headRight .userClass a p {
   #howToWork .container .row .howToWorkBoxs .howToWorkBox-3 {
     margin-bottom: 48px !important;
   }
+  #events .eventBoxs {
+    gap: 28px !important;
+  }
+  #events .eventBoxs .eventTextBox {
+    width: 185px !important;
+  }
+  #events .eventBoxs .eventTextBox h4 {
+    font-size: 16px !important;
+  }
+  #events .eventBoxs .eventTextBox p {
+    font-size: 12px !important;
+  }
 }
 @media (min-width: 1024px) {
   .footerNavbarBox .footerNavbar .ContactBar {
@@ -457,6 +481,9 @@ header .headerClass .headRight .userClass a p {
   .headNavbar ul li a {
     font-size: 20px !important;
   }
+  #beReader .beReaderText {
+    margin-left: 100px;
+  }
   #heroSection .container .row .heroSectionInput .input-group input {
     width: 388px;
     height: 60px;
@@ -485,6 +512,18 @@ header .headerClass .headRight .userClass a p {
     line-height: 18px !important;
     width: 116px !important;
   }
+  #events .eventBoxs {
+    gap: 36px !important;
+  }
+  #events .eventBoxs .eventTextBox {
+    width: 230px !important;
+  }
+  #events .eventBoxs .eventTextBox h4 {
+    font-size: 18px !important;
+  }
+  #events .eventBoxs .eventTextBox p {
+    font-size: 13px !important;
+  }
   .footerNavbarBox .footerNavbar .ContactBar {
     padding-left: 85px;
   }
@@ -506,6 +545,21 @@ header .headerClass .headRight .userClass a p {
   }
 }
 @media (min-width: 1440px) {
+  #beReader .beReaderText {
+    margin-left: 127px;
+  }
+  #events .eventBoxs {
+    gap: 48px !important;
+  }
+  #events .eventBoxs .eventTextBox {
+    width: 271px !important;
+  }
+  #events .eventBoxs .eventTextBox h4 {
+    font-size: 20px !important;
+  }
+  #events .eventBoxs .eventTextBox p {
+    font-size: 14px !important;
+  }
   #janrs .container .janrBoxs .janrBox {
     width: 267px !important;
     height: 180px !important;
@@ -888,4 +942,224 @@ footer .footerNavbarBox .footerNavbar ul li a {
 }
 #readers .container .readerBoxs .readerBox .readersButton button:hover {
   background-color: #FF3A00;
+}
+
+#events {
+  margin-bottom: 40px;
+}
+#events .container .row .eventTitle {
+  margin-bottom: 24px;
+}
+#events .container .row .eventTitle h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+}
+#events .container .eventBoxs {
+  display: flex;
+  justify-content: center;
+}
+#events .container .eventBoxs .eventBox {
+  width: 381px;
+  height: 275px;
+  background-color: red;
+  position: relative;
+}
+#events .container .eventBoxs .eventBox .eventDate {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 40px;
+  background-color: #FF3A00;
+  padding: 17px 30px;
+  display: flex;
+  flex-direction: column;
+}
+#events .container .eventBoxs .eventBox .eventDate p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #f2f2f2;
+  line-height: 18px;
+  text-align: center;
+}
+#events .container .eventBoxs .eventBox .eventImageBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#events .container .eventBoxs .eventBox .eventImageBox img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#events .container .eventBoxs .eventBox .eventTextBoxs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(70px);
+          backdrop-filter: blur(70px);
+  height: 105px;
+  width: 100%;
+}
+#events .container .eventBoxs .eventBox .eventTextBoxs .eventTextBox {
+  max-width: 271px;
+}
+#events .container .eventBoxs .eventBox .eventTextBoxs .eventTextBox h4 {
+  color: #f2f2f2;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 10px 0px 4px 11px;
+}
+#events .container .eventBoxs .eventBox .eventTextBoxs .eventTextBox p {
+  line-height: 18px;
+  font-weight: 400;
+  margin-left: 11px;
+}
+#events .container .eventBoxs .eventBox .eventButtonBox {
+  position: absolute;
+  bottom: 39px;
+  right: 15px;
+}
+#events .container .eventBoxs .eventBox .eventButtonBox button {
+  background-color: #666;
+  color: #f2f2f2;
+  border-radius: 6.27px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 5px 28px;
+}
+#events .container .eventBoxs .eventBox .eventButtonBox button:hover {
+  background-color: #FF3A00;
+}
+
+#beReader {
+  margin-bottom: 40px;
+  background-color: #930100;
+  padding: 131px 0px;
+}
+#beReader .container .row .beReaderText {
+  max-width: 429px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#beReader .container .row .beReaderBtn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#beReader .container .row .beReaderBtn button {
+  background-color: #B2B2B2;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 9px 48px;
+}
+
+#articles {
+  margin-bottom: 40px;
+}
+#articles .container .row .articleTitle {
+  margin-bottom: 28px;
+}
+#articles .container .row .articleTitle h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  border-bottom: 1px solid #FF3A00;
+  display: inline;
+  padding-bottom: 4px;
+}
+#articles .container .articleBoxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  justify-content: center;
+}
+#articles .container .articleBoxs .articleBox {
+  background-color: #000;
+  width: calc((100% - 76px) / 3);
+  height: 277px;
+  position: relative;
+}
+#articles .container .articleBoxs .articleBox .articleType {
+  display: flex;
+  margin-bottom: 20px;
+}
+#articles .container .articleBoxs .articleBox .articleType .articleColorBox {
+  background-color: #FF3A00;
+  width: 16px;
+  height: 54px;
+}
+#articles .container .articleBoxs .articleBox .articleType h4 {
+  margin-top: 15px;
+  margin-left: 4px;
+  color: #FF3A00;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#articles .container .articleBoxs .articleBox .articleDesc {
+  margin-bottom: 14px;
+  margin-left: 16px;
+}
+#articles .container .articleBoxs .articleBox .articleDesc h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #F2F2F2;
+}
+#articles .container .articleBoxs .articleBox .articleDate {
+  margin-left: 16px;
+}
+#articles .container .articleBoxs .articleBox .articleDate p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #F2F2F2;
+}
+#articles .container .articleBoxs .articleBox .articleBtn {
+  position: absolute;
+  bottom: 16px;
+  left: 13px;
+}
+#articles .container .articleBoxs .articleBox .articleBtn button {
+  background-color: #666666;
+  color: #F2F2F2;
+  border-radius: 10px;
+  padding: 7px 33px;
+}
+#articles .container .articleBoxs .articleBox .articleBtn button:hover {
+  background-color: #FF3A00;
+}
+@media (max-width: 1200px) {
+  #articles .container .articleBoxs .articleBox .articleDesc h2 {
+    margin: 0 8px;
+  }
+}
+@media (max-width: 996px) {
+  #articles .container .articleBoxs .articleBox {
+    width: calc((100% - 38px) / 2);
+  }
+  #articles .container .articleBoxs .articleBox .articleDesc h2 {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 768px) {
+  #articles .container .articleBoxs .articleBox {
+    width: 90%;
+  }
 }

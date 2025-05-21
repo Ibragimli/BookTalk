@@ -94,13 +94,30 @@
         }
     }
 
-
-
     .footerLogo {
         ul {
             width: 200px;
         }
     }
+
+    #events {
+        .eventBoxs {
+            gap: 10px !important;
+
+            .eventTextBox {
+                width: 150px !important;
+
+                h4 {
+                    font-size: 16px !important;
+                }
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -108,6 +125,7 @@
     .readerBox {
         width: calc((100% - 32px) / 2);
     }
+
 }
 
 @media (max-width: 776px) {
@@ -277,6 +295,25 @@
             }
         }
     }
+
+    #events {
+        .eventBoxs {
+            gap: 28px !important;
+
+            .eventTextBox {
+                width: 185px !important;
+
+                h4 {
+                    font-size: 16px !important;
+                }
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -351,6 +388,13 @@
         }
     }
 
+    #beReader {
+        .beReaderText {
+            margin-left: 100px;
+        }
+
+    }
+
     #heroSection {
         .container {
             .row {
@@ -420,6 +464,29 @@
         }
     }
 
+    #events {
+        .eventBoxs {
+            gap: 36px !important;
+
+            .eventTextBox {
+                width: 230px !important;
+
+                h4 {
+                    font-size: 18px !important;
+
+                }
+
+                p {
+                    font-size: 13px !important;
+
+                }
+            }
+
+
+        }
+
+    }
+
     .footerNavbarBox {
         .footerNavbar {
             .ContactBar {
@@ -458,6 +525,33 @@
 }
 
 @media (min-width: 1440px) {
+
+    #beReader {
+        .beReaderText {
+            margin-left: 127px;
+        }
+
+    }
+
+    #events {
+        .eventBoxs {
+            gap: 48px !important;
+
+            .eventTextBox {
+                width: 271px !important;
+
+                h4 {
+                    font-size: 20px !important;
+
+                }
+
+                p {
+                    font-size: 14px !important;
+
+                }
+            }
+        }
+    }
 
     #janrs {
         .container {
@@ -511,6 +605,8 @@
 
 
     }
+
+
 
     .footerNavbarBox {
         // margin-left: 10%;
