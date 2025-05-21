@@ -1,13 +1,34 @@
-.container {
-    width: 1230px;
-
-    .row {
-        --bs-gutter-x: 0px !important;
-        --bs-gutter-y: 0px !important;
-    }
+body {
+    background-color: #F2F2F2;
+    padding-bottom: 179px;
 
     .container {
-        --bs-gutter-x: 0px !important;
-        --bs-gutter-y: 0px !important;
+        // width: 1230px;
+        --bs-gutter-x: 0rem !important;
+        --bs-gutter-y: 0 !important;
+
+        .row {
+            --bs-gutter-x: 0px !important;
+            --bs-gutter-y: 0px !important;
+        }
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #F2F2F2;
+
+    }
+    h2{
+        font-size: 36px;
+        color: #F2F2F2;
+    }
+    h3{
+        font-size: 32px;
+        color: #F2F2F2;
+    }
+    p{
+        font-size: 14px;
+        color: #F2F2F2;
+
     }
 }

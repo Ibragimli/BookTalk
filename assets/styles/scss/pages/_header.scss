@@ -6,8 +6,9 @@ header {
         border-bottom: #111111 1px solid;
         padding-bottom: 10px;
 
+
         .headLeft {
-            width: 32.3333%z;
+
             .headerLogo {
                 display: flex;
                 width: 124px;
@@ -34,7 +35,6 @@ header {
             align-items: center;
 
             .headNavbar {
-                width: 380px;
                 height: 24px;
 
                 ul {
@@ -44,11 +44,9 @@ header {
 
                     li {
                         flex: none;
-                        width: 103px !important;
-                        max-width: 103px !important;
                         height: 24px;
                         text-align: center;
-                        margin-right: 16px;
+                        margin-right: 14px;
 
                         a {
                             display: block; // Vacib
@@ -60,7 +58,7 @@ header {
                         }
 
                         .activeNavbar {
-                            color: #FF3A00;
+                            color: #7A0007;
 
                         }
                     }
@@ -72,7 +70,7 @@ header {
 
                 .loginClassButtons {
                     width: 265px;
-                    height: 40px;
+                    // height: 40px;
                     display: flex;
                     align-items: center;
                     justify-content: end;
@@ -97,9 +95,9 @@ header {
                         margin-left: 14px;
                         background-color: #666666;
                         border-radius: 10px;
-                        padding: 10px 8px;
+                        padding: 8px 8px;
                         width: 200px;
-                        height: 40px;
+                        // height: 40px;
                         text-align: center;
                         font-size: 16px;
                     }

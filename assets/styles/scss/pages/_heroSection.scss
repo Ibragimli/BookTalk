@@ -1,0 +1,54 @@
+#heroSection {
+    background-color: #000000;
+    margin: 51px 0px 40px 0px;
+
+    .container {
+        width: 1230px;
+
+        .row {
+            .heroSectionInput {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+
+                h1 {
+                    color: #F2F2F2;
+                }
+
+                p {
+                    color: #F2F2F2;
+                }
+
+                .input-group {
+                    input {
+                        // width: 388px;
+                        // height: 60px;
+                        padding-left: 16px;
+
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+
+                    button {
+                        padding: 18px 24px 19px 24px;
+                        background-color: #666666;
+                        color: #F2F2F2;
+                        font-size: 14px;
+                        border-top-right-radius: 1px;
+                        border-bottom-right-radius: 1px;
+                    }
+                }
+            }
+
+            .heroSectionImage {
+
+                img {
+                    object-fit: fill;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+#howToWork {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .howToWorkTitle {
+                h2 {
+                    color: #000;
+                    font-weight: 700;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .howToWorkBoxs {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                .howToWorkBox {
+                    ul {
+                        display: flex;
+                        align-items: center;
+
+                        li {
+
+                            p {}
+
+                            .howToWorkNumber {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 56px;
+                                height: 56px;
+                                margin-right: 24px;
+                                font-size: 36px;
+                                background-color: #FF3A00;
+                                border-radius: 36px;
+                            }
+
+                            .howToWorkBoxDesc {
+                                color: #666;
+                                font-weight: 400;
+                            }
+
+                            h3 {
+                                color: #000;
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+
+            .howToWorkButton {
+                button {
+                    background-color: #666;
+                    color: #F2F2F2;
+                    border-radius: 10px;
+                    width: 200px;
+                    height: 40px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}

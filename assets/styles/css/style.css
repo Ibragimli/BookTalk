@@ -1,3 +1,56 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "InterBlack";
+  src: url("../fonts/Inter_18pt-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "InterThin";
+  src: url("../fonts/Inter_18pt-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #F2F2F2;
+  padding-bottom: 179px;
+}
+body .container {
+  --bs-gutter-x: 0rem !important;
+  --bs-gutter-y: 0 !important;
+}
+body .container .row {
+  --bs-gutter-x: 0px !important;
+  --bs-gutter-y: 0px !important;
+}
+body h1 {
+  font-size: 48px;
+  color: #F2F2F2;
+}
+body h2 {
+  font-size: 36px;
+  color: #F2F2F2;
+}
+body h3 {
+  font-size: 32px;
+  color: #F2F2F2;
+}
+body p {
+  font-size: 14px;
+  color: #F2F2F2;
+}
+
 html,
 body,
 div,
@@ -84,6 +137,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: "Inter", sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -129,18 +183,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1230px;
-}
-.container .row {
-  --bs-gutter-x: 0px !important;
-  --bs-gutter-y: 0px !important;
-}
-.container .container {
-  --bs-gutter-x: 0px !important;
-  --bs-gutter-y: 0px !important;
-}
-
 header {
   z-index: 100;
 }
@@ -148,9 +190,6 @@ header .headerClass {
   margin-top: 24px;
   border-bottom: #111111 1px solid;
   padding-bottom: 10px;
-}
-header .headerClass .headLeft {
-  width: 32.3333% z;
 }
 header .headerClass .headLeft .headerLogo {
   display: flex;
@@ -173,7 +212,6 @@ header .headerClass .headRight {
   align-items: center;
 }
 header .headerClass .headRight .headNavbar {
-  width: 380px;
   height: 24px;
 }
 header .headerClass .headRight .headNavbar ul {
@@ -183,11 +221,9 @@ header .headerClass .headRight .headNavbar ul {
 }
 header .headerClass .headRight .headNavbar ul li {
   flex: none;
-  width: 103px !important;
-  max-width: 103px !important;
   height: 24px;
   text-align: center;
-  margin-right: 16px;
+  margin-right: 14px;
 }
 header .headerClass .headRight .headNavbar ul li a {
   display: block;
@@ -197,14 +233,13 @@ header .headerClass .headRight .headNavbar ul li a {
   line-height: 24px;
 }
 header .headerClass .headRight .headNavbar ul li .activeNavbar {
-  color: #FF3A00;
+  color: #7A0007;
 }
 header .headerClass .headRight .loginClass {
   text-align: -webkit-right;
 }
 header .headerClass .headRight .loginClass .loginClassButtons {
   width: 265px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -226,9 +261,8 @@ header .headerClass .headRight .loginClass .loginClassButtons .registerButton {
   margin-left: 14px;
   background-color: #666666;
   border-radius: 10px;
-  padding: 10px 8px;
+  padding: 8px 8px;
   width: 200px;
-  height: 40px;
   text-align: center;
   font-size: 16px;
 }
@@ -256,73 +290,310 @@ header .headerClass .headRight .userClass a p {
   color: #000;
 }
 
+@media (max-width: 500px) {
+  .readerBox {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  #janrs .container .janrBoxs .janrBox {
+    width: 48% !important;
+    height: 180px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+  }
+  #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 776px) {
+  .footerNavbarBox .footerNavbar .ContactBar {
+    padding-left: 25px;
+  }
+  .footerNavbarBox .footerNavbar .SocialBar {
+    padding-left: 25px;
+  }
+  .footerNavbarBox .footerNavbar .footerNewsBox {
+    padding-left: 25px;
+  }
+  .headNavbar {
+    width: 270px;
+  }
+  .headNavbar ul li a {
+    font-size: 17px !important;
+  }
+  #heroSection .container .row .heroSectionInput .input-group input {
+    width: 240px;
+    height: 46px;
+    font-size: 11px;
+  }
+  #heroSection .container .row .heroSectionInput .input-group button {
+    padding: 11px 18px 11px 18px !important;
+    font-size: 12px !important;
+  }
+  #janrs .container .janrBoxs .janrBox {
+    width: 48% !important;
+    height: 180px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+  }
+  #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
+    font-size: 20px !important;
+  }
+  .footerLogo ul {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .readerBox {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media (max-width: 776px) {
+  .headNavbar ul li a {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 992px) {
+  .loginClass .loginClassButtons {
+    width: 180px !important;
+  }
+  .loginClass .loginClassButtons .loginButton {
+    font-size: 11px !important;
+  }
+  .loginClass .loginClassButtons .registerButton {
+    width: 140px !important;
+    font-size: 11.5px !important;
+    padding: 5px 5px;
+  }
+  .registerButton {
+    padding: 5px 5px !important;
+  }
+  #howToWork .container .row .howToWorkBox h3 {
+    font-size: 22px;
+  }
+  .readerBox {
+    width: calc((100% - 64px) / 3);
+  }
+}
+@media (min-width: 992px) {
+  .headNavbar {
+    width: 300px;
+  }
+  .headNavbar ul li a {
+    font-size: 16px !important;
+  }
+  .loginClass .loginClassButtons {
+    width: 200px !important;
+  }
+  .loginClass .loginClassButtons .loginButton {
+    font-size: 11px !important;
+  }
+  .loginClass .loginClassButtons .registerButton {
+    width: 140px !important;
+    font-size: 13px !important;
+  }
+  #heroSection .container .row .heroSectionInput .input-group input {
+    width: 340px;
+    height: 60px;
+    font-size: 14px !important;
+  }
+  #heroSection .container .row .heroSectionInput .input-group button {
+    padding: 18px 24px 19px 24px !important;
+    font-size: 14px !important;
+  }
+  #janrs .container .janrBoxs .janrBox {
+    width: 225px !important;
+    height: 180px !important;
+    margin-right: 10px !important;
+  }
+  #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
+    font-size: 20px !important;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBoxs-1 {
+    margin-right: 96px !important;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox-1 {
+    margin-bottom: 48px !important;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox-3 {
+    margin-bottom: 48px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .footerNavbarBox .footerNavbar .ContactBar {
+    padding-left: 45px;
+  }
+  .footerNavbarBox .footerNavbar .SocialBar {
+    padding-left: 45px;
+  }
+  .footerNavbarBox .footerNavbar .footerNewsBox {
+    padding-left: 45px;
+  }
+  .footerLogo ul {
+    width: 250px;
+  }
+  .loginClass .loginClassButtons {
+    width: 200px !important;
+  }
+  .loginClass .loginClassButtons .loginButton {
+    font-size: 12px !important;
+  }
+  .loginClass .loginClassButtons .registerButton {
+    width: 150px !important;
+    font-size: 14px !important;
+  }
+  .headNavbar {
+    width: 350px !important;
+  }
+  .headNavbar ul li a {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .headNavbar {
+    width: 350px !important;
+  }
+  .headNavbar ul li a {
+    font-size: 20px !important;
+  }
+  #heroSection .container .row .heroSectionInput .input-group input {
+    width: 388px;
+    height: 60px;
+  }
+  #heroSection .container .row .heroSectionInput .input-group button {
+    padding: 18px 24px 19px 24px;
+    font-size: 14px;
+  }
+  #heroSection .container .row .heroSectionImage {
+    height: 390px;
+  }
+  #janrs .container .janrBoxs .janrBox {
+    width: 267px !important;
+    height: 180px !important;
+    margin-right: 15px !important;
+  }
+  #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
+    font-size: 28px !important;
+  }
+  #janrs .container .janrBoxs .janrBox .janrTypesBox ul li p {
+    font-style: 12px !important;
+    margin-bottom: 4px !important;
+  }
+  #janrs .container .janrBoxs .janrBox .janrButtonBox button {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    width: 116px !important;
+  }
+  .footerNavbarBox .footerNavbar .ContactBar {
+    padding-left: 85px;
+  }
+  .footerNavbarBox .footerNavbar .SocialBar {
+    padding-left: 85px;
+  }
+  .footerNavbarBox .footerNavbar .footerNewsBox {
+    padding-left: 85px;
+  }
+  .loginClass .loginClassButtons {
+    width: 235px !important;
+  }
+  .loginClass .loginClassButtons .loginButton {
+    font-size: 13px !important;
+  }
+  .loginClass .loginClassButtons .registerButton {
+    width: 170px !important;
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 1440px) {
+  #janrs .container .janrBoxs .janrBox {
+    width: 267px !important;
+    height: 180px !important;
+    margin-right: 40px !important;
+  }
+  .headNavbar {
+    margin-left: 18px;
+    width: 380px !important;
+    height: 24px;
+  }
+  .container {
+    width: 1230px !important;
+  }
+  .footerLogo ul {
+    width: 293px;
+  }
+  .loginClass .loginClassButtons {
+    width: 265px !important;
+  }
+  .loginClass .loginClassButtons .loginButton {
+    font-size: 13px !important;
+  }
+  .loginClass .loginClassButtons .registerButton {
+    width: 200px !important;
+    font-size: 16px !important;
+  }
+  .footerNavbarBox .footerNavbar .ContactBar {
+    padding-left: 96px;
+  }
+  .footerNavbarBox .footerNavbar .SocialBar {
+    padding-left: 96px;
+  }
+  .footerNavbarBox .footerNavbar .footerNewsBox {
+    padding-left: 96px;
+  }
+}
 footer {
   background-color: #000000;
-  width: 100%;
   height: 179px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  z-index: 100;
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 98;
 }
 footer .container {
-  padding: 26.5px 0px;
-  max-height: 126px;
-  height: 126px;
+  padding: 19.5px 0px;
 }
-footer .rowBar {
-  display: flex;
-}
-footer .rowBar .footerLogo ul {
-  width: 292px;
-  height: 36px;
-}
-footer .rowBar .footerLogo ul .footerLogoTitle {
+footer .footerLogo ul .footerLogoTitle {
   display: flex;
   margin-bottom: 4px;
 }
-footer .rowBar .footerLogo ul .footerLogoTitle p {
+footer .footerLogo ul .footerLogoTitle p {
   font-weight: 700;
   font-size: 32px;
   line-height: 34px;
 }
-footer .rowBar .footerLogo ul .footerLogoTitle .footerLogoLeft {
+footer .footerLogo ul .footerLogoTitle .footerLogoLeft {
   color: #F2F2F2;
 }
-footer .rowBar .footerLogo ul .footerLogoTitle .footerLogoRight {
+footer .footerLogo ul .footerLogoTitle .footerLogoRight {
   color: #FF3A00;
 }
-footer .rowBar .footerLogo ul .footerLogoDesc p {
+footer .footerLogo ul .footerLogoDesc p {
   font-weight: 400;
   text-align: left;
   font-size: 14px;
   line-height: 18px;
   color: #B2B2B2;
 }
-footer .rowBar .footerNavbarBox {
-  margin-left: 10%;
-}
-footer .rowBar .footerNavbarBox .footerNavbar {
+footer .footerNavbarBox .footerNavbar {
   display: flex;
   flex-direction: row;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .navigationBar {
+footer .footerNavbarBox .footerNavbar .navigationBar {
   text-align: left;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .ContactBar {
+footer .footerNavbarBox .footerNavbar .ContactBar {
   text-align: left;
-  padding-left: 96px;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .SocialBar {
+footer .footerNavbarBox .footerNavbar .SocialBar {
   text-align: left;
-  padding-left: 96px;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .footerNewsBox {
+footer .footerNavbarBox .footerNavbar .footerNewsBox {
   text-align: left;
-  padding-left: 96px;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .footerNewsBox h1 {
+footer .footerNavbarBox .footerNavbar .footerNewsBox h1 {
   width: 189px;
   height: 20px;
   color: #E5E5E5;
@@ -332,7 +603,7 @@ footer .rowBar .footerNavbarBox .footerNavbar .footerNewsBox h1 {
   letter-spacing: 0%;
   margin-bottom: 8px;
 }
-footer .rowBar .footerNavbarBox .footerNavbar .footerNewsBox input {
+footer .footerNavbarBox .footerNavbar .footerNewsBox input {
   color: #B2B2B2;
   width: 200px;
   font-size: 12px;
@@ -346,15 +617,275 @@ footer .rowBar .footerNavbarBox .footerNavbar .footerNewsBox input {
   background-color: transparent;
   text-align: center;
 }
-footer .rowBar .footerNavbarBox .footerNavbar h2 {
+footer .footerNavbarBox .footerNavbar h2 {
   color: #F2F2F2;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-footer .rowBar .footerNavbarBox .footerNavbar ul li a {
+footer .footerNavbarBox .footerNavbar ul li a {
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
   color: #F2F2F2;
+}
+
+#heroSection {
+  background-color: #000000;
+  margin: 51px 0px 40px 0px;
+}
+#heroSection .container {
+  width: 1230px;
+}
+#heroSection .container .row .heroSectionInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#heroSection .container .row .heroSectionInput h1 {
+  color: #F2F2F2;
+}
+#heroSection .container .row .heroSectionInput p {
+  color: #F2F2F2;
+}
+#heroSection .container .row .heroSectionInput .input-group input {
+  padding-left: 16px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#heroSection .container .row .heroSectionInput .input-group button {
+  padding: 18px 24px 19px 24px;
+  background-color: #666666;
+  color: #F2F2F2;
+  font-size: 14px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+#heroSection .container .row .heroSectionImage img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+#janrs {
+  margin-bottom: 40px;
+}
+#janrs .container .janrTitle {
+  margin-bottom: 24px;
+}
+#janrs .container .janrTitle p {
+  color: #FF3A00;
+}
+#janrs .container .janrTitle h2 {
+  color: #000000;
+}
+#janrs .container .janrBoxs .janrBox {
+  position: relative;
+}
+#janrs .container .janrBoxs .janrBox .boxLeftColor {
+  background-color: #B2B2B2;
+  height: 100%;
+  width: 12px;
+}
+#janrs .container .janrBoxs .janrBox .janrTitleBox {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+#janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
+  line-height: 32px;
+  font-size: 28px;
+  font-weight: 500;
+}
+#janrs .container .janrBoxs .janrBox .janrTypesBox {
+  position: absolute;
+  top: 50px;
+  left: 22px;
+}
+#janrs .container .janrBoxs .janrBox .janrTypesBox ul {
+  display: flex;
+}
+#janrs .container .janrBoxs .janrBox .janrTypesBox ul li {
+  margin-right: 12px;
+}
+#janrs .container .janrBoxs .janrBox .janrTypesBox ul li p {
+  font-style: 12px;
+  line-height: 16px;
+  font-weight: 0;
+  font-family: "InterThin", sans-serif;
+  margin-bottom: 4px;
+}
+#janrs .container .janrBoxs .janrBox .janrButtonBox {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+#janrs .container .janrBoxs .janrBox .janrButtonBox button {
+  color: #F2F2F2;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 116px;
+  border-radius: 8.45px;
+}
+#janrs .container .janrBoxs .janrBox .janrButtonBox .btn-1 {
+  background-color: #FF3A00;
+}
+#janrs .container .janrBoxs .janrBox .janrButtonBox .btn-2 {
+  background-color: #666666;
+}
+#janrs .container .janrBoxs .janrBox-1 {
+  background-color: #7A0007;
+}
+#janrs .container .janrBoxs .janrBox-2 {
+  background-color: #930100;
+}
+#janrs .container .janrBoxs .janrBox-3 {
+  background-color: #DB2200;
+}
+#janrs .container .janrBoxs .janrBox-4 {
+  background-color: #FF3A00;
+}
+
+#howToWork {
+  margin-bottom: 40px;
+}
+#howToWork .container .row .howToWorkTitle h2 {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#howToWork .container .row .howToWorkBoxs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul {
+  display: flex;
+  align-items: center;
+}
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li .howToWorkNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  font-size: 36px;
+  background-color: #FF3A00;
+  border-radius: 36px;
+}
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li .howToWorkBoxDesc {
+  color: #666;
+  font-weight: 400;
+}
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li h3 {
+  color: #000;
+  font-weight: 500;
+}
+#howToWork .container .row .howToWorkButton button {
+  background-color: #666;
+  color: #F2F2F2;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 24px;
+}
+
+#readers {
+  margin-bottom: 40px;
+}
+#readers .container .row .readerTitle {
+  margin-bottom: 24px;
+}
+#readers .container .row .readerTitle h2 {
+  font-weight: 600;
+  font-style: 36px;
+  color: #000;
+  line-height: 40px;
+}
+#readers .container .row .readersAllButton {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#readers .container .row .readersAllButton button {
+  background-color: #000;
+  color: #f2f2f2;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 9px 47px;
+}
+#readers .container .readerBoxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+#readers .container .readerBoxs .readerBox {
+  width: 280px;
+  height: 360px;
+  position: relative;
+}
+#readers .container .readerBoxs .readerBox .readerImageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#readers .container .readerBoxs .readerBox .readerImageBox img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1px;
+}
+#readers .container .readerBoxs .readerBox .readerTextBox {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(70px);
+          backdrop-filter: blur(70px);
+  border-radius: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+}
+#readers .container .readerBoxs .readerBox .readerTextBox .readerTexts {
+  position: absolute;
+  top: 23px;
+  left: 12px;
+}
+#readers .container .readerBoxs .readerBox .readerTextBox .readerTexts .readerName {
+  font-size: 16px;
+  line-height: 20px;
+}
+#readers .container .readerBoxs .readerBox .readerTextBox .readerTexts .readerDesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+#readers .container .readerBoxs .readerBox .readersButton {
+  position: absolute;
+  bottom: 23px;
+  left: 37.5px;
+}
+#readers .container .readerBoxs .readerBox .readersButton button {
+  color: #f2f2f2;
+  border-radius: 10PX;
+  background-color: #666;
+  padding: 9px 58px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#readers .container .readerBoxs .readerBox .readersButton button:hover {
+  background-color: #FF3A00;
 }

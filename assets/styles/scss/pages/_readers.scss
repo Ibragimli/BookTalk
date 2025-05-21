@@ -1,0 +1,115 @@
+#readers {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .readerTitle {
+                margin-bottom: 24px;
+
+                h2 {
+                    font-weight: 600;
+                    font-style: 36px;
+                    color: #000;
+                    line-height: 40px;
+                }
+            }
+
+            .readersAllButton {
+                margin-top: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    background-color: #000;
+                    color: #f2f2f2;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    padding: 9px 47px;
+                }
+            }
+        }
+
+        .readerBoxs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+
+            .readerBox {
+                width: 280px;
+                height: 360px;
+                position: relative;
+
+                .readerImageBox {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        object-fit: cover;
+                        border-radius: 1px;
+
+                    }
+                }
+
+                .readerTextBox {
+                    background: rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(70px);
+                    border-radius: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 140px;
+
+                    .readerTexts {
+                        position: absolute;
+                        top: 23px;
+                        left: 12px;
+
+                        .readerName {
+                            font-size: 16px;
+                            line-height: 20px;
+
+                        }
+
+                        .readerDesc {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                        }
+                    }
+                }
+
+                .readersButton {
+                    position: absolute;
+                    bottom: 23px;
+                    left: 37.5px;
+
+                    button {
+                        color: #f2f2f2;
+                        border-radius: 10PX;
+                        background-color: #666;
+                        padding: 9px 58px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+
+                    button:hover {
+                        background-color: #FF3A00;
+
+                    }
+                }
+            }
+        }
+    }
+}

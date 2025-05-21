@@ -1,0 +1,112 @@
+#janrs {
+    margin-bottom: 40px;
+
+    .container {
+        .row {}
+
+        .janrTitle {
+            margin-bottom: 24px;
+
+            p {
+                color: #FF3A00;
+            }
+
+            h2 {
+                color: #000000;
+            }
+        }
+
+        .janrBoxs {
+            .janrBox {
+                // width: 267px;
+                position: relative;
+                // height: 180px;
+                // margin-right: 40px;
+
+                .boxLeftColor {
+                    background-color: #B2B2B2;
+                    height: 100%;
+                    width: 12px;
+                }
+
+                .janrTitleBox {
+                    position: absolute;
+                    top: 12px;
+                    left: 20px;
+
+                    h3 {
+                        line-height: 32px;
+                        font-size: 28px;
+                        font-weight: 500;
+
+                    }
+                }
+
+
+                .janrTypesBox {
+                    position: absolute;
+                    top: 50px;
+                    left: 22px;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-right: 12px;
+
+                            p {
+                                font-style: 12px;
+                                line-height: 16px;
+                                font-weight: 0;
+                                font-family: "InterThin", sans-serif;
+                                margin-bottom: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .janrButtonBox {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 20px;
+
+                    button {
+                        color: #F2F2F2;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                        width: 116px;
+                        border-radius: 8.45px;
+
+                    }
+
+                    .btn-1 {
+                        background-color: #FF3A00;
+
+                    }
+
+                    .btn-2 {
+                        background-color: #666666;
+
+                    }
+                }
+            }
+
+            .janrBox-1 {
+                background-color: #7A0007;
+            }
+
+            .janrBox-2 {
+                background-color: #930100;
+            }
+
+            .janrBox-3 {
+                background-color: #DB2200;
+            }
+
+            .janrBox-4 {
+                background-color: #FF3A00;
+            }
+        }
+    }
+}
