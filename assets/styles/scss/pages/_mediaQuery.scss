@@ -126,6 +126,12 @@
         width: calc((100% - 32px) / 2);
     }
 
+    #articles {
+        .articleBox {
+            width: 90%;
+
+        }
+    }
 }
 
 @media (max-width: 776px) {
@@ -178,6 +184,19 @@
 
     .readerBox {
         width: calc((100% - 64px) / 3);
+    }
+
+    #articles {
+        .articleBox {
+            width: calc((100% - 38px) / 2);
+
+        }
+
+        .articleDesc {
+            h2 {
+                margin: 0 5px;
+            }
+        }
     }
 }
 
@@ -524,6 +543,17 @@
 
 }
 
+@media (max-width: 1200px) {
+
+    .articleDesc {
+        h2 {
+            margin: 0 8px;
+        }
+
+    }
+}
+
+
 @media (min-width: 1440px) {
 
     #beReader {
@@ -646,3 +676,5 @@
     }
 
 }
+
+
