@@ -198,6 +198,49 @@
             }
         }
     }
+
+    #bePartner {
+        .container {
+            .row {
+                .partnerBox {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    .partnerLeftBox {
+                        .partnerTextBox {
+                            .partnerTitle {
+                                h2 {
+                                    font-size: 28px;
+                                    line-height: 32px;
+                                }
+                            }
+
+                            .partnerDesc {
+                                p {
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .partnerRightBox {
+                        justify-content: center;
+                        margin-top: 20px;
+
+                        .partnerBtnBox {
+                            button {
+                                padding: 12px 40px;
+                                font-size: 15px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -675,6 +718,33 @@
         }
     }
 
+    #bePartner {
+
+        .container {
+            .row {
+
+                .partnerBox {
+                    // justify-content: center;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+
+                    .partnerLeftBox {
+                        position: absolute;
+                        top: 83.5px;
+                        left: 129px;
+                    }
+
+                    .partnerRightBox {
+                        position: absolute;
+                        top: 99.5px;
+                        right: 129px;
+                        // display: flex;
+                        // justify-content: end;
+                        // align-items: center;
+                    }
+                }
+            }
+        }
+    }
 }
-
-

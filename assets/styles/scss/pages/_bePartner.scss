@@ -7,30 +7,49 @@
 
             .partnerBox {
                 background-color: #930100;
+                // padding: 83px 0px;
+                height: 251px;
                 display: flex;
-                padding: 83px 0px;
                 justify-content: center;
 
+                // position: relative;
+                // top: 0;
+                // left: 0;
+
                 .partnerLeftBox {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
 
                     .partnerTextBox {
                         .partnerTitle {
-                            h2 {}
+                            h2 {
+                                font-size: 36px;
+                                font-weight: 600;
+                                line-height: 40px;
+                            }
 
                         }
 
                         .partnerDesc {
-                            p {}
+                            p {
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #F2F2F2;
+                                font-family: "InterThin", sans-serif;
+                            }
                         }
                     }
                 }
 
                 .partnerRightBox {
-                        display: flex;
-                        justify-content: end;
-                        align-items: center;
+
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
                     .partnerBtnBox {
-                    
+
                         button {
                             padding: 15px 55px;
                             color: #F2F2F2;
