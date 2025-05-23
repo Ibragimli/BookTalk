@@ -1,0 +1,158 @@
+#weeklyFavoriteBooks {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .weeklyFavoriteBookTitleBox {
+                h1 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    font-weight: 600;
+                    color: #000;
+                    margin-bottom: 4px;
+                }
+            }
+
+            .weeklyFavoriteBookDescBox {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #000;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        .favoriteBooks {
+            gap: 40px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .favoriteBookCard {
+                max-width: 600px;
+                max-height: 251px;
+                display: flex;
+                background-color: #000;
+                padding: 30px;
+                position: relative;
+                border-radius: 1px;
+
+                .favoriteBookImageBox {
+                    img {
+                        height: 175px;
+                        width: 125px;
+                    }
+                }
+
+                .favoriteBookRightBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    max-width: 240px;
+                    margin-left: 16px;
+
+                    .favoriteBookContent {
+                        h3 {
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 500;
+                            margin-bottom: 4px;
+                            color: #F2F2F2;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #E5E5E5;
+                            opacity: 80%;
+                        }
+                    }
+
+                    .favoriteBookFooter {
+                        .favoriteBookAuthorBox {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                margin-right: 4px;
+                                object-fit: cover;
+
+                            }
+
+                            .favoriteBookAuthorInfoBox {
+                                display: flex;
+                                flex-direction: column;
+
+                                p {
+                                    font-size: 14px;
+                                    color: #F2F2F2;
+                                    line-height: 20px;
+                                    font-weight: 400;
+                                }
+
+                                small {
+                                    font-size: 10px;
+                                    color: #B2B2B2;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+                .favoriteBookBtnBox {
+                    position: absolute;
+                    bottom: 37.5px;
+                    right: 36.17px;
+
+                    button {
+                        background-color: #666;
+                        color: #FFF;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 10px 14px;
+                    }
+
+                    button:hover {
+                        background-color: #FF3A00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 996px) {
+    #weeklyFavoriteBooks {
+        .favoriteBooks {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .favoriteBookCard {
+                flex: 0 0 calc(50% - 8px);
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 995px) {
+    #weeklyFavoriteBooks {
+        .favoriteBooks {
+            flex-direction: column;
+            align-items: center;
+
+            .favoriteBookCard {
+                width: 100%;
+                max-width: 90%;
+            }
+        }
+    }
+}

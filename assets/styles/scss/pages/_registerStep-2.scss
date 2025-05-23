@@ -1,0 +1,177 @@
+#registerStepTwo {
+    margin-top: 46px;
+    margin-bottom: 129px;
+
+    .container {
+        .row {
+            .registerStepTwoBox {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 64px;
+
+                ul {
+                    display: flex;
+                    text-align: center;
+                    flex-wrap: wrap;
+
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 23px;
+
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: 600;
+                            width: 36px;
+                            height: 36px;
+                            background-color: #B2B2B2;
+                            border-radius: 50%;
+                            font-size: 14px;
+                            color: #000;
+                            margin-bottom: 4px;
+                        }
+
+                        span {
+                            color: #000;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+
+                        i {
+                            display: none;
+                            font-weight: 600;
+                            width: 36px;
+                            height: 36px;
+                            background-color: #256428;
+                            border-radius: 50%;
+                            font-size: 14px;
+                            color: #000;
+                            margin-bottom: 4px;
+                            color: #F2F2F2;
+                        }
+
+                    }
+
+                    .active {
+                        p {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #FF793F;
+                        }
+                    }
+
+                    .completed {
+                        p {
+                            display: none;
+                        }
+
+                        i {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        ::before {
+                            content: '\f00c';
+                            font-family: "Font Awesome 6 Free";
+                            font-weight: 600;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            background-color: #256428;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            color: #fff;
+                            margin-bottom: 4px;
+
+                        }
+                    }
+
+                }
+            }
+
+            .registerStepTwoTitleBox {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 64px;
+
+
+                h2 {
+                    font-size: 36px;
+                    color: #000;
+                    line-height: 40px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    text-align: center;
+                    color: #666;
+                    font-size: 20px;
+                    line-height: 24px;
+                    max-width: 320px;
+                }
+            }
+
+            .registerStepTwoRow {
+
+            }
+
+            .registerStepTwoJoinBox {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 32px;
+
+                p {
+                    color: #000;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin-right: 4px;
+                }
+
+                a {
+                    color: #FF3A00;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            .registerStepTwoBtnBox {
+                text-align: center;
+
+                button {
+                    color: #F2F2F2;
+                    background-color: #666;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 15.2px 64.08px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                button:hover {
+                    background-color: #FF793F;
+                }
+            }
+        }
+
+
+    }
+}

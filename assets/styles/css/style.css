@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
@@ -290,6 +291,36 @@ header .headerClass .headRight .userClass a p {
   color: #000;
 }
 
+@media (min-width: 350px) {
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 20.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 22px;
+    line-height: 46px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 240.5px;
+    left: 75px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 80px;
+    padding: 14.5px 0px;
+    font-size: 12px;
+  }
+}
 @media (max-width: 500px) {
   .readerBox {
     width: 100%;
@@ -304,6 +335,39 @@ header .headerClass .headRight .userClass a p {
   }
   #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
     font-size: 20px !important;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 45.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 210.5px;
+    left: 105px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 270px;
+    height: 50px;
+    font-size: 12px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 80px;
+    padding: 14.5px 0px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  #premiumBookService {
+    height: 550px;
   }
 }
 @media (min-width: 776px) {
@@ -355,18 +419,63 @@ header .headerClass .headRight .userClass a p {
   #events .eventBoxs .eventTextBox p {
     font-size: 12px !important;
   }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 100.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 210.5px;
+    left: 155px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 340px;
+    height: 50px;
+    font-size: 12px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 80px;
+    padding: 14.5px 0px;
+    font-size: 12px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 776px) {
+  .headNavbar ul li a {
+    font-size: 15px !important;
+  }
   .readerBox {
     width: calc((100% - 32px) / 2);
   }
   #articles .articleBox {
     width: 90%;
   }
-}
-@media (max-width: 776px) {
-  .headNavbar ul li a {
-    font-size: 15px !important;
+  #registerStepOne .container .row .registerStepOneInputRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  #registerStepOne .container .row .registerStepOneInputRow .registerStepOneFullnameBox,
+  #registerStepOne .container .row .registerStepOneInputRow .registerStepEmailBox,
+  #registerStepOne .container .row .registerStepOneInputRow .registerStepPasswordsBox {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+  #registerStepOne .container .row .registerStepOneInputRow .registerStepPasswordsBox {
+    flex-direction: column;
+  }
+  #registerStepOne .container .row .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 992px) {
@@ -417,6 +526,10 @@ header .headerClass .headRight .userClass a p {
     padding: 12px 40px;
     font-size: 15px;
     line-height: 20px;
+  }
+  #premiumBookService {
+    height: 550px !important;
+    padding: 50px 0px;
   }
 }
 @media (min-width: 992px) {
@@ -473,6 +586,44 @@ header .headerClass .headRight .userClass a p {
   }
   #events .eventBoxs .eventTextBox p {
     font-size: 12px !important;
+  }
+  #premiumBookService .premiumContainer .premiumLeft {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+  }
+  #premiumBookService .premiumContainer .premiumPlans {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 190.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 210.5px;
+    left: 235px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 420px;
+    height: 50px;
+    font-size: 14px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 113px;
+    padding: 13px 0px;
+    font-size: 14px;
   }
 }
 @media (min-width: 1024px) {
@@ -574,10 +725,55 @@ header .headerClass .headRight .userClass a p {
     width: 170px !important;
     font-size: 16px !important;
   }
+  #premiumBookService .premiumContainer .premiumLeft {
+    position: absolute;
+    top: 147px;
+    left: 0px;
+  }
+  #premiumBookService .premiumContainer .premiumPlans {
+    position: absolute;
+    top: 99px;
+    right: 0px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 250.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 233.5px;
+    left: 290px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 480px;
+    height: 60px;
+    font-size: 16px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 143px;
+    padding: 17.5px 20px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 1200px) {
   .articleDesc h2 {
     margin: 0 8px;
+  }
+  #premiumBookService .premiumContainer .premiumLeft h1 {
+    font-size: 32px !important;
+  }
+  #premiumBookService .premiumContainer .premiumLeft p {
+    max-height: 420px !important;
+    font-size: 14px !important;
   }
 }
 @media (min-width: 1440px) {
@@ -645,6 +841,34 @@ header .headerClass .headRight .userClass a p {
     position: absolute;
     top: 99.5px;
     right: 129px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+    position: absolute;
+    top: 92.5px;
+    left: 256.5px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+    position: absolute;
+    top: 233.5px;
+    left: 309px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+    width: 480px;
+    height: 60px;
+    font-size: 16px;
+  }
+  #readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+    width: 143px;
+    font-size: 14px;
+    padding: 17.5px 20px;
   }
 }
 footer {
@@ -1539,4 +1763,711 @@ footer .footerNavbarBox .footerNavbar ul li a {
   font-size: 10px;
   font-weight: 500;
   line-height: 14px;
+}
+
+#readerMeet {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#readerMeet .container {
+  background-color: #000;
+  height: 389px;
+}
+#readerMeet .container .readerMeetContentBox {
+  position: relative;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetTextBox {
+  text-align: center;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetTextBox h1 {
+  font-weight: 700;
+  color: #F2F2F2;
+  margin-bottom: 8px;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetTextBox span {
+  font-weight: 100;
+  opacity: 50%;
+  margin-bottom: 64px;
+  color: #F2F2F2;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetInputBox {
+  max-width: 622px;
+  max-height: 60px;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent {
+  display: flex;
+  align-items: center;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent input {
+  max-width: 480px;
+  padding: 23px 0px 23px 16px;
+  max-height: 60px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#readerMeet .container .readerMeetContentBox .readerMeetInputBox .readerMeetInputContent button {
+  max-width: 143px;
+  background-color: #666666;
+  color: #F2F2F2;
+  border-radius: 1px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  max-width: 143px;
+  height: 100%;
+}
+
+#weeklyFavoriteBooks {
+  margin-bottom: 40px;
+}
+#weeklyFavoriteBooks .container .row .weeklyFavoriteBookTitleBox h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 4px;
+}
+#weeklyFavoriteBooks .container .row .weeklyFavoriteBookDescBox p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 24px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks {
+  gap: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard {
+  max-width: 600px;
+  max-height: 251px;
+  display: flex;
+  background-color: #000;
+  padding: 30px;
+  position: relative;
+  border-radius: 1px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookImageBox img {
+  height: 175px;
+  width: 125px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 240px;
+  margin-left: 16px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookContent h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #F2F2F2;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookContent p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #E5E5E5;
+  opacity: 80%;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookFooter .favoriteBookAuthorBox {
+  display: flex;
+  align-items: center;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookFooter .favoriteBookAuthorBox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookFooter .favoriteBookAuthorBox .favoriteBookAuthorInfoBox {
+  display: flex;
+  flex-direction: column;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookFooter .favoriteBookAuthorBox .favoriteBookAuthorInfoBox p {
+  font-size: 14px;
+  color: #F2F2F2;
+  line-height: 20px;
+  font-weight: 400;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookRightBox .favoriteBookFooter .favoriteBookAuthorBox .favoriteBookAuthorInfoBox small {
+  font-size: 10px;
+  color: #B2B2B2;
+  line-height: 14px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookBtnBox {
+  position: absolute;
+  bottom: 37.5px;
+  right: 36.17px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookBtnBox button {
+  background-color: #666;
+  color: #FFF;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 14px;
+}
+#weeklyFavoriteBooks .container .favoriteBooks .favoriteBookCard .favoriteBookBtnBox button:hover {
+  background-color: #FF3A00;
+}
+
+@media (max-width: 1439px) and (min-width: 996px) {
+  #weeklyFavoriteBooks .favoriteBooks {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #weeklyFavoriteBooks .favoriteBooks .favoriteBookCard {
+    flex: 0 0 calc(50% - 8px);
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 995px) {
+  #weeklyFavoriteBooks .favoriteBooks {
+    flex-direction: column;
+    align-items: center;
+  }
+  #weeklyFavoriteBooks .favoriteBooks .favoriteBookCard {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+#premiumBookService {
+  background-color: #7A0007;
+  height: 446px;
+  margin-bottom: 12px;
+}
+#premiumBookService .premiumContainer {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+#premiumBookService .premiumContainer .premiumLeft h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#premiumBookService .premiumContainer .premiumLeft p {
+  max-width: 481px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 85%;
+  margin-bottom: 24px;
+}
+#premiumBookService .premiumContainer .premiumLeft button {
+  background-color: #B2B2B2;
+  color: #000000;
+  border: none;
+  padding: 8px 23px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#premiumBookService .premiumContainer .premiumPlans {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard {
+  background-color: #B2B2B2;
+  color: #000;
+  border-radius: 6px;
+  width: 228px;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1294117647);
+  box-shadow: 0px 17px 10px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 30px 12px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0px 47px 13px 0px rgba(0, 0, 0, 0);
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard h3 {
+  font-size: 16px;
+  color: #000;
+  margin-top: 20px;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard small {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 40px;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard ul li {
+  margin-bottom: 8px;
+  display: flex;
+  list-style: none;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard ul li .liStyleColorBox {
+  margin-right: 4px;
+  color: #DB2200;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard ul li p {
+  font-size: 10px;
+  color: #000;
+}
+#premiumBookService .premiumContainer .premiumPlans .planCard:hover {
+  background-color: #E5E5E5;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1294117647);
+  box-shadow: 0px 17px 10px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 30px 12px 0px rgba(0, 0, 0, 0.0196078431);
+  box-shadow: 0px 47px 13px 0px rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 996px) {
+  .premiumContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .premiumLeft,
+  .premiumPlans {
+    max-width: 100%;
+    text-align: center;
+  }
+  .premiumLeft h1 {
+    font-size: 24px;
+  }
+  .planCard {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+#chooseRole {
+  margin-top: 190px;
+  margin-bottom: 267px;
+}
+#chooseRole .container .row .chooseRoleTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#chooseRole .container .row .chooseRoleTitleBox h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4px;
+}
+#chooseRole .container .row .chooseRoleTitleBox p {
+  color: #666;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 295px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#chooseRole .container .row .chooseRoleCheckbox {
+  max-width: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+#chooseRole .container .row .chooseRoleCheckbox .customCheckbox {
+  margin-right: 12px;
+}
+#chooseRole .container .row .chooseRoleCheckbox .customCheckbox input {
+  width: 36px;
+  height: 36px;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #FF793F;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+#chooseRole .container .row .chooseRoleCheckbox .customCheckbox input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.2s ease;
+}
+#chooseRole .container .row .chooseRoleCheckbox .customCheckbox input:checked::before {
+  background-color: #FF793F;
+}
+#chooseRole .container .row .chooseRoleCheckbox .chooseRoleCheckboxContent h3 {
+  font-size: 28px;
+  line-height: 32px;
+  color: #000;
+  font-weight: 500;
+}
+#chooseRole .container .row .chooseRoleCheckbox .chooseRoleCheckboxContent p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #666;
+  opacity: 80%;
+}
+#chooseRole .container .row .chooseRoleBtnBox {
+  text-align: center;
+}
+#chooseRole .container .row .chooseRoleBtnBox button {
+  color: #F2F2F2;
+  background-color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15.2px 64.08px;
+}
+#chooseRole .container .row .chooseRoleBtnBox button:hover {
+  background-color: #FF793F;
+}
+#chooseRole .container .chooseRoleCheckboxRow {
+  justify-content: center;
+}
+
+#registerStepOne {
+  margin-top: 46px;
+  margin-bottom: 129px;
+}
+#registerStepOne .container .row .registerStepOneBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#registerStepOne .container .row .registerStepOneBox ul {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  /* Kiçik ekranlarda sətirə düşməsi üçün */
+}
+#registerStepOne .container .row .registerStepOneBox ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 23px;
+}
+#registerStepOne .container .row .registerStepOneBox ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #B2B2B2;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+}
+#registerStepOne .container .row .registerStepOneBox ul li span {
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerStepOne .container .row .registerStepOneBox ul .active p {
+  width: 50px;
+  height: 50px;
+  background-color: #FF793F;
+}
+#registerStepOne .container .row .registerStepOneTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#registerStepOne .container .row .registerStepOneTitleBox h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#registerStepOne .container .row .registerStepOneTitleBox p {
+  color: #666;
+  font-size: 20px;
+  line-height: 24px;
+}
+#registerStepOne .container .row .registerStepOneJoinBox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+#registerStepOne .container .row .registerStepOneJoinBox p {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 4px;
+}
+#registerStepOne .container .row .registerStepOneJoinBox a {
+  color: #FF3A00;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerStepOne .container .row .registerStepOneBtnBox {
+  text-align: center;
+}
+#registerStepOne .container .row .registerStepOneBtnBox button {
+  color: #F2F2F2;
+  background-color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15.2px 64.08px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#registerStepOne .container .row .registerStepOneBtnBox button:hover {
+  background-color: #FF793F;
+}
+#registerStepOne .container .registerStepOneInputRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepOneFullnameBox,
+#registerStepOne .container .registerStepOneInputRow .registerStepEmailBox {
+  max-width: 684px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepOneFullnameBox input,
+#registerStepOne .container .registerStepOneInputRow .registerStepEmailBox input {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #666;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepOneFullnameBox .registerInputTitle,
+#registerStepOne .container .registerStepOneInputRow .registerStepEmailBox .registerInputTitle {
+  position: absolute;
+  top: -22px;
+  left: 2px;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepOneFullnameBox .registerInputTitle p,
+#registerStepOne .container .registerStepOneInputRow .registerStepEmailBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+  font-weight: 400;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox {
+  max-width: 330px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+  margin-right: 16px;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox:last-child {
+  margin-right: 0;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox input {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #666;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #F2F2F2;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox .registerInputTitle {
+  position: absolute;
+  top: -22px;
+  left: 2px;
+}
+#registerStepOne .container .registerStepOneInputRow .registerStepPasswordsBox .registerStepPasswordBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+#registerStepTwo {
+  margin-top: 46px;
+  margin-bottom: 129px;
+}
+#registerStepTwo .container .row .registerStepTwoBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 23px;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #B2B2B2;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul li span {
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul li i {
+  display: none;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #256428;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+  color: #F2F2F2;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul .active p {
+  width: 50px;
+  height: 50px;
+  background-color: #FF793F;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul .completed p {
+  display: none;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul .completed i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registerStepTwo .container .row .registerStepTwoBox ul .completed ::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #256428;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+#registerStepTwo .container .row .registerStepTwoTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#registerStepTwo .container .row .registerStepTwoTitleBox h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#registerStepTwo .container .row .registerStepTwoTitleBox p {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 320px;
+}
+#registerStepTwo .container .row .registerStepTwoJoinBox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+#registerStepTwo .container .row .registerStepTwoJoinBox p {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 4px;
+}
+#registerStepTwo .container .row .registerStepTwoJoinBox a {
+  color: #FF3A00;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerStepTwo .container .row .registerStepTwoBtnBox {
+  text-align: center;
+}
+#registerStepTwo .container .row .registerStepTwoBtnBox button {
+  color: #F2F2F2;
+  background-color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15.2px 64.08px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#registerStepTwo .container .row .registerStepTwoBtnBox button:hover {
+  background-color: #FF793F;
 }

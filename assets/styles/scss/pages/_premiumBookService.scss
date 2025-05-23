@@ -1,0 +1,161 @@
+#premiumBookService {
+    background-color: #7A0007;
+    height: 446px;
+    // padding: 40px 20px;
+    margin-bottom: 12px;
+
+    .premiumContainer {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+
+        .premiumLeft {
+            // position: absolute;
+            // top: 147px;
+            // left: 0px;
+
+            h1 {
+                font-size: 36px;
+                line-height: 40px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            p {
+                max-width: 481px;
+                font-size: 16px;
+                font-weight: 400;
+                opacity: 85%;
+                margin-bottom: 24px;
+            }
+
+            button {
+                background-color: #B2B2B2;
+                color: #000000;
+                border: none;
+                padding: 8px 23px;
+                font-size: 16px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .premiumPlans {
+            // position: absolute;
+            // top: 99px;
+            // right: 0px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            // flex: 1 1 300px;
+
+            .planCard {
+                background-color: #B2B2B2;
+                color: #000;
+                border-radius: 6px;
+                // padding: 20px;
+                width: 228px;
+                height: 248px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                box-shadow: 0px 2px 4px 0px #00000026;
+                box-shadow: 0px 8px 8px 0px #00000021;
+                box-shadow: 0px 17px 10px 0px #00000014;
+                box-shadow: 0px 30px 12px 0px #00000005;
+                box-shadow: 0px 47px 13px 0px #00000000;
+
+                h3 {
+                    font-size: 16px;
+                    color: #000;
+                    margin-top: 20px;
+                }
+
+                small {
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                    color: #000;
+                    margin-bottom: 40px;
+                }
+
+                ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                    text-align: left;
+                    font-size: 14px;
+
+                    li {
+
+                        margin-bottom: 8px;
+                        display: flex;
+
+                        .liStyleColorBox {
+                            margin-right: 4px;
+                            color: #DB2200;
+                            width: 12px;
+                            height: 12px;
+                            background-color: red; // rəng burada dəyişdirilir
+                            border-radius: 50%; // dairəvi etmək üçün
+
+                        }
+
+                        p {
+                            font-size: 10px;
+                            color: #000;
+
+                        }
+
+                        list-style: none;
+
+
+                    }
+                }
+            }
+
+            .planCard:hover {
+                background-color: #E5E5E5;
+                box-shadow: 0px 2px 4px 0px #00000026;
+
+                box-shadow: 0px 8px 8px 0px #00000021;
+
+                box-shadow: 0px 17px 10px 0px #00000014;
+
+                box-shadow: 0px 30px 12px 0px #00000005;
+
+                box-shadow: 0px 47px 13px 0px #00000000;
+
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 996px) {
+    .premiumContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premiumLeft,
+    .premiumPlans {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .premiumLeft h1 {
+        font-size: 24px;
+    }
+
+    .planCard {
+        width: 100%;
+        max-width: 300px;
+    }
+}
