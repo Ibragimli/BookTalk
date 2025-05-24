@@ -1,177 +1,380 @@
 #registerStepTwo {
-    margin-top: 46px;
-    margin-bottom: 129px;
+  margin-top: 46px;
+  margin-bottom: 129px;
+  .container {
+    .row {
+      .registerStepTwoBox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 64px;
 
-    .container {
-        .row {
-            .registerStepTwoBox {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 64px;
+        ul {
+          display: flex;
+          text-align: center;
+          flex-wrap: wrap;
 
-                ul {
-                    display: flex;
-                    text-align: center;
-                    flex-wrap: wrap;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 23px;
 
-
-                    li {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 23px;
-
-                        p {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-weight: 600;
-                            width: 36px;
-                            height: 36px;
-                            background-color: #B2B2B2;
-                            border-radius: 50%;
-                            font-size: 14px;
-                            color: #000;
-                            margin-bottom: 4px;
-                        }
-
-                        span {
-                            color: #000;
-                            font-size: 14px;
-                            line-height: 18px;
-                        }
-
-                        i {
-                            display: none;
-                            font-weight: 600;
-                            width: 36px;
-                            height: 36px;
-                            background-color: #256428;
-                            border-radius: 50%;
-                            font-size: 14px;
-                            color: #000;
-                            margin-bottom: 4px;
-                            color: #F2F2F2;
-                        }
-
-                    }
-
-                    .active {
-                        p {
-                            width: 50px;
-                            height: 50px;
-                            background-color: #FF793F;
-                        }
-                    }
-
-                    .completed {
-                        p {
-                            display: none;
-                        }
-
-                        i {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-
-                        ::before {
-                            content: '\f00c';
-                            font-family: "Font Awesome 6 Free";
-                            font-weight: 600;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 40px;
-                            height: 40px;
-                            background-color: #256428;
-                            border-radius: 50%;
-                            font-size: 16px;
-                            color: #fff;
-                            margin-bottom: 4px;
-
-                        }
-                    }
-
-                }
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: 600;
+              width: 36px;
+              height: 36px;
+              background-color: #b2b2b2;
+              border-radius: 50%;
+              font-size: 14px;
+              color: #000;
+              margin-bottom: 4px;
             }
 
-            .registerStepTwoTitleBox {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-bottom: 64px;
-
-
-                h2 {
-                    font-size: 36px;
-                    color: #000;
-                    line-height: 40px;
-                    font-weight: 600;
-                    text-align: center;
-                    margin-bottom: 8px;
-                }
-
-                p {
-                    text-align: center;
-                    color: #666;
-                    font-size: 20px;
-                    line-height: 24px;
-                    max-width: 320px;
-                }
+            span {
+              color: #000;
+              font-size: 14px;
+              line-height: 18px;
             }
 
-            .registerStepTwoRow {
+            i {
+              display: none;
+              font-weight: 600;
+              width: 36px;
+              height: 36px;
+              background-color: #256428;
+              border-radius: 50%;
+              font-size: 14px;
+              color: #000;
+              margin-bottom: 4px;
+              color: #f2f2f2;
+            }
+          }
 
+          .active {
+            p {
+              width: 50px;
+              height: 50px;
+              background-color: #ff793f;
+            }
+          }
+
+          .completed {
+            p {
+              display: none;
             }
 
-            .registerStepTwoJoinBox {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 32px;
-
-                p {
-                    color: #000;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 18px;
-                    margin-right: 4px;
-                }
-
-                a {
-                    color: #FF3A00;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 18px;
-                }
+            i {
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
 
-            .registerStepTwoBtnBox {
-                text-align: center;
-
-                button {
-                    color: #F2F2F2;
-                    background-color: #666;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    line-height: 20px;
-                    padding: 15.2px 64.08px;
-                    border: none;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
-                }
-
-                button:hover {
-                    background-color: #FF793F;
-                }
+            ::before {
+              content: "\f00c";
+              font-family: "Font Awesome 6 Free";
+              font-weight: 600;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              background-color: #256428;
+              border-radius: 50%;
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 4px;
             }
+          }
+        }
+      }
+
+      .registerStepTwoTitleBox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 64px;
+
+        h2 {
+          font-size: 36px;
+          color: #000;
+          line-height: 40px;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 8px;
         }
 
+        p {
+          text-align: center;
+          color: #666;
+          font-size: 20px;
+          line-height: 24px;
+          max-width: 320px;
+        }
+      }
 
+      .errorBox {
+        margin-top: 12px;
+        p {
+          color: #ff793f;
+        }
+      }
+      .registerStepTwoBtnBox {
+        text-align: center;
+
+        button {
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 20px;
+          padding: 15.7px 64.52px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .registerStepTwoBackBtn {
+          background-color: #f2f2f2;
+          border: 1px solid #666;
+          color: #666;
+          margin-right: 16px;
+        }
+        .registerStepTwoNextBtn {
+          background-color: #ff3a00;
+          color: #f2f2f2;
+        }
+      }
     }
+    .registerStepTwoRow {
+      .registerStepInputsBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 880px;
+        position: relative;
+        margin-bottom: 60px;
+        // margin-left: 250px;
+        .registerStepTwoSelecetInputs {
+          display: flex;
+          flex-wrap: wrap;
+          .registerStepDateBox {
+            margin-right: 56px;
+            input {
+              background-color: #e5e5e5;
+              border-radius: 4px;
+              padding-left: 8px;
+              font-size: 12px;
+              line-height: 16px;
+              width: 200px;
+              height: 40px;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+            .registerInputTitle {
+              position: absolute;
+              top: -25px;
+              left: 0;
+
+              p {
+                font-size: 16px;
+                color: #000000;
+                line-height: 20px;
+                font-weight: 500;
+              }
+            }
+          }
+
+          .registerStepGenderBox {
+            position: relative;
+            margin-right: 56px;
+            margin-bottom: 5px;
+            select {
+              background-color: #e5e5e5;
+              border-radius: 4px;
+              padding-left: 8px;
+              font-size: 12px;
+              line-height: 16px;
+              width: 200px;
+              height: 40px;
+              -webkit-appearance: none; /* Chrome, Safari, Opera */
+              -moz-appearance: none; /* Firefox */
+              appearance: none; /* Standard */
+              option {
+              }
+            }
+            .registerInputTitle {
+              position: absolute;
+              top: -25px;
+              left: 0;
+
+              p {
+                font-size: 16px;
+                color: #000000;
+                line-height: 20px;
+                font-weight: 500;
+                span {
+                  font-size: 10px;
+                  line-height: 14px;
+                  color: #666;
+                }
+              }
+            }
+          }
+          .registerStepLangBox {
+            position: relative;
+            select {
+              background-color: #e5e5e5;
+              border-radius: 4px;
+              padding-left: 8px;
+              font-size: 12px;
+              line-height: 16px;
+              width: 200px;
+              height: 40px;
+              -webkit-appearance: none; /* Chrome, Safari, Opera */
+              -moz-appearance: none; /* Firefox */
+              appearance: none; /* Standard */
+              option {
+              }
+            }
+            .registerInputTitle {
+              position: absolute;
+              top: -25px;
+              left: 0;
+
+              p {
+                font-size: 16px;
+                color: #000000;
+                line-height: 20px;
+                font-weight: 500;
+                display: ruby-text;
+              }
+            }
+          }
+        }
+
+        .registerStepTwoReadingBox {
+          position: relative;
+          margin-bottom: 44px;
+          .registerInputTitle {
+            position: absolute;
+            top: -25px;
+            left: 0;
+
+            p {
+              font-size: 16px;
+              color: #000000;
+              line-height: 20px;
+              font-weight: 500;
+              display: ruby-text;
+            }
+          }
+          ul {
+            display: flex;
+            li {
+              display: flex;
+              margin-right: 12px;
+              input[type="radio"] {
+                display: none;
+
+                &:checked + label {
+                  background-color: #ff3a00;
+                  color: #f2f2f2;
+                }
+              }
+
+              label {
+                width: 88px;
+                height: 30px;
+                background-color: #e5e5e5;
+                color: #666666;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 0.3s;
+                border: 1px solid #666666;
+              }
+            }
+          }
+        }
+        .registerStepTwoBookCountBox {
+          max-width: 454px;
+          position: relative;
+          .registerInputTitle {
+            position: absolute;
+            top: -20px;
+            left: 0;
+
+            p {
+              font-size: 16px;
+              color: #000000;
+              line-height: 20px;
+              font-weight: 500;
+              display: ruby-text;
+              span {
+                font-size: 10px;
+                line-height: 14px;
+                color: #666;
+              }
+            }
+          }
+          ul {
+            height: 135px;
+            background-color: #e5e5e5;
+            border: 1px solid #666;
+            border-radius: 10px;
+            display: flex;
+            justify-content: start;
+            padding: 40px 24px;
+            li {
+              display: flex;
+              flex-direction: column;
+              margin-right: 24px;
+              align-items: start;
+              .readCount {
+                position: relative;
+                margin-bottom: 15px;
+                label {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  input {
+                    margin-right: 4px;
+                    appearance: none;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #ff9e66;
+                    border-radius: 50%;
+                    outline: none;
+                    cursor: pointer;
+                    position: relative;
+                  }
+                  input[type="radio"]:checked::before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 16px;
+                    height: 16px;
+                    background-color: red;
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

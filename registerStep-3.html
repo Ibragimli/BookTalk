@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+
+    <title>BookTalk</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center headerClass">
+          <div class="col-lg-12 headLeft">
+            <div class="headerLogo">
+              <h1 class="headerLogoLeft">BOOK</h1>
+              <h1 class="headerLogoRight">TALK</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="registerStepThree">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 registerStepThreeBox">
+              <ul>
+                <li class="completed">
+                  <p>1</p>
+                  <span>Hesab</span>
+                </li>
+                <li class="completed">
+                  <p>2</p>
+                  <span>Profil</span>
+                </li>
+                <li class="active">
+                  <p>3</p>
+                  <span>Maraqlar</span>
+                </li>
+                <li>
+                  <p>4</p>
+                  <span>Tamamla</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 registerStepThreeTitleBox">
+              <h2>Ədəbi Maraqlar və Janrlar</h2>
+              <p>Ən çox sevdiyiniz janrları və müəllifləri seçin</p>
+            </div>
+          </div>
+
+          <div class="row registerStepThreeRow">
+            <div class="col-12 registerStepInputsBox">
+              <!-- Janr  seçimi -->
+              <div class="col registerStepThreeGenreBox">
+                <div class="registerInputTitle">
+                  <p>
+                    Sevdiyiniz janrları seçin*
+                    <span> (ən az 3 ədəd) </span>
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="check-1" />
+                    <label for="check-1">Roman</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-2" />
+                    <label for="check-2">Bioqrafiya</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-3" />
+                    <label for="check-3">Fantaziya</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-4" />
+                    <label for="check-4">Triller</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-5" />
+                    <label for="check-5">Biznes</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-6" />
+                    <label for="check-6">Psixologiya</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-7" />
+                    <label for="check-7">Fəlsəfə</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-8" />
+                    <label for="check-8">Bədii Ədəbiyyat</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-9" />
+                    <label for="check-9">Tarix</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-10" />
+                    <label for="check-10">Elmi-Kütləvi</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-11" />
+                    <label for="check-11">Şəxsi İnkişaf</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-12" />
+                    <label for="check-12">Digər</label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Müəllif  seçimi -->
+              <div class="col registerStepThreeAuthorBox">
+                <div class="registerInputTitle">
+                  <p>
+                    Sevdiyiniz müəllifləri əlavə edin*
+                    <span> (ən az 3 ədəd) </span>
+                  </p>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Müəllif adı daxil edin (bir neçə müəllif yazmaq üçün vergüldən istifadə edin)"
+                />
+              </div>
+
+              <!-- Oxu platform seçimi -->
+              <div class="col registerStepThreeReaderBox">
+                <div class="registerInputTitle">
+                  <p>
+                    Hansı oxu platformalarından istifadə edirsiniz?
+                    <span> (istəyə bağlı) </span>
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="check-kindle" />
+                    <label for="check-kindle"
+                      ><span class="checkbox-box"></span> Kindle</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-audible" />
+                    <label for="check-audible"
+                      ><span class="checkbox-box"></span> Audible</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-kobo" />
+                    <label for="check-kobo"
+                      ><span class="checkbox-box"></span> Kobo</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-apple" />
+                    <label for="check-apple"
+                      ><span class="checkbox-box"></span> Apple Books</label
+                    >
+                  </li>
+                </ul>
+
+                <!-- <ul>
+                  <li>
+                    <input type="checkbox" id="check-kindle" />
+                    <label for="check-kindle">Kindle</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-audible" />
+                    <label for="check-audible">Audible</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-kobo" />
+                    <label for="check-kobo">Kobo</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check-apple" />
+                    <label for="check-apple">Apple Books</label>
+                  </li>
+                </ul> -->
+              </div>
+
+              <!-- Error mesajı -->
+              <div class="errorBox">
+                <p>*işarəli xanalar mütləq doldurulmalıdır!</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 registerStepThreeBtnBox">
+              <button class="btn registerStepThreeBackBtn">Geri qayıt</button>
+              <button class="btn registerStepThreeNextBtn">Davam Et</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

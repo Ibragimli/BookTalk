@@ -365,11 +365,6 @@ header .headerClass .headRight .userClass a p {
     font-size: 12px;
   }
 }
-@media (max-width: 576px) {
-  #premiumBookService {
-    height: 550px;
-  }
-}
 @media (min-width: 776px) {
   .footerNavbarBox .footerNavbar .ContactBar {
     padding-left: 25px;
@@ -452,6 +447,18 @@ header .headerClass .headRight .userClass a p {
   .headNavbar ul li a {
     font-size: 15px !important;
   }
+  #registerStepTwo .container .registerStepLangBox {
+    margin-top: 40px;
+  }
+  #registerStepTwo .container .registerStepGenderBox {
+    margin-top: 0px;
+  }
+  #registerStepThree .container .registerStepThreeRow .registerStepInputsBox {
+    margin-left: 25px;
+  }
+  #registerStepThree .registerInputTitle P {
+    font-size: 22px !important;
+  }
   .readerBox {
     width: calc((100% - 32px) / 2);
   }
@@ -476,6 +483,20 @@ header .headerClass .headRight .userClass a p {
     width: 100% !important;
     max-width: 100% !important;
     margin-right: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  #premiumBookService {
+    height: 550px;
+  }
+  #registerStepTwo .container .registerStepLangBox {
+    margin-top: 40px;
+  }
+  #registerStepTwo .registerStepGenderBox {
+    margin-top: 40px;
+  }
+  #registerStepThree .registerInputTitle P {
+    font-size: 18px !important;
   }
 }
 @media (max-width: 992px) {
@@ -625,6 +646,12 @@ header .headerClass .headRight .userClass a p {
     padding: 13px 0px;
     font-size: 14px;
   }
+  #registerStepTwo .container .registerStepTwoRow .registerStepInputsBox {
+    margin-left: 150px;
+  }
+  #registerStepThree .container .registerStepThreeRow .registerStepInputsBox {
+    margin-left: 150px;
+  }
 }
 @media (min-width: 1024px) {
   .footerNavbarBox .footerNavbar .ContactBar {
@@ -763,6 +790,12 @@ header .headerClass .headRight .userClass a p {
     padding: 17.5px 20px;
     font-size: 14px;
   }
+  #registerStepTwo .container .registerStepTwoRow .registerStepInputsBox {
+    margin-left: 200px;
+  }
+  #registerStepThree .container .registerStepThreeRow .registerStepInputsBox {
+    margin-left: 210px;
+  }
 }
 @media (max-width: 1200px) {
   .articleDesc h2 {
@@ -869,6 +902,12 @@ header .headerClass .headRight .userClass a p {
     width: 143px;
     font-size: 14px;
     padding: 17.5px 20px;
+  }
+  #registerStepTwo .container .registerStepTwoRow .registerStepInputsBox {
+    margin-left: 250px;
+  }
+  #registerStepThree .container .registerStepThreeRow .registerStepInputsBox {
+    margin-left: 260px;
   }
 }
 footer {
@@ -2362,7 +2401,7 @@ footer .footerNavbarBox .footerNavbar ul li a {
   font-weight: 600;
   width: 36px;
   height: 36px;
-  background-color: #B2B2B2;
+  background-color: #b2b2b2;
   border-radius: 50%;
   font-size: 14px;
   color: #000;
@@ -2383,12 +2422,12 @@ footer .footerNavbarBox .footerNavbar ul li a {
   font-size: 14px;
   color: #000;
   margin-bottom: 4px;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 #registerStepTwo .container .row .registerStepTwoBox ul .active p {
   width: 50px;
   height: 50px;
-  background-color: #FF793F;
+  background-color: #ff793f;
 }
 #registerStepTwo .container .row .registerStepTwoBox ul .completed p {
   display: none;
@@ -2435,39 +2474,816 @@ footer .footerNavbarBox .footerNavbar ul li a {
   line-height: 24px;
   max-width: 320px;
 }
-#registerStepTwo .container .row .registerStepTwoJoinBox {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 32px;
+#registerStepTwo .container .row .errorBox {
+  margin-top: 12px;
 }
-#registerStepTwo .container .row .registerStepTwoJoinBox p {
-  color: #000;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  margin-right: 4px;
-}
-#registerStepTwo .container .row .registerStepTwoJoinBox a {
-  color: #FF3A00;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
+#registerStepTwo .container .row .errorBox p {
+  color: #ff793f;
 }
 #registerStepTwo .container .row .registerStepTwoBtnBox {
   text-align: center;
 }
 #registerStepTwo .container .row .registerStepTwoBtnBox button {
-  color: #F2F2F2;
-  background-color: #666;
   border-radius: 10px;
   font-size: 16px;
   line-height: 20px;
-  padding: 15.2px 64.08px;
+  padding: 15.7px 64.52px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-#registerStepTwo .container .row .registerStepTwoBtnBox button:hover {
-  background-color: #FF793F;
+#registerStepTwo .container .row .registerStepTwoBtnBox .registerStepTwoBackBtn {
+  background-color: #f2f2f2;
+  border: 1px solid #666;
+  color: #666;
+  margin-right: 16px;
+}
+#registerStepTwo .container .row .registerStepTwoBtnBox .registerStepTwoNextBtn {
+  background-color: #ff3a00;
+  color: #f2f2f2;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 880px;
+  position: relative;
+  margin-bottom: 60px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepDateBox {
+  margin-right: 56px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepDateBox input {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 200px;
+  height: 40px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepDateBox input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepDateBox .registerInputTitle {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepDateBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 500;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepGenderBox {
+  position: relative;
+  margin-right: 56px;
+  margin-bottom: 5px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepGenderBox select {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none; /* Chrome, Safari, Opera */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepGenderBox .registerInputTitle {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepGenderBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 500;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepGenderBox .registerInputTitle p span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepLangBox {
+  position: relative;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepLangBox select {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 200px;
+  height: 40px;
+  -webkit-appearance: none; /* Chrome, Safari, Opera */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepLangBox .registerInputTitle {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoSelecetInputs .registerStepLangBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 500;
+  display: ruby-text;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox {
+  position: relative;
+  margin-bottom: 44px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox .registerInputTitle {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 500;
+  display: ruby-text;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox ul {
+  display: flex;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox ul li {
+  display: flex;
+  margin-right: 12px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox ul li input[type=radio] {
+  display: none;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox ul li input[type=radio]:checked + label {
+  background-color: #ff3a00;
+  color: #f2f2f2;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoReadingBox ul li label {
+  width: 88px;
+  height: 30px;
+  background-color: #e5e5e5;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #666666;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox {
+  max-width: 454px;
+  position: relative;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox .registerInputTitle {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  font-weight: 500;
+  display: ruby-text;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox .registerInputTitle p span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul {
+  height: 135px;
+  background-color: #e5e5e5;
+  border: 1px solid #666;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  padding: 40px 24px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  align-items: start;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul li .readCount {
+  position: relative;
+  margin-bottom: 15px;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul li .readCount label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul li .readCount label input {
+  margin-right: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ff9e66;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+#registerStepTwo .container .registerStepTwoRow .registerStepInputsBox .registerStepTwoBookCountBox ul li .readCount label input[type=radio]:checked::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+#registerStepThree {
+  margin-top: 46px;
+  margin-bottom: 129px;
+}
+#registerStepThree .container .row .registerStepThreeBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 34px;
+}
+#registerStepThree .container .row .registerStepThreeBox ul {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#registerStepThree .container .row .registerStepThreeBox ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 23px;
+}
+#registerStepThree .container .row .registerStepThreeBox ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+}
+#registerStepThree .container .row .registerStepThreeBox ul li span {
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerStepThree .container .row .registerStepThreeBox ul li i {
+  display: none;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #256428;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+  color: #f2f2f2;
+}
+#registerStepThree .container .row .registerStepThreeBox ul .active p {
+  width: 50px;
+  height: 50px;
+  background-color: #ff793f;
+}
+#registerStepThree .container .row .registerStepThreeBox ul .completed p {
+  display: none;
+}
+#registerStepThree .container .row .registerStepThreeBox ul .completed i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registerStepThree .container .row .registerStepThreeBox ul .completed ::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #256428;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+#registerStepThree .container .row .registerStepThreeTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+}
+#registerStepThree .container .row .registerStepThreeTitleBox h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#registerStepThree .container .row .registerStepThreeTitleBox p {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 393px;
+}
+#registerStepThree .container .row .errorBox {
+  margin-top: 12px;
+}
+#registerStepThree .container .row .errorBox p {
+  color: #ff793f;
+}
+#registerStepThree .container .row .registerStepThreeBtnBox {
+  text-align: center;
+}
+#registerStepThree .container .row .registerStepThreeBtnBox button {
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15.7px 64.52px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#registerStepThree .container .row .registerStepThreeBtnBox .registerStepThreeBackBtn {
+  background-color: #f2f2f2;
+  border: 1px solid #666;
+  color: #666;
+  margin-right: 16px;
+}
+#registerStepThree .container .row .registerStepThreeBtnBox .registerStepThreeNextBtn {
+  background-color: #ff3a00;
+  color: #f2f2f2;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 880px;
+  position: relative;
+  margin-bottom: 24px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox {
+  position: relative;
+  margin-bottom: 65px;
+  max-width: 830px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox ul li {
+  position: relative;
+  list-style: none;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox ul li input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox ul li label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  width: 160px;
+  height: 40px;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeGenreBox ul li input[type=checkbox]:checked + label {
+  background-color: #ff3a00;
+  color: #fff;
+  width: 200px;
+  height: 52px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeAuthorBox {
+  margin-bottom: 65px;
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeAuthorBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeAuthorBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeAuthorBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeAuthorBox input {
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  font-size: 12px;
+  width: 90%;
+  max-width: 720px;
+  height: 60px;
+  line-height: 14px;
+  max-width: 720px;
+  border-radius: 10px;
+  padding-left: 16px;
+  border: none;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox {
+  position: relative;
+  width: 100%;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul li {
+  list-style: none;
+  position: relative;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul li input[type=checkbox] {
+  display: none;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul li label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #f2f2f2;
+  width: 120px;
+  height: 40px;
+  color: #000;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul li label .checkbox-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+#registerStepThree .container .registerStepThreeRow .registerStepInputsBox .registerStepThreeReaderBox ul li input[type=checkbox]:checked + label .checkbox-box {
+  background-color: #ff3a00;
+}
+
+#registerCompleted {
+  margin-top: 58px;
+  margin-bottom: 129px;
+}
+#registerCompleted .container .row .registerCompletedBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 115px;
+}
+#registerCompleted .container .row .registerCompletedBox ul {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+#registerCompleted .container .row .registerCompletedBox ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#registerCompleted .container .row .registerCompletedBox ul li span {
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+#registerCompleted .container .row .registerCompletedBox ul li .compLeft {
+  left: -10px;
+}
+#registerCompleted .container .row .registerCompletedBox ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  background-color: #256428;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 4px;
+  color: #f2f2f2;
+}
+#registerCompleted .container .row .registerCompletedTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 74px;
+}
+#registerCompleted .container .row .registerCompletedTitleBox i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: #235e26;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+#registerCompleted .container .row .registerCompletedTitleBox h2 {
+  font-size: 36px;
+  color: #235e26;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#registerCompleted .container .row .registerCompletedTitleBox p {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  opacity: 80%;
+}
+#registerCompleted .container .row .registerCompletedBtnBox {
+  text-align: center;
+}
+#registerCompleted .container .row .registerCompletedBtnBox button {
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px 80px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #666666;
+  color: #f2f2f2;
+}
+#registerCompleted .container .row .registerCompletedBtnBox button:hover {
+  background-color: #ff3a00;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 880px;
+  position: relative;
+  margin-bottom: 24px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox {
+  position: relative;
+  margin-bottom: 65px;
+  max-width: 830px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li {
+  position: relative;
+  list-style: none;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  width: 160px;
+  height: 40px;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li input[type=checkbox]:checked + label {
+  background-color: #ff3a00;
+  color: #fff;
+  width: 200px;
+  height: 52px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox {
+  margin-bottom: 65px;
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox input {
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+  font-size: 12px;
+  width: 90%;
+  max-width: 720px;
+  height: 60px;
+  line-height: 14px;
+  max-width: 720px;
+  border-radius: 10px;
+  padding-left: 16px;
+  border: none;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox {
+  position: relative;
+  width: 100%;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle {
+  position: absolute;
+  top: -43px;
+  left: 0;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle p {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle p span {
+  margin-left: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li {
+  list-style: none;
+  position: relative;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li input[type=checkbox] {
+  display: none;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #f2f2f2;
+  width: 120px;
+  height: 40px;
+  color: #000;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li label .checkbox-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li input[type=checkbox]:checked + label .checkbox-box {
+  background-color: #ff3a00;
 }
