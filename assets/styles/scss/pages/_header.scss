@@ -136,4 +136,29 @@ header {
 
 
     }
+
+    .headerRegister {
+        align-items: center;
+        margin-top: 35.5px;
+
+        .headerLogo {
+            display: flex;
+            width: 124px;
+            height: 24px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 37.85px;
+                line-height: 41px;
+            }
+
+            .headerLogoLeft {
+                color: #111111;
+            }
+
+            .headerLogoRight {
+                color: #FF3A00;
+            }
+        }
+    }
 }

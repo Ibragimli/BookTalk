@@ -49,9 +49,11 @@
               <div
                 class="col registerListenerNameBox registerListenerNameSurname"
               >
-                <input type="password" placeholder="" />
-                <div class="registerInputTitle">
-                  <p>Ad*</p>
+                <div class="inputWrapper">
+                  <input type="text" />
+                  <div class="registerInputTitle">
+                    <p>Ad*</p>
+                  </div>
                 </div>
                 <div class="errorBox">
                   <p>Bu xana mütləq doldurulmalıdır.</p>
@@ -60,9 +62,11 @@
               <div
                 class="col registerListenerSurnameBox registerListenerNameSurname"
               >
-                <input type="text" placeholder="" />
-                <div class="registerInputTitle">
-                  <p>Soyad*</p>
+                <div class="inputWrapper">
+                  <input type="text" />
+                  <div class="registerInputTitle">
+                    <p>Soyad*</p>
+                  </div>
                 </div>
                 <div class="errorBox">
                   <p>Bu xana mütləq doldurulmalıdır.</p>
@@ -70,56 +74,70 @@
               </div>
             </div>
             <div class="col registerListenerEmailBox">
-              <input type="text" placeholder="sizin@email.az" />
-              <div class="registerInputTitle">
-                <p>E-Poçt ünvanı*</p>
+              <div class="inputWrapper">
+                <input type="text" placeholder="sizin@email.az" />
+                <div class="registerInputTitle">
+                  <p>E-Poçt ünvanı*</p>
+                </div>
+              </div>
+              <div class="errorBox">
+                <p>Düzgün e-mail formatı daxil edin ( məs; ad@domain.com )</p>
+              </div>
+            </div>
+            <div class="col registerListenerPasswordBox">
+              <div class="inputWrapper">
+                <input type="password" placeholder="********" />
+                <div class="registerInputTitle">
+                  <p>Şifrə təyin edin*</p>
+                </div>
               </div>
               <div class="errorBox">
                 <p>*işarəli xanalar mütləq doldurulmalıdır!</p>
               </div>
             </div>
-            <div class="col registerListenerFullnameBox">
-              <input type="password" placeholder="********" />
-              <div class="registerInputTitle">
-                <p>Şifrə təyin edin*</p>
-              </div>
-              <div class="errorBox">
-                <p>*işarəli xanalar mütləq doldurulmalıdır!</p>
-              </div>
-            </div>
-            <div class="col registerListenerFullnameBox">
-              <input type="password" placeholder="********" />
-              <div class="registerInputTitle">
-                <p>Şifrənizi təsdiq edin*</p>
+            <div class="col registerListenerPasswordConfirmBox">
+              <div class="inputWrapper">
+                <input type="password" placeholder="********" />
+                <div class="registerInputTitle">
+                  <p>Şifrənizi təsdiq edin*</p>
+                </div>
               </div>
               <div class="errorBox">
                 <p>*işarəli xanalar mütləq doldurulmalıdır!</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 registerListenerJoinBox">
-              <input type="checkbox" name="" id="" />
-              <p>İstifadə şərtləri və məxfilik siyasəti ilə razıyam</p>
+          <div class="row registerRuleRow">
+            <div class="col-lg-12 registerRuleBox">
+              <input type="checkbox" id="registerRule" />
+              <label for="registerRule">
+                <span class="checkbox-box"></span>
+                İstifadə şərtləri və məxfilik siyasəti ilə razıyam
+              </label>
+              <div class="errorBox">
+                <span
+                  >Qeydiyyatdan keçmək üçün şərtlərlə razılaşmalısınız.</span
+                >
+              </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row registerListenerBtnRow">
             <div class="col-lg-12 registerListenerBtnBox">
-              <button class="btn">Davam Et</button>
+              <button class="btn">Qeydiyyatdan Keç</button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 registerListenerBtnBox">
+          <div class="row registerListenerLineRow">
+            <div class="col registerListenerLineBox">
               <hr />
-              <p>və ya</p>
+              <span>və ya</span>
               <hr />
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-12 registerListenerBtnBox">
-              <button class="btn">Google ilə davam et</button>
-              <button class="btn">Facebook ilə davam et</button>
+          <div class="row registerListenerSosialBtnRow">
+            <div class="col registerListenerSosialBtnBox">
+              <button class="btn googleBtn">Google ilə davam et</button>
+              <button class="btn facebookBtn">Facebook ilə davam et</button>
             </div>
           </div>
           <div class="row">

@@ -290,6 +290,26 @@ header .headerClass .headRight .userClass a p {
   line-height: 24px;
   color: #000;
 }
+header .headerRegister {
+  align-items: center;
+  margin-top: 35.5px;
+}
+header .headerRegister .headerLogo {
+  display: flex;
+  width: 124px;
+  height: 24px;
+}
+header .headerRegister .headerLogo h1 {
+  font-weight: 700;
+  font-size: 37.85px;
+  line-height: 41px;
+}
+header .headerRegister .headerLogo .headerLogoLeft {
+  color: #111111;
+}
+header .headerRegister .headerLogo .headerLogoRight {
+  color: #FF3A00;
+}
 
 @media (min-width: 350px) {
   #readerMeet .container .readerMeetContentBox .readerMeetTextBox {
@@ -3118,175 +3138,6 @@ footer .footerNavbarBox .footerNavbar ul li a {
 #registerCompleted .container .row .registerCompletedBtnBox button:hover {
   background-color: #ff3a00;
 }
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 880px;
-  position: relative;
-  margin-bottom: 24px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox {
-  position: relative;
-  margin-bottom: 65px;
-  max-width: 830px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle {
-  position: absolute;
-  top: -43px;
-  left: 0;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle p {
-  font-size: 28px;
-  color: #000000;
-  line-height: 32px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox .registerInputTitle p span {
-  margin-left: 7px;
-  font-size: 10px;
-  line-height: 14px;
-  color: #666;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li {
-  position: relative;
-  list-style: none;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-  opacity: 0;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e5e5e5;
-  width: 160px;
-  height: 40px;
-  color: #666;
-  border: 1px solid #666;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedGenreBox ul li input[type=checkbox]:checked + label {
-  background-color: #ff3a00;
-  color: #fff;
-  width: 200px;
-  height: 52px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox {
-  margin-bottom: 65px;
-  position: relative;
-  width: 100%;
-  max-width: 880px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle {
-  position: absolute;
-  top: -43px;
-  left: 0;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle p {
-  font-size: 28px;
-  color: #000000;
-  line-height: 32px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox .registerInputTitle p span {
-  margin-left: 7px;
-  font-size: 10px;
-  line-height: 14px;
-  color: #666;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedAuthorBox input {
-  box-sizing: border-box;
-  background-color: #e5e5e5;
-  font-size: 12px;
-  width: 90%;
-  max-width: 720px;
-  height: 60px;
-  line-height: 14px;
-  max-width: 720px;
-  border-radius: 10px;
-  padding-left: 16px;
-  border: none;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox {
-  position: relative;
-  width: 100%;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle {
-  position: absolute;
-  top: -43px;
-  left: 0;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle p {
-  font-size: 28px;
-  color: #000000;
-  line-height: 32px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox .registerInputTitle p span {
-  margin-left: 7px;
-  font-size: 10px;
-  line-height: 14px;
-  color: #666;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li {
-  list-style: none;
-  position: relative;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li input[type=checkbox] {
-  display: none;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  background-color: #f2f2f2;
-  width: 120px;
-  height: 40px;
-  color: #000;
-  border: 1px solid #666;
-  border-radius: 8px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li label .checkbox-box {
-  width: 16px;
-  height: 16px;
-  border: 1px solid #b2b2b2;
-  border-radius: 4px;
-  background-color: white;
-  transition: background-color 0.5s ease;
-}
-#registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li input[type=checkbox]:checked + label .checkbox-box {
-  background-color: #ff3a00;
-}
 
 #registerListener {
   margin-top: 50px;
@@ -3336,8 +3187,8 @@ footer .footerNavbarBox .footerNavbar ul li a {
   text-align: center;
 }
 #registerListener .container .row .registerListenerBtnBox button {
-  color: #f2f2f2;
-  background-color: #666;
+  color: #000;
+  background-color: #E5E5E5;
   border-radius: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -3348,6 +3199,7 @@ footer .footerNavbarBox .footerNavbar ul li a {
 }
 #registerListener .container .row .registerListenerBtnBox button:hover {
   background-color: #ff793f;
+  color: #F2F2F2;
 }
 #registerListener .container .registerListenerInputRow {
   display: flex;
@@ -3355,16 +3207,42 @@ footer .footerNavbarBox .footerNavbar ul li a {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  gap: 37px;
 }
 #registerListener .container .registerListenerInputRow .registerListenerFullnameBox,
-#registerListener .container .registerListenerInputRow .registerListenerEmailBox {
-  max-width: 684px;
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox {
+  max-width: 512px;
   width: 100%;
-  margin-bottom: 50px;
   position: relative;
 }
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .errorBox,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .errorBox,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox .errorBox,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox .errorBox {
+  display: inline-block;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .errorBox p,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .errorBox p,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox .errorBox p,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox .errorBox p {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  color: #DC5959;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox.error input,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox.error input,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox.error input,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox.error input {
+  border-color: red;
+  color: red;
+}
 #registerListener .container .registerListenerInputRow .registerListenerFullnameBox input,
-#registerListener .container .registerListenerInputRow .registerListenerEmailBox input {
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox input,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox input,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox input {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -3377,13 +3255,17 @@ footer .footerNavbarBox .footerNavbar ul li a {
   padding-left: 12px;
 }
 #registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerInputTitle,
-#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle {
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox .registerInputTitle,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox .registerInputTitle {
   position: absolute;
   top: -22px;
   left: 2px;
 }
 #registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerInputTitle p,
-#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle p {
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle p,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordBox .registerInputTitle p,
+#registerListener .container .registerListenerInputRow .registerListenerPasswordConfirmBox .registerInputTitle p {
   font-size: 16px;
   color: #000;
   line-height: 20px;
@@ -3398,7 +3280,6 @@ footer .footerNavbarBox .footerNavbar ul li a {
 #registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname {
   max-width: 330px;
   width: 100%;
-  margin-bottom: 50px;
   position: relative;
   margin-right: 32px;
 }
@@ -3428,11 +3309,158 @@ footer .footerNavbarBox .footerNavbar ul li a {
   line-height: 20px;
   font-weight: 400;
 }
-#registerListener .errorBox {
-  position: absolute;
-  bottom: -22px;
-  left: 0;
+#registerListener .container .registerRuleRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
 }
-#registerListener .errorBox p {
-  color: #CB5101;
+#registerListener .container .registerRuleRow .registerRuleBox {
+  max-width: 512px;
+  width: 100%;
+  padding-bottom: 58px;
+  position: relative;
+}
+#registerListener .container .registerRuleRow .registerRuleBox input {
+  display: none;
+}
+#registerListener .container .registerRuleRow .registerRuleBox label {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+}
+#registerListener .container .registerRuleRow .registerRuleBox label .checkbox-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #D32F2F;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+#registerListener .container .registerRuleRow .registerRuleBox input:checked + label .checkbox-box {
+  background-color: #ff3a00;
+}
+#registerListener .container .registerRuleRow .registerRuleBox .errorBox span {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #DC5959;
+  font-size: 12px;
+  line-height: 16px;
+}
+#registerListener .container .registerListenerLineRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+#registerListener .container .registerListenerLineRow .registerListenerLineBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 528px;
+  width: 100%;
+}
+#registerListener .container .registerListenerLineRow .registerListenerLineBox hr {
+  width: calc((100% - 51px) / 2);
+  height: 1px;
+  background-color: #666;
+  max-width: 240px;
+}
+#registerListener .container .registerListenerLineRow .registerListenerLineBox span {
+  white-space: nowrap;
+  color: #666;
+  font-size: 14px;
+  padding: 0 8px;
+}
+#registerListener .container .registerListenerSosialBtnRow {
+  margin-bottom: 16px;
+}
+#registerListener .container .registerListenerSosialBtnRow .registerListenerSosialBtnBox {
+  text-align: center;
+}
+#registerListener .container .registerListenerSosialBtnRow .registerListenerSosialBtnBox button {
+  color: #000;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #666;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+#registerListener .container .registerListenerSosialBtnRow .registerListenerSosialBtnBox .googleBtn {
+  margin-right: 20px;
+}
+#registerListener .container .registerListenerSosialBtnRow .registerListenerSosialBtnBox button:hover {
+  background-color: #ff3a00;
+  color: #F2F2F2;
+  border: none;
+}
+
+#registerAuthorCompleted {
+  margin-top: 234px;
+  margin-bottom: 129px;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 74px;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedTitleBox i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: #235e26;
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  font-size: 48px;
+  margin-bottom: 43px;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedTitleBox h2 {
+  font-size: 36px;
+  color: #235e26;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedTitleBox p {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  opacity: 80%;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedBtnBox {
+  text-align: center;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedBtnBox button {
+  margin-top: 147px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px 34px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #E5E5E5;
+  color: #000000;
+}
+#registerAuthorCompleted .container .row .registerAuthorCompletedBtnBox button:hover {
+  background-color: #ff3a00;
+  color: #f2f2f2;
 }

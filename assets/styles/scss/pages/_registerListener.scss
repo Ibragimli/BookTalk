@@ -54,8 +54,8 @@
         text-align: center;
 
         button {
-          color: #f2f2f2;
-          background-color: #666;
+          color: #000;
+          background-color: #E5E5E5;
           border-radius: 10px;
           font-size: 16px;
           line-height: 20px;
@@ -67,6 +67,7 @@
 
         button:hover {
           background-color: #ff793f;
+          color: #F2F2F2;
         }
       }
     }
@@ -77,13 +78,36 @@
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
+      gap: 37px;
 
       .registerListenerFullnameBox,
-      .registerListenerEmailBox {
-        max-width: 684px;
+      .registerListenerEmailBox,
+      .registerListenerPasswordBox,
+      .registerListenerPasswordConfirmBox {
+
+        max-width: 512px;
         width: 100%;
-        margin-bottom: 50px;
         position: relative;
+
+        .errorBox {
+          // display: none;
+          display: inline-block;
+
+          p {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            color: #DC5959;
+          }
+        }
+
+        &.error {
+          input {
+            border-color: red;
+            color: red;
+          }
+        }
+
 
         input {
           font-size: 12px;
@@ -121,7 +145,6 @@
         .registerListenerNameSurname {
           max-width: 330px;
           width: 100%;
-          margin-bottom: 50px;
           position: relative;
           margin-right: 32px;
 
@@ -158,13 +181,130 @@
         }
       }
     }
-  }
-  .errorBox{
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-    p{
-        color: #CB5101;
+
+    .registerRuleRow {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 8px;
+
+
+
+      .registerRuleBox {
+        max-width: 512px;
+        width: 100%;
+        padding-bottom: 58px;
+        position: relative;
+
+        input {
+          display: none;
+        }
+
+        label {
+          display: flex;
+          //       justify-content: center;
+          //       align-items: center;
+          gap: 8px;
+          cursor: pointer;
+          font-size: 12px;
+          color: #000;
+
+          .checkbox-box {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #D32F2F;
+            border-radius: 4px;
+            background-color: white;
+            transition: background-color 0.3s ease;
+
+          }
+        }
+
+        input:checked+label .checkbox-box {
+          background-color: #ff3a00; // 
+        }
+
+        .errorBox {
+
+          // display: inline-block;
+          span {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            color: #DC5959;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
     }
+
+    .registerListenerLineRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 24px;
+
+      .registerListenerLineBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 528px;
+        width: 100%;
+
+        hr {
+          width: calc((100% - 51px) / 2);
+          height: 1px;
+          background-color: #666;
+          max-width: 240px;
+        }
+
+        span {
+          white-space: nowrap;
+          color: #666;
+          font-size: 14px;
+          padding: 0 8px;
+        }
+      }
+    }
+
+    .registerListenerSosialBtnRow {
+      margin-bottom: 16px;
+
+      .registerListenerSosialBtnBox {
+        text-align: center;
+
+        button {
+          color: #000;
+          background-color: #F2F2F2;
+          border-radius: 10px;
+          font-size: 12px;
+          line-height: 14px;
+          width: 160px;
+          height: 40px;
+          border: 1px solid #666;
+          cursor: pointer;
+          transition: background-color 0.5s ease;
+
+        }
+
+        .googleBtn {
+          margin-right: 20px;
+        }
+
+        button:hover {
+          background-color: #ff3a00;
+          color: #F2F2F2;
+          border: none;
+        }
+      }
+    }
+
   }
+
+
 }
