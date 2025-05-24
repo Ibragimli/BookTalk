@@ -3287,3 +3287,152 @@ footer .footerNavbarBox .footerNavbar ul li a {
 #registerCompleted .container .registerCompletedRow .registerStepInputsBox .registerCompletedReaderBox ul li input[type=checkbox]:checked + label .checkbox-box {
   background-color: #ff3a00;
 }
+
+#registerListener {
+  margin-top: 50px;
+  margin-bottom: 129px;
+}
+#registerListener .container .row .registerListenerTitleBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 64px;
+  text-align: center;
+}
+#registerListener .container .row .registerListenerTitleBox h2 {
+  font-size: 36px;
+  color: #000;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#registerListener .container .row .registerListenerTitleBox p {
+  color: #666;
+  font-size: 16px;
+  line-height: 20px;
+}
+#registerListener .container .row .registerListenerJoinBox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+#registerListener .container .row .registerListenerJoinBox p {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 4px;
+}
+#registerListener .container .row .registerListenerJoinBox a {
+  color: #ff3a00;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+#registerListener .container .row .registerListenerBtnBox {
+  text-align: center;
+}
+#registerListener .container .row .registerListenerBtnBox button {
+  color: #f2f2f2;
+  background-color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15.2px 64.08px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#registerListener .container .row .registerListenerBtnBox button:hover {
+  background-color: #ff793f;
+}
+#registerListener .container .registerListenerInputRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox {
+  max-width: 684px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox input,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox input {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #666;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerInputTitle,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle {
+  position: absolute;
+  top: -22px;
+  left: 2px;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerInputTitle p,
+#registerListener .container .registerListenerInputRow .registerListenerEmailBox .registerInputTitle p {
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+  font-weight: 400;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 512px;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname {
+  max-width: 330px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+  margin-right: 32px;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname:last-child {
+  margin-right: 0;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname input {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #666;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname .registerInputTitle {
+  position: absolute;
+  top: -26px;
+  left: 2px;
+}
+#registerListener .container .registerListenerInputRow .registerListenerFullnameBox .registerListenerNameSurname .registerInputTitle p {
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+  font-weight: 400;
+}
+#registerListener .errorBox {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+#registerListener .errorBox p {
+  color: #CB5101;
+}
