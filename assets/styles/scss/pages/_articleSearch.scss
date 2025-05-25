@@ -1,0 +1,47 @@
+#articleSearch {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            justify-content: center;
+
+            .articleSearchTitleBox {
+
+                max-width: 623px;
+                text-align: center;
+
+                h3 {
+                    font-size: 28px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .articleSearchInputBox {
+                position: relative;
+                max-width: 742px;
+
+                label {
+                    position: absolute;
+                    top: 17px;
+                    left: 40%;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #666;
+                }
+
+                input {
+                    border: 1px solid #000000;
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 48px;
+                    background-color: #F2F2F2;
+
+                }
+            }
+        }
+    }
+}

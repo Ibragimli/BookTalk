@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+
+    <title>BookTalk</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center headerClass">
+          <!-- Sol tərəf: Logo -->
+          <div class="col-lg-4 col-md-3 col-sm-2 headLeft">
+            <div class="headerLogo">
+              <h1 class="headerLogoLeft">BOOK</h1>
+              <h1 class="headerLogoRight">TALK</h1>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-9 col-sm-10 headRight row">
+            <!-- Orta hissə: Menyu -->
+            <div class="col-lg-7 col-md-6 col-sm-7 headNavbar">
+              <ul>
+                <li><a href="#">Ana Səhifə</a></li>
+                <li><a href="#">Qiraətçilər</a></li>
+                <li><a href="#">Tədbirlər</a></li>
+                <li><a href="#" class="activeNavbar">Blog</a></li>
+              </ul>
+            </div>
+
+            <!-- Sağ tərəf: Giriş/Qeydiyyat və Hesab -->
+            <div class="col-lg-5 col-md-5 col-sm-7">
+              <div class="loginClass d-none">
+                <div class="loginClassButtons">
+                  <a href="#" class="loginButton">Daxil Ol</a>
+                  <a href="#" class="registerButton">Qeydiyyatdan Keç</a>
+                </div>
+              </div>
+              <div class="userClass">
+                <a href="#">
+                  <img src="./assets/Images/userPhoto.jpg" alt="image" />
+                  <p>Hesabım</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="articleSearch">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 articleSearchTitleBox">
+              <h3>
+                Kitab dinləmə mədəniyyəti, qiraətçi təcrübələri və faydalı
+                ədəbiyyat məqalələri
+              </h3>
+            </div>
+            <div class="col-12 articleSearchInputBox">
+              <input type="text" name="" id="articleSearchInput" />
+              <label for="articleSearchInput"> Məqalələr üzrə axtar...</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 blogLeft">
+              <div class="col-12 blogCategories">
+                <ul>
+                  <li><h3>KATEQORIYALAR</h3></li>
+                  <li><p>TƏHLİL</p></li>
+                  <li><p>MÜSAHİBƏ</p></li>
+                  <li><p>TƏCRÜBƏ</p></li>
+                </ul>
+              </div>
+              <div class="col-12 blogBox">
+                <div class="">
+                  <div class="col-12 blogTypeBox">
+                    <div class="blogTypeColorBox"></div>
+                    <p>Təhlil</p>
+                  </div>
+                  <div class="blogInfoBox">
+                    <h3>
+                      Orxan Pamukun "Məsum Muzey" əsərində nostalji və
+                      kolleksiyaçılıq
+                    </h3>
+                    <p>
+                      Nobel mükafatı laureatı Orxan Pamukun məşhur romanının
+                      ətraflı təhlili. Əsərdətoxunulan əsas mövzular və
+                      müəllifin unikal üslubunun açıqlanması...
+                    </p>
+                    <span>Müəllif: Nigar Məmmədli</span>
+                  </div>
+                  <div class="blogDateBox">
+                    <span>15 Aprel 2025 | 8 dəq oxunma vaxtı</span>
+                  </div>
+                  <div class="blogBtnBox">
+                    <button class="btn">Davam et</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 blogRight">
+              <div class="blogPopularCategories">
+                <h5>Populyar Kateqoriyalar</h5>
+                <ul>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Kitab təhlilləri</p>
+                      <span>45</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Müəllif portretləri</p>
+                      <span>28</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Oxuma təcrübələri</p>
+                      <span>12</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Ədəbi axınlar</p>
+                      <span>19</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="blogArchive">
+                <h5>Bloq Arxivi</h5>
+                <ul>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Aprel 2025</p>
+                      <span>24</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Mart 2025</p>
+                      <span>16</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="blogCategory">
+                      <p>Yanvar 2025</p>
+                      <span>9</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="articles">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 articleTitle-2">
+              <h3>Ən Yeni Məqalələr</h3>
+            </div>
+          </div>
+          <div class="articleBoxs">
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Müsahibə</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>İlqar Fəhmi ilə ədəbiyyat haqqında söhbət</h2>
+              </div>
+              <div class="articleDate">
+                <p>12 Aprel 2025 | 5 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Tövsiyyə</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>2025-ci ilin ilk rübündə oxunmalı 10 kitab</h2>
+              </div>
+              <div class="articleDate">
+                <p>08 Aprel 2025 | 12 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Təcrübə</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>Rəqəmsal dövrdə kağız kitabların önəmi</h2>
+              </div>
+              <div class="articleDate">
+                <p>05 Aprel 2025 | 25 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Təhlil</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>Haruki Murakaminin “1Q84” romanı</h2>
+              </div>
+              <div class="articleDate">
+                <p>12 Aprel 2025 | 5 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Müsahibə</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>Nigar Köçərli ilə tərcümə sənəti haqqında</h2>
+              </div>
+              <div class="articleDate">
+                <p>12 Aprel 2025 | 5 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+            <div class="articleBox">
+              <div class="articleType">
+                <div class="articleColorBox"></div>
+                <h4>Təcrübə</h4>
+              </div>
+              <div class="articleDesc">
+                <h2>Şəxsi kitabxananın təşkili qaydaları</h2>
+              </div>
+              <div class="articleDate">
+                <p>12 Aprel 2025 | 5 dəq</p>
+              </div>
+              <div class="articleBtn">
+                <button class="btn">Davam Et</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 articleAllButton">
+              <button class="btn">Hamısına Bax</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="createBlog">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 createBlogCol">
+              <div class="col-lg-7 createBlogLeft">
+                <h1>
+                  Kitab təcrübələrinizi bloq yazılarınızla zənginləşdirin...
+                </h1>
+                <p>
+                  Kitablar, qiraət və təəssüratlarla bağlı fikirlərini bizimlə
+                  paylaş
+                </p>
+                <div class="createBlogBtnBox">
+                  <button class="btn">İndi Başla</button>
+                </div>
+              </div>
+              <div class="col-lg-5 createBlogRight">
+                <div class="imgBox">
+                  <img src="./assets/Images/blogİmage.jpg" alt="blogImage" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-3 footerLogo">
+          <ul>
+            <li class="footerLogoTitle">
+              <p class="footerLogoLeft">BOOK</p>
+              <p class="footerLogoRight">TALK</p>
+            </li>
+            <li class="footerLogoDesc">
+              <p>
+                Kitabsevərlər və qiraətçiləri bir araya gətirən sosial kitab
+                platforması.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-9 footerNavbarBox">
+          <div class="footerNavbar">
+            <div class="navigationBar">
+              <h2>Naviqasiya</h2>
+              <ul>
+                <li><a href="#"> Ana Səhifə </a></li>
+                <li><a href="#"> Haqqımızda </a></li>
+                <li><a href="#"> Qiraətçilər </a></li>
+                <li><a href="#"> Tədbirlər </a></li>
+                <li><a href="#"> Bloq </a></li>
+              </ul>
+            </div>
+            <div class="ContactBar">
+              <h2>Əlaqə</h2>
+              <ul>
+                <li><a href="#"> info@booktalk.az </a></li>
+                <li><a href="#"> +994 123 45 67 </a></li>
+                <li><a href="#"> Baki şəhəri, Nizami küçəsi 54 </a></li>
+              </ul>
+            </div>
+            <div class="SocialBar">
+              <h2>Sosial Media</h2>
+              <ul>
+                <li><a href="#"> Facebook </a></li>
+                <li><a href="#"> Instagram </a></li>
+                <li><a href="#"> Linkedin </a></li>
+                <li><a href="#"> Tiktok </a></li>
+              </ul>
+            </div>
+            <div class="footerNewsBox">
+              <h1>Yenilikdən xəbərdar olun</h1>
+
+              <input type="text" placeholder="E-poçt ünvanınızı daxil edin" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </footer>
+</html>
