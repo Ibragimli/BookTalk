@@ -1,140 +1,529 @@
-<!DOCTYPE html>
-<html lang="az">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Dual-Row Slider</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        padding: 40px 0;
-      }
-
-      .slider-container {
-        max-width: 1240px;
-        margin: auto;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slide-group {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        gap: 24px;
-        flex: 0 0 100%;
-      }
-
-      .card {
-        width: 408px;
-        height: 257px;
-        background-color: #FFD700;
-        border-radius: 12px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      }
-
-      .pagination {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .pagination button {
-        background-color: #ccc;
-        border: none;
-        margin: 0 5px;
-        padding: 5px 10px;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-
-      .pagination button.active {
-        background-color: #000;
-        color: #fff;
-      }
-
-      @media (max-width: 1024px) {
-        .card {
-          width: 320px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .card {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="slider-container">
-      <div class="slider-wrapper" id="sliderWrapper">
-        <!-- Slide 1 -->
-        <div class="slide-group">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="slide-group">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="slide-group">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-      </div>
-      <div class="pagination">
-        <button class="active" onclick="goToSlide(0)">1</button>
-        <button onclick="goToSlide(1)">2</button>
-        <button onclick="goToSlide(2)">3</button>
+<section id="meetDate">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 meetDateTitle">
+        <h1>Görüş təyin edin</h1>
       </div>
     </div>
 
-    <script>
-      let currentIndex = 0;
-      const wrapper = document.getElementById('sliderWrapper');
-      const buttons = document.querySelectorAll('.pagination button');
+    <!-- Progress -->
+    <div class="row">
+      <div class="meetDateProgressbar">
+        <div class="progress-section">
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow=""
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar" style="width: 22%"></div>
+          </div>
+          <div class="progress-steps">
+            <span class="progress-step active" id="step1">Tarix</span>
+            <span class="progress-step" id="step2">Saat</span>
+            <span class="progress-step" id="step3">Müddət</span>
+            <span class="progress-step" id="step4">Məkan</span>
+            <span class="progress-step" id="step5">Ödəniş</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      function goToSlide(index) {
-        const slides = document.querySelectorAll('.slide-group');
-        const containerWidth = document.querySelector('.slider-container').offsetWidth;
-        wrapper.style.transform = `translateX(-${index * containerWidth}px)`;
-        currentIndex = index;
-        buttons.forEach(btn => btn.classList.remove('active'));
-        buttons[index].classList.add('active');
+    <!-- Header -->
+    <div class="row meetDateReaderInfoRow">
+      <div class="col-lg-12 meetDateReaderInfo">
+        <div class="readerInfo">
+          <div class="meetDateReaderAvatar">
+            <img src="./assets/Images/readerAvatar.jpg" alt="readerAvatar" />
+          </div>
+          <div class="readerDetails">
+            <div class="readerName">Aynur Həsənova</div>
+            <div class="readerWork">Peşəkar qiraətçi</div>
+            <div class="readerStats">
+              <span
+                >5.0
+                <img src="./assets/icons/starYellow.svg" alt="" />
+              </span>
+
+              <span class="readerCommentCount">22 rəy</span>
+            </div>
+          </div>
+        </div>
+        <div class="priceInfo">
+          <p>45 azn / saat</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Choose -->
+    <div class="meetDateChoose">
+      <div class="bookingContent" id="bookingContent">
+        <form action="./test.html">
+          <!-- Günlər -->
+          <div class="meetTableRow">
+            <div class="meetTableTitle">
+              <h2>Tarix seçin</h2>
+            </div>
+            <div class="meetTableBox">
+              <ul>
+                <li class="day-label"><p>Bazar Ertəsi</p></li>
+                <li class="day-label"><p>Çərşənbə</p></li>
+                <li class="day-label"><p>Çərşənbə axşamı</p></li>
+                <li class="day-label"><p>Cümə axşamı</p></li>
+                <li class="day-label"><p>Cümə</p></li>
+                <li class="day-label"><p>Şənbə</p></li>
+                <li class="day-label"><p>Bazar</p></li>
+
+                <!-- Günlər -->
+                <li class="day">
+                  <input type="radio" id="d4" name="selectedDay" />
+                  <label for="d4">4</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d5" name="selectedDay" />
+                  <label for="d5">5</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d6" name="selectedDay" />
+                  <label for="d6">6</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d7" name="selectedDay" />
+                  <label for="d7">7</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d8" name="selectedDay" />
+                  <label for="d8">8</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d9" name="selectedDay" />
+                  <label for="d9">9</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d10" name="selectedDay" />
+                  <label for="d10">10</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d11" name="selectedDay" />
+                  <label for="d11">11</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d12" name="selectedDay" />
+                  <label for="d12">12</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d13" name="selectedDay" />
+                  <label for="d13">13</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d14" name="selectedDay" />
+                  <label for="d14">14</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d15" name="selectedDay" />
+                  <label for="d15">15</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d16" name="selectedDay" />
+                  <label for="d16">16</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d17" name="selectedDay" />
+                  <label for="d17">17</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d18" name="selectedDay" />
+                  <label for="d18">18</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d19" name="selectedDay" />
+                  <label for="d19">19</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d20" name="selectedDay" />
+                  <label for="d20">20</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d21" name="selectedDay" />
+                  <label for="d21">21</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d22" name="selectedDay" />
+                  <label for="d22">22</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d23" name="selectedDay" />
+                  <label for="d23">23</label>
+                </li>
+                <li class="day">
+                  <input type="radio" id="d24" name="selectedDay" />
+                  <label for="d24">24</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Saat -->
+          <div class="meetDateTime">
+            <div class="col-lg-12">
+              <h3 class="timeSlotTitle">Saat aralığı seçin</h3>
+            </div>
+            <div class="timeSlots" id="timeSlots">
+              <ul>
+                <li class="time">
+                  <input type="radio" id="t9" name="selectedTime" />
+                  <label for="t9">09:00</label>
+                </li>
+                <li class="time">
+                  <input type="radio" id="t11" name="selectedTime" />
+                  <label for="t11">11:00</label>
+                </li>
+                <li class="time">
+                  <input type="radio" id="t13" name="selectedTime" />
+                  <label for="t13">13:00</label>
+                </li>
+                <li class="time">
+                  <input type="radio" id="t15" name="selectedTime" />
+                  <label class="disabled" for="t15">15:00</label>
+                </li>
+                <li class="time">
+                  <input type="radio" id="t17" name="selectedTime" />
+                  <label class="disabled" for="t17">17:00</label>
+                </li>
+                <li class="time">
+                  <input type="radio" id="t19" name="selectedTime" />
+                  <label class="disabled" for="t19">19:00</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Vaxt və Pul -->
+          <div class="meetDateDuration">
+            <div class="col-lg-12">
+              <h3 class="DurationTitle">Görüş müddətini təyin et</h3>
+            </div>
+            <div class="durationOptions" id="durationOptions">
+              <ul>
+                <!-- durationMoney -->
+                <li class="durationMoney">
+                  <input type="radio" id="45" name="selectedDuration" />
+                  <label for="45">
+                    <p class="duration">1 saat</p>
+                    <p class="money">45 AZN</p>
+                  </label>
+                </li>
+                <!-- durationMoney -->
+                <li class="durationMoney">
+                  <input type="radio" id="85" name="selectedDuration" />
+                  <label for="85">
+                    <p class="duration">2 saat</p>
+                    <p class="money">85 AZN</p>
+                  </label>
+                </li>
+                <!-- durationMoney -->
+                <li class="durationMoney">
+                  <input type="radio" id="120" name="selectedDuration" />
+                  <label for="120">
+                    <p class="duration">3 saat</p>
+                    <p class="money">120 AZN</p>
+                  </label>
+                </li>
+                <!-- durationMoney -->
+                <li class="durationMoney">
+                  <input type="radio" id="200" name="selectedDuration" />
+                  <label for="200">
+                    <p class="duration">4 saat</p>
+                    <p class="money">200 AZN</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Məkan -->
+          <div class="meetDateLocation">
+            <div class="col-lg-12">
+              <h3 class="LocationTitle">Məkan seçin</h3>
+            </div>
+            <div class="locationOptions" id="locationOptions">
+              <ul>
+                <!-- Location - 1 -->
+                <li class="location">
+                  <input type="radio" id="kitabxana" name="selectedLocation" />
+                  <label for="kitabxana">
+                    <p class="locationTitle">Kitabxana</p>
+                    <p class="locationDesc">Milli kitabxana, Bakı</p>
+                  </label>
+                </li>
+
+                <!-- Location - 2 -->
+                <li class="location">
+                  <input type="radio" id="kofesop" name="selectedLocation" />
+                  <label for="kofesop">
+                    <p class="locationTitle">Kofeşop</p>
+                    <p class="locationDesc">Libraff Cafe, Bakı</p>
+                  </label>
+                </li>
+
+                <!-- Location - 3 -->
+                <li class="location">
+                  <input type="radio" id="onlayn" name="selectedLocation" />
+                  <label for="onlayn">
+                    <p class="locationTitle">Onlayn</p>
+                    <p class="locationDesc">Zoom, Google Meet və s.</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Seçimlər -->
+          <div class="summaryBox">
+            <div class="summaryCard">
+              <div class="col-lg-12">
+                <h3 class="section-title">Seçiminiz:</h3>
+              </div>
+              <div class="summaryItems">
+                <!-- Qiraətçi  & Müddət-->
+                <div class="summaryItemCol">
+                  <div class="summaryItem">
+                    <span class="summaryLabel">Qiraətçi: </span>
+                    <span class="summaryValue">Aynur Həsənova</span>
+                  </div>
+                  <div class="summaryItem">
+                    <span class="summaryLabel">Müddət: </span>
+                    <span class="summaryValue" id="summaryDuration">
+                      2 saat
+                    </span>
+                  </div>
+                </div>
+
+                <div class="summaryItemCol">
+                  <!-- Tarix: -->
+                  <div class="summaryItem">
+                    <span class="summaryLabel">Tarix: </span>
+                    <span class="summaryValue" id="summaryDate"> 28 May </span>
+                  </div>
+                  <!-- Məkan -->
+                  <div class="summaryItem">
+                    <span class="summaryLabel">Məkan: </span>
+                    <span class="summaryValue" id="summaryLocation">
+                      Libraff Cafe
+                    </span>
+                  </div>
+                </div>
+                <!-- Saat -->
+                <div class="summaryItemCol">
+                  <div class="summaryItem">
+                    <span class="summaryLabel">Saat: </span>
+                    <span class="summaryValue" id="summaryTime">
+                      13:00-15:00
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ümumi məbləğ: -->
+            <div class="summaryTotalRow">
+              <span class="summaryLabel">Ümumi məbləğ: </span>
+              <span class="summaryValue summaryTotal" id="summaryTotal">
+                80 AZN
+              </span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="actionButtons">
+            <a href="./index.html" class="btn btn-cancel">
+              <img src="./assets/icons/leftArrow.svg" alt="" />Ləğv et
+            </a>
+            <button class="btn btn-next" id="proceedButton">Ödənişə keç</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const readerName = document.getElementById("readerName").innerText.trim();
+    const hourlyPrice = 45;
+
+    const summaryReaderName = document.getElementById("summaryReaderName");
+    const summaryDuration = document.getElementById("summaryDuration");
+    const summaryDate = document.getElementById("summaryDate");
+    const summaryTime = document.getElementById("summaryTime");
+    const summaryLocation = document.getElementById("summaryLocation");
+    const summaryTotal = document.getElementById("summaryTotal");
+    const proceedButton = document.getElementById("proceedButton");
+
+    summaryReaderName.textContent = readerName;
+
+    const durationInputs = document.querySelectorAll(
+      'input[name="selectedDuration"]'
+    );
+    const dayInputs = document.querySelectorAll('input[name="selectedDay"]');
+    const timeInputs = document.querySelectorAll('input[name="selectedTime"]');
+    const locationInputs = document.querySelectorAll(
+      'input[name="selectedLocation"]'
+    );
+
+    const locationPriceMap = {
+      kitabxana: 0,
+      kofesop: 5,
+      onlayn: -0.1,
+    };
+
+    const monthNames = [
+      "Yanvar",
+      "Fevral",
+      "Mart",
+      "Aprel",
+      "May",
+      "İyun",
+      "İyul",
+      "Avqust",
+      "Sentyabr",
+      "Oktyabr",
+      "Noyabr",
+      "Dekabr",
+    ];
+
+    function getCorrectMonth(selectedDayNumber) {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const currentMonth = now.getMonth();
+
+      // Bu ayın seçilmiş günü
+      const selectedDateThisMonth = new Date(
+        currentYear,
+        currentMonth,
+        selectedDayNumber
+      );
+      // Bu gün
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+      // Əgər seçilmiş gün bu gündən kiçikdirsə, ay növbəti aya keçsin
+      if (selectedDateThisMonth < today) {
+        // Növbəti ayı qaytarırıq
+        let nextMonth = currentMonth + 1;
+        let nextYear = currentYear;
+        if (nextMonth > 11) {
+          nextMonth = 0;
+          nextYear++;
+        }
+        return { monthName: monthNames[nextMonth], year: nextYear };
+      } else {
+        return { monthName: monthNames[currentMonth], year: currentYear };
+      }
+    }
+
+    function updateSummary() {
+      // Müddət
+      const selectedDurationInput = Array.from(durationInputs).find(
+        (i) => i.checked
+      );
+      let durationText = "-";
+      let durationPrice = 0;
+      if (selectedDurationInput) {
+        const label = selectedDurationInput.nextElementSibling;
+        durationText = label.querySelector(".duration").innerText;
+        durationPrice = parseInt(selectedDurationInput.id, 10);
+      }
+      summaryDuration.textContent = durationText;
+
+      // Gün və ay
+      const selectedDayInput = Array.from(dayInputs).find((i) => i.checked);
+      let dayText = "-";
+      if (selectedDayInput) {
+        const label = selectedDayInput.nextElementSibling;
+        let selectedDayNum = parseInt(label.innerText.trim(), 10);
+        const { monthName, year } = getCorrectMonth(selectedDayNum);
+        dayText = `${selectedDayNum} ${monthName}`;
+        // dayText = `${selectedDayNum} ${monthName} ${year}`;
+      }
+      summaryDate.textContent = dayText;
+
+      // Saat
+      const selectedTimeInput = Array.from(timeInputs).find((i) => i.checked);
+      let timeText = "-";
+      if (selectedTimeInput) {
+        const label = selectedTimeInput.nextElementSibling;
+        timeText = label.innerText;
+      }
+      summaryTime.textContent = timeText;
+
+      // Məkan
+      const selectedLocationInput = Array.from(locationInputs).find(
+        (i) => i.checked
+      );
+      let locationText = "-";
+      let priceModifier = 0;
+      if (selectedLocationInput) {
+        const label = selectedLocationInput.nextElementSibling;
+        locationText = label.querySelector(".locationTitle").innerText;
+        priceModifier = locationPriceMap[selectedLocationInput.id] || 0;
+      }
+      summaryLocation.textContent = locationText;
+
+      // Ümumi məbləğ
+      let totalPrice = durationPrice;
+      if (priceModifier < 0) {
+        totalPrice = Math.round(totalPrice * (1 + priceModifier));
+      } else {
+        totalPrice += priceModifier;
       }
 
-      window.addEventListener('resize', () => {
-        goToSlide(currentIndex);
-      });
-    </script>
-  </body>
-</html>
+      summaryTotal.textContent = totalPrice > 0 ? `${totalPrice} AZN` : "0 AZN";
+    }
+
+    [...durationInputs, ...dayInputs, ...timeInputs, ...locationInputs].forEach(
+      (input) => {
+        input.addEventListener("change", updateSummary);
+      }
+    );
+    proceedButton.addEventListener("click", (e) => {
+      if (
+        !selected.day ||
+        !selected.time ||
+        !selected.duration ||
+        !selected.location
+      ) {
+        e.preventDefault();
+        alert("Zəhmət olmasa bütün seçimləri tamamlayın.");
+      }
+    });
+    proceedButton.addEventListener("click", (e) => {
+      // Burada seçilmiş dəyərləri götürürük
+      const selectedDurationInput = Array.from(
+        document.querySelectorAll('input[name="selectedDuration"]')
+      ).find((i) => i.checked);
+      const selectedDayInput = Array.from(
+        document.querySelectorAll('input[name="selectedDay"]')
+      ).find((i) => i.checked);
+      const selectedTimeInput = Array.from(
+        document.querySelectorAll('input[name="selectedTime"]')
+      ).find((i) => i.checked);
+      const selectedLocationInput = Array.from(
+        document.querySelectorAll('input[name="selectedLocation"]')
+      ).find((i) => i.checked);
+
+      // Əgər hər hansı seçim yoxdursa, proses dayandırılır və xəbərdarlıq göstərilir
+      if (
+        !selectedDurationInput ||
+        !selectedDayInput ||
+        !selectedTimeInput ||
+        !selectedLocationInput
+      ) {
+        e.preventDefault();
+        alert("Zəhmət olmasa bütün seçimləri tamamlayın.");
+      }
+    });
+    updateSummary();
+  });
+</script>

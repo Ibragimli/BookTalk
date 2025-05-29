@@ -1,0 +1,41 @@
+#comingSoon {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .comingSoonLogo {
+        .comingSoonLogoBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ComingSoonImageBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-height: 100px;
+
+                img {
+                    display: block; // 
+                    width: 170%;
+                    max-width: 300px;
+                    height: auto;
+                    max-height: 100px;
+                    object-fit: cover;
+                }
+
+                .comingSoonText {
+
+                    h1 {
+                        color: #111111;
+                        font-size: 28px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

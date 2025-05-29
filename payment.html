@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+
+    <title>BookTalk</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row headerRegister">
+          <div class="col-12 headLogoCol">
+            <div class="headerLogo">
+              <a href="./index.html">
+                <h1 class="headerLogoLeft">BOOK</h1>
+                <h1 class="headerLogoRight">TALK</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="payment">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 paymentTitle">
+              <h1>Görüş təyin edin</h1>
+              <a href="#"> X </a>
+            </div>
+          </div>
+
+          <!-- Progress -->
+          <div class="row">
+            <div class="paymentProgressbar">
+              <div class="progress-section">
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow=""
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <div class="progress-steps">
+                  <span class="progress-step active" id="step1">Tarix</span>
+                  <span class="progress-step active" id="step2">Saat</span>
+                  <span class="progress-step active" id="step3">Müddət</span>
+                  <span class="progress-step active" id="step4">Məkan</span>
+                  <span class="progress-step active" id="step5">Ödəniş</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Header -->
+          <div class="row paymentReaderInfoRow">
+            <div class="col-lg-12 paymentReaderInfo">
+              <div class="readerInfo">
+                <div class="paymentReaderAvatar">
+                  <span>AH</span>
+                </div>
+                <div class="readerDetails">
+                  <div class="readerName" id="readerName">Aynur Həsənova</div>
+                  <div class="readerWork">
+                    Peşəkar Qiraətçi
+                    <div class="readerStats">
+                      <span class="readerCommentRating">• 4.9/5 </span>
+                      <span class="readerCommentCount">• 328 rəy</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="priceInfo">
+                <p>45 azn / saat</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Card -->
+          <div class="paymentSection" id="paymentSection">
+            <div class="bookingContent">
+              <h3 class="sectionTitle">Ödəniş</h3>
+              <div class="paymentGrid">
+                <div class="paymentInputs">
+                  <h4 class="sectionTitle">Ödəniş üsulunu seçin</h4>
+                  <div class="paymentMethod selected" id="cardPayment">
+                    <input type="radio" name="payment" value="card" checked />
+                    <label>
+                      <div class="paymentTitle">Kart ilə ödəniş</div>
+                      <div class="paymentDesc">Visa, Mastercard</div>
+                    </label>
+                  </div>
+                  <div class="paymentMethod" id="mobilePayment">
+                    <input type="radio" name="payment" value="mobile" />
+                    <label>
+                      <div class="paymentTitle">Mobil ödəniş</div>
+                      <div class="paymentDesc">Apple Pay, Google Pay</div>
+                    </label>
+                  </div>
+
+                  <div class="cardForm" id="cardForm">
+                    <h4 class="sectionTitle">Kart məlumatları</h4>
+                    <!-- Card number -->
+                    <input
+                      type="text"
+                      class="formInput"
+                      placeholder="Kart nömrəsi"
+                    />
+                    <!-- MM/YY & CVC -->
+                    <div class="formGrid">
+                      <!-- MM/YY -->
+
+                      <input
+                        type="text"
+                        class="formInput"
+                        placeholder="MM/YY"
+                      />
+                      <!-- CVC -->
+
+                      <input type="text" class="formInput" placeholder="CVC" />
+                    </div>
+                    <!-- Card Owner Name -->
+                    <input
+                      type="text"
+                      class="formInput"
+                      placeholder="Kart sahibinin adı"
+                    />
+                  </div>
+                </div>
+
+                <div class="orderSummary">
+                  <h4 class="sectionTitle">Sifariş xülasəsi</h4>
+                  <div class="orderItem">
+                    <span class="orderLabel">Qiraətçi:</span>
+                    <span class="orderLabelName">Aynur Həsənova</span>
+                  </div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Tarix:</span>
+                    <span id="orderDate">15 May 2025</span>
+                  </div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Saat:</span>
+                    <span id="orderTime">15:00</span>
+                  </div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Müddət:</span>
+                    <span id="orderDuration">2 saat</span>
+                  </div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Məkan:</span>
+                    <span id="orderLocation">Kafe</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Xidmət haqqı:</span>
+                    <span id="servicePrice">90 ₼</span>
+                  </div>
+                  <div class="orderItem">
+                    <span class="orderLabel">Platforma komissiyası:</span>
+                    <span>5 ₼</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="orderTotal">
+                    <span>Yekun məbləğ:</span>
+                    <span class="amount" id="totalPrice">95 ₼</span>
+                  </div>
+                  <button class="orderSummaryBtn btn btn-next btn-confirm">
+                    Ödənişi təsdiqlə
+                  </button>
+                </div>
+              </div>
+              <div class="securityNote">
+                🔒 Ödənişiniz təhlükəsiz şəkildə emal olunur
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/payment.js"></script>
+  </body>
+</html>

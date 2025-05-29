@@ -1,0 +1,285 @@
+#meetTable {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .meetTableTitle {
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .meetTableRow {
+            .meetTableBox {
+
+
+                form {
+                    ul {
+                        background-color: #FFE6CC;
+                        width: 642px;
+                        height: 220px;
+                        display: grid;
+                        grid-template-columns: repeat(7, 1fr);
+                        margin-bottom: 12px;
+                        padding: 24px 93px 30px 42px;
+                        border-radius: 4px;
+
+                        li {
+                            text-align: center;
+
+                        }
+
+                        .day-label {
+                            margin-right: 24px;
+                            width: 100%;
+                            max-height: 15px;
+                            margin-bottom: 12px;
+
+                            p {
+                                width: 100%;
+                                display: ruby-text;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #000;
+                                font-weight: 500;
+                                width: 100%;
+                            }
+                        }
+
+                        .day {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 16px;
+
+                            input[type="checkbox"] {
+                                display: none;
+
+                            }
+
+                            input:hover {
+                                background-color: #FFC699;
+                            }
+
+                            input[type="checkbox"]:hover+label {
+                                background-color: #FFC699;
+                                color: #7A0007;
+                                border-color: #FF3A00;
+                                border: 1px solid #7A0007;
+
+
+                            }
+
+                            label {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 36px;
+                                height: 36px;
+                                line-height: 30px;
+                                text-align: center;
+                                border: 1px solid #666666;
+                                border-radius: 4px;
+                                cursor: pointer;
+                                user-select: none;
+                                transition: background-color 0.4s ease;
+
+                            }
+
+                            input[type="checkbox"]:checked+label {
+                                background-color: #FF3A00;
+                                color: white;
+                                border-color: #FF3A00;
+                                width: 40px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .meetTableBoxAction {
+                display: flex;
+                flex-wrap: nowrap;
+
+                .meetTableButton {
+                    background-color: #666;
+                    border-radius: 4px;
+                    width: 200px;
+                    height: 52px;
+                    color: #F2F2F2;
+                    font-size: 16px;
+                    line-height: 20px;
+                    transition: all 0.5 ease;
+                    font-weight: 500;
+                }
+
+                .meetTableButton:hover {
+
+                    background-color: #FF3A00;
+                }
+
+                button {
+                    margin-right: 7px;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    #meetTable {
+        padding: 0px 20px;
+
+        .container {
+            .meetTableRow {
+                .meetTableBox {
+                    form {
+                        ul {
+                            width: 100%;
+                            height: auto;
+                            padding: 20px;
+                            gap: 10px;
+
+                            .day-label {
+                                margin-right: 0;
+                                margin-bottom: 8px;
+
+                                p {
+                                    font-size: 9px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .day {
+                                margin-bottom: 10px;
+
+                                label {
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 12px;
+                                }
+
+                                input[type="checkbox"]:checked+label {
+                                    width: 32px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .meetTableBoxAction {
+                    flex-direction: column;
+                    align-items: stretch;
+
+                    .meetTableButton {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        height: 48px;
+                        font-size: 14px;
+                    }
+
+                    button {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #meetTable {
+        .container {
+            .meetTableRow {
+                .meetTableBox {
+                    form {
+                        ul {
+                            width: 100%;
+                            height: auto;
+                            padding: 16px 20px;
+                            gap: 8px;
+                            grid-template-columns: repeat(7, 1fr);
+
+                            li {
+                                margin: 0;
+                            }
+
+                            .day {
+                                margin-bottom: 10px;
+
+                                label {
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 12px;
+                                }
+
+                                input[type="checkbox"]:checked+label {
+                                    width: 32px;
+                                }
+                            }
+
+                            .day-label {
+                                margin-bottom: 8px;
+
+                                p {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #meetTable {
+        .container {
+            .meetTableRow {
+                .meetTableBox {
+                    form {
+                        ul {
+                            padding: 12px 12px;
+                            gap: 6px;
+                            grid-template-columns: repeat(7, 1fr);
+
+                            .day {
+                                label {
+                                    width: 26px;
+                                    height: 26px;
+                                    font-size: 10px;
+                                }
+
+                                input[type="checkbox"]:checked+label {
+                                    width: 28px;
+                                }
+                            }
+
+                            .day-label {
+                                margin-bottom: 6px;
+
+                                p {
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

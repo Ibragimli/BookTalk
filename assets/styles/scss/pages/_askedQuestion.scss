@@ -1,0 +1,119 @@
+#askedQuestions {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .askedQuestionTitle {
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .askedQuestionTitleRow {
+            .askedQuestionBoxs {
+                
+                .askedQuestionBox {
+                    background-color: #E5E5E5;
+                    width: 100%;
+                    max-width: 1120px;
+                    border-radius: 4px;
+
+                    .askedQuestionBtnBox {
+                        margin-bottom:10px ;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 36px 20px 32px;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+
+                        p {
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-weight: 500;
+                            color: #000;
+                        }
+
+                        .askedQuestionIcon {
+                            background-color: #FFC699;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+
+                            img {
+                                width: 11px;
+                                height: 11px;
+                            }
+                        }
+                    }
+
+                    .questionAnswerBox {
+                        margin-bottom: 10px;
+                        .questionAnswerCard {}
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .askedQuestionTitle h2 {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .askedQuestionTitle h2 {
+            font-size: 26px;
+        }
+
+        .askedQuestionBtnBox {
+
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .askedQuestionTitle h2 {
+            font-size: 22px;
+        }
+
+        .askedQuestionBtnBox {
+            padding: 16px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .askedQuestionBox {
+            padding: 12px;
+        }
+
+        .askedQuestionBtnBox {
+            padding: 12px;
+
+            p {
+                font-size: 14px;
+            }
+
+            .askedQuestionIcon {
+                width: 20px;
+                height: 20px;
+
+                img {
+                    width: 9px;
+                    height: 9px;
+                }
+            }
+        }
+    }
+}

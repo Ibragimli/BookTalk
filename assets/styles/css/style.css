@@ -1,25 +1,64 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
   src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "InterBold";
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
   src: url("../fonts/Inter_18pt-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "InterBlack";
+  font-family: "Inter";
   src: url("../fonts/Inter_18pt-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "InterThin";
-  src: url("../fonts/Inter_18pt-Thin.ttf") format("truetype");
-  font-weight: 100;
+  font-family: "LeagueSpartan";
+  src: url("../fonts/LeagueSpartan-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -192,20 +231,20 @@ header .headerClass {
   border-bottom: #111111 1px solid;
   padding-bottom: 10px;
 }
-header .headerClass .headLeft .headerLogo {
+header .headerClass .headLeft .headerLogo a {
   display: flex;
   width: 124px;
   height: 24px;
 }
-header .headerClass .headLeft .headerLogo h1 {
+header .headerClass .headLeft .headerLogo a h1 {
   font-weight: 700;
   font-size: 22.55px;
   line-height: 23.95px;
 }
-header .headerClass .headLeft .headerLogo .headerLogoLeft {
+header .headerClass .headLeft .headerLogo a .headerLogoLeft {
   color: #111111;
 }
-header .headerClass .headLeft .headerLogo .headerLogoRight {
+header .headerClass .headLeft .headerLogo a .headerLogoRight {
   color: #FF3A00;
 }
 header .headerClass .headRight {
@@ -294,20 +333,20 @@ header .headerRegister {
   align-items: center;
   margin-top: 35.5px;
 }
-header .headerRegister .headerLogo {
+header .headerRegister .headerLogo a {
   display: flex;
   width: 124px;
   height: 24px;
 }
-header .headerRegister .headerLogo h1 {
+header .headerRegister .headerLogo a h1 {
   font-weight: 700;
   font-size: 37.85px;
   line-height: 41px;
 }
-header .headerRegister .headerLogo .headerLogoLeft {
+header .headerRegister .headerLogo a .headerLogoLeft {
   color: #111111;
 }
-header .headerRegister .headerLogo .headerLogoRight {
+header .headerRegister .headerLogo a .headerLogoRight {
   color: #FF3A00;
 }
 
@@ -385,30 +424,26 @@ header .headerRegister .headerLogo .headerLogoRight {
     font-size: 12px;
   }
 }
+@media (max-width: 576px) {
+  #premiumBookService {
+    height: 550px;
+  }
+  #registerStepTwo .container .registerStepLangBox {
+    margin-top: 40px;
+  }
+  #registerStepTwo .registerStepGenderBox {
+    margin-top: 40px;
+  }
+  #registerStepThree .registerInputTitle P {
+    font-size: 18px !important;
+  }
+}
 @media (min-width: 776px) {
-  .footerNavbarBox .footerNavbar .ContactBar {
-    padding-left: 25px;
-  }
-  .footerNavbarBox .footerNavbar .SocialBar {
-    padding-left: 25px;
-  }
-  .footerNavbarBox .footerNavbar .footerNewsBox {
-    padding-left: 25px;
-  }
   .headNavbar {
     width: 270px;
   }
   .headNavbar ul li a {
     font-size: 17px !important;
-  }
-  #heroSection .container .row .heroSectionInput .input-group input {
-    width: 240px;
-    height: 46px;
-    font-size: 11px;
-  }
-  #heroSection .container .row .heroSectionInput .input-group button {
-    padding: 11px 18px 11px 18px !important;
-    font-size: 12px !important;
   }
   #janrs .container .janrBoxs .janrBox {
     width: 48% !important;
@@ -418,9 +453,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
   #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
     font-size: 20px !important;
-  }
-  .footerLogo ul {
-    width: 200px;
   }
   #events .eventBoxs {
     gap: 10px !important;
@@ -505,20 +537,6 @@ header .headerRegister .headerLogo .headerLogoRight {
     margin-right: 0 !important;
   }
 }
-@media (max-width: 576px) {
-  #premiumBookService {
-    height: 550px;
-  }
-  #registerStepTwo .container .registerStepLangBox {
-    margin-top: 40px;
-  }
-  #registerStepTwo .registerStepGenderBox {
-    margin-top: 40px;
-  }
-  #registerStepThree .registerInputTitle P {
-    font-size: 18px !important;
-  }
-}
 @media (max-width: 992px) {
   .loginClass .loginClassButtons {
     width: 180px !important;
@@ -533,9 +551,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
   .registerButton {
     padding: 5px 5px !important;
-  }
-  #howToWork .container .row .howToWorkBox h3 {
-    font-size: 22px;
   }
   .readerBox {
     width: calc((100% - 64px) / 3);
@@ -590,15 +605,6 @@ header .headerRegister .headerLogo .headerLogoRight {
     width: 140px !important;
     font-size: 13px !important;
   }
-  #heroSection .container .row .heroSectionInput .input-group input {
-    width: 340px;
-    height: 60px;
-    font-size: 14px !important;
-  }
-  #heroSection .container .row .heroSectionInput .input-group button {
-    padding: 18px 24px 19px 24px !important;
-    font-size: 14px !important;
-  }
   #janrs .container .janrBoxs .janrBox {
     width: 225px !important;
     height: 180px !important;
@@ -606,15 +612,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
   #janrs .container .janrBoxs .janrBox .janrTitleBox h3 {
     font-size: 20px !important;
-  }
-  #howToWork .container .row .howToWorkBoxs .howToWorkBoxs-1 {
-    margin-right: 96px !important;
-  }
-  #howToWork .container .row .howToWorkBoxs .howToWorkBox-1 {
-    margin-bottom: 48px !important;
-  }
-  #howToWork .container .row .howToWorkBoxs .howToWorkBox-3 {
-    margin-bottom: 48px !important;
   }
   #events .eventBoxs {
     gap: 28px !important;
@@ -674,18 +671,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
 }
 @media (min-width: 1024px) {
-  .footerNavbarBox .footerNavbar .ContactBar {
-    padding-left: 45px;
-  }
-  .footerNavbarBox .footerNavbar .SocialBar {
-    padding-left: 45px;
-  }
-  .footerNavbarBox .footerNavbar .footerNewsBox {
-    padding-left: 45px;
-  }
-  .footerLogo ul {
-    width: 250px;
-  }
   .loginClass .loginClassButtons {
     width: 200px !important;
   }
@@ -712,17 +697,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
   #beReader .beReaderText {
     margin-left: 100px;
-  }
-  #heroSection .container .row .heroSectionInput .input-group input {
-    width: 388px;
-    height: 60px;
-  }
-  #heroSection .container .row .heroSectionInput .input-group button {
-    padding: 18px 24px 19px 24px;
-    font-size: 14px;
-  }
-  #heroSection .container .row .heroSectionImage {
-    height: 390px;
   }
   #janrs .container .janrBoxs .janrBox {
     width: 267px !important;
@@ -752,15 +726,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   }
   #events .eventBoxs .eventTextBox p {
     font-size: 13px !important;
-  }
-  .footerNavbarBox .footerNavbar .ContactBar {
-    padding-left: 85px;
-  }
-  .footerNavbarBox .footerNavbar .SocialBar {
-    padding-left: 85px;
-  }
-  .footerNavbarBox .footerNavbar .footerNewsBox {
-    padding-left: 85px;
   }
   .loginClass .loginClassButtons {
     width: 235px !important;
@@ -858,9 +823,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   .container {
     width: 1230px !important;
   }
-  .footerLogo ul {
-    width: 293px;
-  }
   .loginClass .loginClassButtons {
     width: 265px !important;
   }
@@ -870,15 +832,6 @@ header .headerRegister .headerLogo .headerLogoRight {
   .loginClass .loginClassButtons .registerButton {
     width: 200px !important;
     font-size: 16px !important;
-  }
-  .footerNavbarBox .footerNavbar .ContactBar {
-    padding-left: 96px;
-  }
-  .footerNavbarBox .footerNavbar .SocialBar {
-    padding-left: 96px;
-  }
-  .footerNavbarBox .footerNavbar .footerNewsBox {
-    padding-left: 96px;
   }
   #bePartner .container .row .partnerBox {
     position: relative;
@@ -933,15 +886,13 @@ header .headerRegister .headerLogo .headerLogoRight {
 footer {
   background-color: #000000;
   height: 179px;
-  position: static;
-  bottom: 0px;
   width: 100%;
   display: flex;
   align-items: center;
   z-index: 98;
 }
 footer .container {
-  padding: 19.5px 0px;
+  padding: 19.5px 0;
 }
 footer .footerLogo ul .footerLogoTitle {
   display: flex;
@@ -957,6 +908,7 @@ footer .footerLogo ul .footerLogoTitle .footerLogoLeft {
 }
 footer .footerLogo ul .footerLogoTitle .footerLogoRight {
   color: #FF3A00;
+  margin-left: 5px;
 }
 footer .footerLogo ul .footerLogoDesc p {
   font-weight: 400;
@@ -969,17 +921,12 @@ footer .footerNavbarBox .footerNavbar {
   display: flex;
   flex-direction: row;
 }
-footer .footerNavbarBox .footerNavbar .navigationBar {
-  text-align: left;
-}
-footer .footerNavbarBox .footerNavbar .ContactBar {
-  text-align: left;
-}
-footer .footerNavbarBox .footerNavbar .SocialBar {
-  text-align: left;
-}
+footer .footerNavbarBox .footerNavbar .navigationBar,
+footer .footerNavbarBox .footerNavbar .ContactBar,
+footer .footerNavbarBox .footerNavbar .SocialBar,
 footer .footerNavbarBox .footerNavbar .footerNewsBox {
   text-align: left;
+  margin-right: 40px;
 }
 footer .footerNavbarBox .footerNavbar .footerNewsBox h1 {
   width: 189px;
@@ -988,7 +935,6 @@ footer .footerNavbarBox .footerNavbar .footerNewsBox h1 {
   font-weight: 500;
   line-height: 20px;
   font-size: 16px;
-  letter-spacing: 0%;
   margin-bottom: 8px;
 }
 footer .footerNavbarBox .footerNavbar .footerNewsBox input {
@@ -999,9 +945,8 @@ footer .footerNavbarBox .footerNavbar .footerNewsBox input {
   font-weight: 400;
   height: 40px;
   border: 1px solid #FFC699;
-  border-radius: 10PX;
-  padding: 22px 16px;
-  gap: 16px;
+  border-radius: 10px;
+  padding: 0 16px;
   background-color: transparent;
   text-align: center;
 }
@@ -1016,6 +961,87 @@ footer .footerNavbarBox .footerNavbar ul li a {
   font-size: 10px;
   line-height: 14px;
   color: #F2F2F2;
+  text-decoration: none;
+}
+footer .footerNavbarBox .footerNavbar ul li a:hover {
+  color: #FF3A00;
+}
+@media (max-width: 1200px) {
+  footer .footerNavbarBox .footerNavbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .footerNavbarBox .footerNavbar .navigationBar,
+  footer .footerNavbarBox .footerNavbar .ContactBar,
+  footer .footerNavbarBox .footerNavbar .SocialBar,
+  footer .footerNavbarBox .footerNavbar .footerNewsBox {
+    margin-right: 0;
+  }
+}
+@media (max-width: 992px) {
+  footer {
+    height: auto;
+    padding: 20px 15px;
+    display: block;
+  }
+  footer .footerLogo {
+    margin-bottom: 20px;
+  }
+  footer .footerLogo ul .footerLogoTitle {
+    justify-content: center;
+  }
+  footer .footerLogo ul .footerLogoTitle p {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  footer .footerLogo ul .footerLogoTitle .footerLogoRight {
+    margin-left: 6px;
+  }
+  footer .footerLogo ul .footerLogoDesc p {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
+  footer .footerNavbarBox .footerNavbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footerNavbarBox .footerNavbar > div {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  footer .footerNavbarBox .footerNavbar .footerNewsBox input {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    padding: 15px 10px;
+  }
+  footer .footerLogo ul .footerLogoTitle p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  footer .footerLogo ul .footerLogoDesc p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  footer .footerNavbarBox .footerNavbar h2 {
+    font-size: 14px;
+  }
+  footer .footerNavbarBox .footerNavbar ul li a {
+    font-size: 11px;
+  }
+  footer .footerNavbarBox .footerNavbar .footerNewsBox h1 {
+    font-size: 14px;
+  }
+  footer .footerNavbarBox .footerNavbar .footerNewsBox input {
+    height: 36px;
+    font-size: 11px;
+    padding: 0 12px;
+    border-radius: 8px;
+  }
 }
 
 #heroSection {
@@ -1023,40 +1049,126 @@ footer .footerNavbarBox .footerNavbar ul li a {
   margin: 51px 0px 40px 0px;
 }
 #heroSection .container {
-  width: 1230px;
+  max-width: 1230px;
+  padding: 0 15px;
+}
+#heroSection .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#heroSection .container .row .heroSectionInput,
+#heroSection .container .row .heroSectionImage {
+  flex: 0 0 48%;
 }
 #heroSection .container .row .heroSectionInput {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
 }
-#heroSection .container .row .heroSectionInput h1 {
-  color: #F2F2F2;
+#heroSection .container .row .heroSectionInput h1,
+#heroSection .container .row .heroSectionInput p {
+  color: #f2f2f2;
 }
 #heroSection .container .row .heroSectionInput p {
-  color: #F2F2F2;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+#heroSection .container .row .heroSectionInput .input-group {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 388px;
 }
 #heroSection .container .row .heroSectionInput .input-group input {
-  max-width: 388px;
-  max-height: 60px;
+  flex: 1;
+  height: 60px;
   padding-left: 16px;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#heroSection .container .row .heroSectionInput .input-group button {
+  padding: 0 24px;
+  background-color: #666666;
+  color: #f2f2f2;
+  font-size: 14px;
+  border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-#heroSection .container .row .heroSectionInput .input-group button {
-  padding: 18px 24px 19px 24px;
-  background-color: #666666;
-  color: #F2F2F2;
-  font-size: 14px;
-  border-top-right-radius: 1px;
-  border-bottom-right-radius: 1px;
+#heroSection .container .row .heroSectionImage {
+  display: flex;
+  justify-content: center;
 }
 #heroSection .container .row .heroSectionImage img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  #heroSection .container {
+    max-width: 100%;
+  }
+  #heroSection .row .heroSectionInput,
+  #heroSection .row .heroSectionImage {
+    flex: 0 0 100%;
+  }
+  #heroSection .row .heroSectionImage {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 992px) {
+  #heroSection .heroSectionInput {
+    align-items: center;
+    text-align: center;
+  }
+  #heroSection .heroSectionInput .input-group {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  #heroSection .heroSectionInput .input-group input,
+  #heroSection .heroSectionInput .input-group button {
+    width: 100%;
+    border-radius: 3px;
+  }
+  #heroSection .heroSectionInput .input-group button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #heroSection .heroSectionInput h1 {
+    font-size: 28px;
+  }
+  #heroSection .heroSectionInput p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #heroSection .heroSectionInput h1 {
+    font-size: 24px;
+  }
+  #heroSection .heroSectionInput p {
+    font-size: 14px;
+  }
+  #heroSection .heroSectionInput .input-group input {
+    height: 50px;
+  }
+}
+@media (max-width: 375px) {
+  #heroSection .container {
+    padding: 0 10px;
+  }
+  #heroSection .heroSectionInput h1 {
+    font-size: 20px;
+  }
+  #heroSection .heroSectionInput .input-group button {
+    font-size: 13px;
+    padding: 14px;
+  }
 }
 
 #janrs {
@@ -1146,17 +1258,20 @@ footer .footerNavbarBox .footerNavbar ul li a {
   color: #000;
   font-weight: 700;
   margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 44px;
 }
 #howToWork .container .row .howToWorkBoxs {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
+  gap: 40px;
 }
 #howToWork .container .row .howToWorkBoxs .howToWorkBox ul {
   display: flex;
   align-items: center;
 }
-#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li .howToWorkNumber {
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:first-child .howToWorkNumber {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1165,15 +1280,24 @@ footer .footerNavbarBox .footerNavbar ul li a {
   margin-right: 24px;
   font-size: 36px;
   background-color: #FF3A00;
-  border-radius: 36px;
+  border-radius: 50%;
+  color: white;
 }
-#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li .howToWorkBoxDesc {
-  color: #666;
-  font-weight: 400;
-}
-#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li h3 {
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child h3 {
   color: #000;
   font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+#howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child .howToWorkBoxDesc {
+  color: #666;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+#howToWork .container .row .howToWorkButton {
+  margin-top: 40px;
+  text-align: center;
 }
 #howToWork .container .row .howToWorkButton button {
   background-color: #666;
@@ -1181,7 +1305,140 @@ footer .footerNavbarBox .footerNavbar ul li a {
   border-radius: 10px;
   width: 200px;
   height: 40px;
-  margin-top: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#howToWork .container .row .howToWorkButton button:hover {
+  background-color: #FF3A00;
+}
+@media (max-width: 1200px) {
+  #howToWork .howToWorkBoxs {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  #howToWork {
+    margin-bottom: 30px;
+  }
+  #howToWork .container .row .howToWorkTitle h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #howToWork .container .row .howToWorkBoxs {
+    flex-direction: column;
+    align-items: center;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:first-child .howToWorkNumber {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    margin-right: 18px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child h3 {
+    font-size: 18px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child .howToWorkBoxDesc {
+    font-size: 14px;
+  }
+  #howToWork .container .row .howToWorkButton {
+    margin-top: 30px;
+  }
+  #howToWork .container .row .howToWorkButton button {
+    width: 180px;
+    height: 38px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #howToWork {
+    margin-bottom: 25px;
+  }
+  #howToWork .container .row .howToWorkTitle h2 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox {
+    max-width: 100%;
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:first-child .howToWorkNumber {
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
+    margin-right: 14px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child h3 {
+    font-size: 16px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child .howToWorkBoxDesc {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  #howToWork .container .row .howToWorkButton button {
+    width: 160px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  #howToWork {
+    margin-bottom: 20px;
+  }
+  #howToWork .container .row .howToWorkTitle h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox {
+    padding: 0 10px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:first-child .howToWorkNumber {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    margin-right: 12px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child h3 {
+    font-size: 14px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child .howToWorkBoxDesc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #howToWork .container .row .howToWorkButton button {
+    width: 140px;
+    height: 34px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:first-child .howToWorkNumber {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child h3 {
+    font-size: 13px;
+  }
+  #howToWork .container .row .howToWorkBoxs .howToWorkBox ul li:last-child .howToWorkBoxDesc {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  #howToWork .container .row .howToWorkButton button {
+    width: 120px;
+    height: 32px;
+    font-size: 12px;
+  }
 }
 
 #readers {
@@ -3813,4 +4070,1682 @@ footer .footerNavbarBox .footerNavbar ul li a {
   #createBlog .createBlogLeft p {
     font-size: 18px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(221, 74, 20, 0.1529411765);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF3A00;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 60, 0, 0.7450980392);
+  cursor: pointer;
+}
+
+#readerInfo {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+#readerInfo .container .row {
+  align-items: center;
+}
+#readerInfo .container .row .readerProfileInfo {
+  display: flex;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft {
+  margin-right: 24px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox {
+  position: relative;
+  max-width: 240px;
+  max-height: 300px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox .readerImage {
+  border-radius: 2px;
+  width: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox .readerRatingBox {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox .readerRatingBox .readerRating {
+  border: 1px solid #FFC699;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox .readerRatingBox .readerRating span {
+  color: #f2f2f2;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  margin-right: 4px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoLeft .imageBox .readerRatingBox .readerRating .starIcon {
+  color: #f2f2f2;
+  width: 16px;
+  height: 16px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight {
+  max-height: 300px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight h1 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666;
+  font-weight: 500;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerStats {
+  display: flex;
+  gap: 32px;
+  max-width: 253px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerStats .stat {
+  text-align: center;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerStats .stat span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #111;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerStats .stat p {
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerGenres {
+  margin-bottom: 44px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerGenres ul {
+  display: flex;
+  max-width: 277px;
+  flex-wrap: wrap;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerGenres ul li {
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerGenres ul li a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B70F00;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerActionBox {
+  display: flex;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerActionBox button {
+  margin-right: 4px;
+  border-radius: 10px;
+  width: 200px;
+  height: 52px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerActionBox .btnMeet {
+  background-color: #FF3A00;
+  color: #f2f2f2;
+}
+#readerInfo .container .row .readerProfileInfo .readerProfileInfoRight .readerActionBox .btnSendMessage {
+  background-color: #666;
+  color: #f2f2f2;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox h1 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 14px;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo {
+  border-radius: 4px;
+  max-width: 498px;
+  max-height: 236px;
+  position: relative;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo .videoPreview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF3A00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo .videoPreview img {
+  display: block;
+  width: 21px;
+  height: 27px;
+  margin-left: 4px;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo .imageReader {
+  width: calc(200px + 299 * (100vw - 320px) / 1120);
+  height: calc(94px + 142 * (100vw - 320px) / 1120);
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-color: #5e5959;
+  border-radius: 4px;
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* 20% qara */
+}
+#readerInfo .container .row .readerAboutVideo .readerInfoVideoBox .readerVideo video {
+  border-radius: 4px;
+  width: calc(200px + 299 * (100vw - 320px) / 1120);
+  height: calc(94px + 142 * (100vw - 320px) / 1120);
+  cursor: pointer;
+}
+
+#bookPromation {
+  margin-bottom: 40px;
+}
+#bookPromation .container .row .bookPromationTitle {
+  margin-bottom: 20px;
+}
+#bookPromation .container .row .bookPromationTitle h2 {
+  color: #000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox {
+  position: relative;
+  width: 330px;
+  height: 248px;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionVideoBox .readerVideo .videoPreview {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF3A00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionVideoBox .readerVideo .videoPreview .imageIcon {
+  display: block;
+  width: 21px;
+  height: 27px;
+  margin-left: 4px;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionVideoBox .readerVideo img {
+  width: 330px;
+  height: 200px;
+  border-radius: 4px;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionVideoBox .readerVideo video {
+  border-radius: 4px;
+  width: 498px;
+  height: 236px;
+  cursor: pointer;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionContent .bookPromotionTitleDesc h3 {
+  color: #930100;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionContent .bookPromotionTitleDesc p {
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+#bookPromation .container .bookPromotionRow .bookPromotionBoxs .bookPromotionBox .bookPromotionContent .bookPromotionMinute p {
+  color: #666;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+#selectNovel {
+  margin-bottom: 40px;
+}
+#selectNovel .container .row .novelTitle h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#selectNovel .container .novelBoxRow .novelBoxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox {
+  max-width: 281px;
+  max-height: 485px;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelImageBox {
+  margin-bottom: 8px;
+  max-width: 281px;
+  max-height: 401px;
+  border-radius: 2px;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelImageBox img {
+  border-radius: 2px;
+  width: 281px;
+  height: 401px;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelContentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelContentBox .novelTitleDesc h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 500;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelContentBox .novelTitleDesc p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  font-weight: 400;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelContentBox .novelMoneyDate span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #DB2200;
+  font-weight: 400;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelAction {
+  text-align: end;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelAction button {
+  background-color: #666;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+  transition: all 0.4 ease;
+}
+#selectNovel .container .novelBoxRow .novelBoxs .novelBox .novelAction button:hover {
+  background-color: #DB2200;
+  color: #f2f2f2;
+}
+
+#readerExample {
+  margin-bottom: 40px;
+}
+#readerExample .container .row .readerExampleTitle h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample {
+  width: 924px;
+  height: 80px;
+  border-radius: 6px;
+  background-color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 29px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+  /* default */
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft {
+  display: flex;
+  align-items: center;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .playIcon {
+  background-color: #000;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  transition: all 0.5s ease;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .playIcon .audioBtn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .playIcon:hover {
+  background-color: #FF3A00 !important;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .activePlayBtn {
+  background-color: #FF3A00 !important;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .readerExampleContent h3 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft .readerExampleContent p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  font-weight: 400;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight {
+  text-align: center;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .readerExampleTime span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #666;
+  font-weight: 400;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .volumeControl {
+  width: 100px;
+  height: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .volumeControl::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .volumeControl:hover::-webkit-slider-thumb {
+  background-color: #FF3A00;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .volumeControl::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FF3A00;
+  border: none;
+  cursor: pointer;
+}
+#readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight .volumeControl:hover::-moz-range-thumb {
+  background: #FF3A00;
+}
+@media (max-width: 1439px) {
+  #readerExample .container .readerExampleRow .readerExamples .readerExample {
+    width: 80%;
+    height: 70px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1023px) {
+  #readerExample .container .readerExampleRow .readerExamples .readerExample {
+    width: 90%;
+    height: auto;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 767px) {
+  #readerExample .container .readerExampleRow .readerExamples .readerExample {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+  #readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleLeft,
+  #readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #readerExample .container .readerExampleRow .readerExamples .readerExample .readerExampleRight {
+    text-align: right;
+  }
+}
+
+#listenerComment {
+  margin-bottom: 40px;
+}
+#listenerComment .container .row .listenerCommentTitle h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment {
+  width: 926px;
+  border-radius: 6px;
+  background-color: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 28.5px;
+  margin-bottom: 12px;
+  flex-wrap: nowrap;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft {
+  display: flex;
+  align-items: center;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft .listenerCommentImage {
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  max-width: 56px;
+  max-height: 56px;
+  transition: all 0.5s ease;
+  margin-right: 8x;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft .listenerCommentImage .listenerImage {
+  width: 56px;
+  height: 56px;
+  margin-left: 4px;
+  border-radius: 50%;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft .listenerCommentContent h3 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 500;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft .listenerCommentContent p {
+  max-width: 551px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444;
+  font-weight: 400;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight {
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 54px;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight .listenerCommentRating {
+  margin-right: 4px;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight .listenerCommentRating span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  font-weight: 500;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight .listenerCommentStar {
+  display: flex;
+}
+#listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight .listenerCommentStar .starYellow {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 1439px) {
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment {
+    width: 80%;
+    height: 70px;
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 1023px) {
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment {
+    width: 90%;
+    height: auto;
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 767px) {
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    justify-content: space-between;
+  }
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentLeft,
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #listenerComment .container .listenerCommentRow .listenerComments .listenerComment .listenerCommentRight {
+    text-align: right;
+  }
+}
+
+#meetTable {
+  margin-bottom: 40px;
+}
+#meetTable .container .row .meetTableTitle h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul {
+  background-color: #FFE6CC;
+  width: 642px;
+  height: 220px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 12px;
+  padding: 24px 93px 30px 42px;
+  border-radius: 4px;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul li {
+  text-align: center;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day-label {
+  margin-right: 24px;
+  width: 100%;
+  max-height: 15px;
+  margin-bottom: 12px;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day-label p {
+  width: 100%;
+  display: ruby-text;
+  font-size: 10px;
+  line-height: 14px;
+  color: #000;
+  font-weight: 500;
+  width: 100%;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox] {
+  display: none;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day input:hover {
+  background-color: #FFC699;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox]:hover + label {
+  background-color: #FFC699;
+  color: #7A0007;
+  border-color: #FF3A00;
+  border: 1px solid #7A0007;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s ease;
+}
+#meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox]:checked + label {
+  background-color: #FF3A00;
+  color: white;
+  border-color: #FF3A00;
+  width: 40px;
+}
+#meetTable .container .meetTableRow .meetTableBoxAction {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#meetTable .container .meetTableRow .meetTableBoxAction .meetTableButton {
+  background-color: #666;
+  border-radius: 4px;
+  width: 200px;
+  height: 52px;
+  color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
+  transition: all 0.5 ease;
+  font-weight: 500;
+}
+#meetTable .container .meetTableRow .meetTableBoxAction .meetTableButton:hover {
+  background-color: #FF3A00;
+}
+#meetTable .container .meetTableRow .meetTableBoxAction button {
+  margin-right: 7px;
+}
+#meetTable .container .meetTableRow .meetTableBoxAction a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 776px) {
+  #meetTable {
+    padding: 0px 20px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label p {
+    font-size: 9px;
+    text-align: center;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day {
+    margin-bottom: 10px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day label {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox]:checked + label {
+    width: 32px;
+  }
+  #meetTable .container .meetTableRow .meetTableBoxAction {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #meetTable .container .meetTableRow .meetTableBoxAction .meetTableButton {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 48px;
+    font-size: 14px;
+  }
+  #meetTable .container .meetTableRow .meetTableBoxAction button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  #meetTable .container .meetTableRow .meetTableBox form ul {
+    width: 100%;
+    height: auto;
+    padding: 16px 20px;
+    gap: 8px;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul li {
+    margin: 0;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day {
+    margin-bottom: 10px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day label {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox]:checked + label {
+    width: 32px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label {
+    margin-bottom: 8px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  #meetTable .container .meetTableRow .meetTableBox form ul {
+    padding: 12px 12px;
+    gap: 6px;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day label {
+    width: 26px;
+    height: 26px;
+    font-size: 10px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day input[type=checkbox]:checked + label {
+    width: 28px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label {
+    margin-bottom: 6px;
+  }
+  #meetTable .container .meetTableRow .meetTableBox form ul .day-label p {
+    font-size: 9px;
+  }
+}
+#askedQuestions {
+  margin-bottom: 40px;
+}
+#askedQuestions .container .row .askedQuestionTitle h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox {
+  background-color: #E5E5E5;
+  width: 100%;
+  max-width: 1120px;
+  border-radius: 4px;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox .askedQuestionBtnBox {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px 36px 20px 32px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox .askedQuestionBtnBox p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox .askedQuestionBtnBox .askedQuestionIcon {
+  background-color: #FFC699;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox .askedQuestionBtnBox .askedQuestionIcon img {
+  width: 11px;
+  height: 11px;
+}
+#askedQuestions .container .askedQuestionTitleRow .askedQuestionBoxs .askedQuestionBox .questionAnswerBox {
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  #askedQuestions .askedQuestionTitle h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  #askedQuestions .askedQuestionTitle h2 {
+    font-size: 26px;
+  }
+  #askedQuestions .askedQuestionBtnBox p {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #askedQuestions .askedQuestionTitle h2 {
+    font-size: 22px;
+  }
+  #askedQuestions .askedQuestionBtnBox {
+    padding: 16px;
+  }
+}
+@media (max-width: 576px) {
+  #askedQuestions .askedQuestionBox {
+    padding: 12px;
+  }
+  #askedQuestions .askedQuestionBtnBox {
+    padding: 12px;
+  }
+  #askedQuestions .askedQuestionBtnBox p {
+    font-size: 14px;
+  }
+  #askedQuestions .askedQuestionBtnBox .askedQuestionIcon {
+    width: 20px;
+    height: 20px;
+  }
+  #askedQuestions .askedQuestionBtnBox .askedQuestionIcon img {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+#comingSoon {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox .ComingSoonImageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-height: 100px;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox .ComingSoonImageBox img {
+  display: block;
+  width: 170%;
+  max-width: 300px;
+  height: auto;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox .ComingSoonImageBox .comingSoonText h1 {
+  color: #111111;
+  font-size: 28px;
+  text-align: center;
+}
+
+#meetDate {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#meetDate .container .row .meetDateTitle h1 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #7A0007;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#meetDate .container .meetDateProgressbar {
+  width: 100%;
+  max-width: 1000px;
+  padding: 16px 0;
+  background-color: #000;
+  border-radius: 4px;
+}
+#meetDate .container .meetDateProgressbar .progress-section {
+  text-align: -webkit-center;
+  width: 100%;
+  padding: 5px 0px;
+}
+#meetDate .container .meetDateProgressbar .progress-section .progress {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  height: 2px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  max-width: 667px;
+}
+#meetDate .container .meetDateProgressbar .progress-section .progress .progress-bar {
+  background-color: #FF3A00;
+  transition: width 0.8s ease;
+}
+#meetDate .container .meetDateProgressbar .progress-section .progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 667px;
+}
+#meetDate .container .meetDateProgressbar .progress-section .progress-steps .progress-step {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #B2B2B2;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+#meetDate .container .meetDateProgressbar .progress-section .progress-steps .progress-step.active {
+  color: #FF3A00;
+}
+#meetDate .container .meetDateReaderInfoRow {
+  margin-top: 57px;
+  max-width: 891px;
+  margin-bottom: 57px;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .meetDateReaderAvatar img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerName {
+  color: #930100;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerWork {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerStats {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerStats span {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerStats span img {
+  margin-left: 5px;
+  margin-right: 16px;
+  width: 16px;
+  height: 15px;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .readerInfo .readerDetails .readerStats .readerCommentCount {
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+#meetDate .container .meetDateReaderInfoRow .meetDateReaderInfo .priceInfo p {
+  color: #B70F00;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+#meetDate .container .meetDateChoose {
+  margin-bottom: 90px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow {
+  max-width: 954px;
+  margin-bottom: 90px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableTitle h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox {
+  background: #FFC699;
+  padding: 40px 0px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul {
+  max-width: 754px;
+  max-height: 327px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day-label {
+  text-align: center;
+  margin-bottom: 17.84px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day-label p {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day input[type=radio] {
+  display: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day input[type=radio]:hover + label {
+  background-color: #FFC699;
+  color: #7A0007;
+  border-color: #FF3A00;
+  border: 1px solid #7A0007;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .day input[type=radio]:checked + label {
+  background-color: #FF3A00;
+  color: white;
+  border-color: #FF3A00;
+  width: 57px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .disabled {
+  background: #f8f8f8;
+  color: #999;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetTableRow .meetTableBox ul .selected {
+  background: #dd4814;
+  color: white;
+  border-color: #dd4814;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime {
+  margin-bottom: 90px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlotTitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time {
+  margin-bottom: 16px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time input[type=radio] {
+  display: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time label {
+  font-size: 14px;
+  line-height: 18px;
+  width: 140px;
+  height: 50px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time input[type=radio]:not(:disabled):hover + label:not(.disabled) {
+  background-color: #FFC699;
+  color: #7A0007;
+  border-color: #FF3A00;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time input[type=radio]:checked + label:not(.disabled) {
+  background-color: #FF3A00;
+  color: white;
+  border-color: #FF3A00;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateTime .timeSlots ul .time .disabled {
+  background-color: #B2B2B2;
+  color: #000;
+  border: none;
+  cursor: not-allowed;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration {
+  margin-bottom: 90px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .DurationTitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney {
+  margin-bottom: 16px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney input[type=radio] {
+  display: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label {
+  width: 220px;
+  height: 84px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label .duration {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 4px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label .money {
+  font-size: 14px;
+  color: #333;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney input[type=radio]:not(:disabled):hover + label:not(.disabled) {
+  background-color: #FFC699;
+  color: #7A0007;
+  border-color: #FF3A00;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney input[type=radio]:checked + label:not(.disabled) {
+  background-color: #FF3A00;
+  color: white;
+  border-color: #FF3A00;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney input[type=radio]:checked + label:not(.disabled) .duration,
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney input[type=radio]:checked + label:not(.disabled) .money {
+  color: white;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label.disabled {
+  background-color: #B2B2B2;
+  color: #000;
+  border: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label.disabled .duration,
+#meetDate .container .meetDateChoose .bookingContent form .meetDateDuration .durationOptions ul .durationMoney label.disabled .money {
+  color: #000;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation {
+  margin-bottom: 90px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .LocationTitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location {
+  margin-bottom: 16px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location input[type=radio] {
+  display: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label .locationTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 4px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label .locationDesc {
+  font-size: 12px;
+  color: #333;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location input[type=radio]:not(:disabled):hover + label:not(.disabled) {
+  background-color: #FFC699;
+  color: #7A0007;
+  border-color: #FF3A00;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location input[type=radio]:checked + label:not(.disabled) {
+  background-color: #FF3A00;
+  color: white;
+  border-color: #FF3A00;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location input[type=radio]:checked + label:not(.disabled) .locationTitle,
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location input[type=radio]:checked + label:not(.disabled) .locationDesc {
+  color: white;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label.disabled {
+  background-color: #B2B2B2;
+  color: #000;
+  border: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label.disabled .locationTitle,
+#meetDate .container .meetDateChoose .bookingContent form .meetDateLocation .locationOptions ul .location label.disabled .locationDesc {
+  color: #000;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox {
+  margin-top: 32px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .section-title {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #7A0007;
+  margin-bottom: 24px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryCard {
+  display: flex;
+  background-color: #E5E5E5;
+  max-width: 720px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  padding: 38px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryCard .summaryItems {
+  display: flex;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryCard .summaryItems .summaryItemCol .summaryItem {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 8px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryCard .summaryItems .summaryItemCol .summaryItem .summaryLabel {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 6px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryCard .summaryItems .summaryItemCol .summaryItem .summaryValue {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryTotalRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryTotalRow .summaryLabel {
+  color: #000;
+  margin-right: 6px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#meetDate .container .meetDateChoose .bookingContent form .summaryBox .summaryTotalRow .summaryValue.summaryTotal {
+  color: #7A0007;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons {
+  display: flex;
+}
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons button,
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons a {
+  width: 200px;
+  height: 52px;
+  color: #F2F2F2;
+}
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons .btn-cancel {
+  background-color: #666666;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons .btn-cancel img {
+  position: absolute;
+  top: 16.5px;
+  left: 51px;
+  width: 9px;
+  height: 17px;
+}
+#meetDate .container .meetDateChoose .bookingContent form .actionButtons .btn-next {
+  background-color: #FF3A00;
+}
+
+@media (max-width: 576px) {
+  #meetDate {
+    padding: 0px 10px;
+  }
+  #meetDate .container .meetDateProgressbar .progress-section {
+    padding: 5px 15px;
+  }
+}
+#payment {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#payment .container {
+  max-width: 1000px;
+}
+#payment .container .row .paymentTitle {
+  padding: 20px 30px 0px 30px;
+  margin-top: 20px;
+  background-color: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#payment .container .row .paymentTitle h1 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #f2f2f2;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#payment .container .row .paymentTitle a {
+  background: none;
+  border: none;
+  color: #f2f2f2;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+#payment .container .paymentProgressbar {
+  width: 100%;
+  padding: 0px 30px 16px 30px;
+  background-color: #000;
+}
+#payment .container .paymentProgressbar .progress-section {
+  text-align: -webkit-center;
+  width: 100%;
+  padding: 5px 0px;
+}
+#payment .container .paymentProgressbar .progress-section .progress {
+  background-color: #F2F2F2;
+  height: 7px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#payment .container .paymentProgressbar .progress-section .progress .progress-bar {
+  background-color: #FF3A00;
+  transition: width 0.8s ease;
+}
+#payment .container .paymentProgressbar .progress-section .progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#payment .container .paymentProgressbar .progress-section .progress-steps .progress-step {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #B2B2B2;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+#payment .container .paymentProgressbar .progress-section .progress-steps .progress-step.active {
+  color: #FF3A00;
+}
+#payment .container .paymentReaderInfoRow {
+  margin-bottom: 1px;
+  background-color: white;
+  padding: 20px 30px;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .paymentReaderAvatar span {
+  font-size: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  padding: 15px;
+  color: #666;
+  background-color: #F0F0F0;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerName {
+  color: #930100;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerWork {
+  color: #666;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerWork .readerStats {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerWork .readerStats span {
+  color: #666;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerWork .readerStats .readerCommentCount {
+  color: #666;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .readerInfo .readerDetails .readerWork .readerStats .readerCommentRating {
+  color: #666;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+#payment .container .paymentReaderInfoRow .paymentReaderInfo .priceInfo p {
+  color: #B70F00;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+#payment .container .paymentSection {
+  background-color: white;
+  padding: 30px 30px;
+}
+#payment .container .paymentSection .bookingContent .sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .paymentMethod {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .paymentMethod input {
+  margin-right: 10px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .paymentMethod label .paymentTitle {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 32px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .paymentMethod label .paymentDesc {
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .selected {
+  border-color: #dd4814;
+  background: #fff3ed;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .cardForm {
+  margin-top: 20px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .cardForm .formGrid {
+  gap: 15px;
+  display: flex;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .cardForm .formInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .paymentInputs .cardForm .formInput:focus {
+  outline: none;
+  border-color: #dd4814;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .orderSummary {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .orderSummary .orderItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .orderSummary .orderItem .orderLabel {
+  color: #666;
+}
+#payment .container .paymentSection .bookingContent .paymentGrid .orderSummary .orderSummaryBtn {
+  background-color: #c93d12;
+  color: #f2f2f2;
+  width: 100%;
+  margin-top: 20px;
+}
+#payment .container .paymentSection .bookingContent .securityNote {
+  text-align: center;
 }

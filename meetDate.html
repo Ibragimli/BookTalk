@@ -28,19 +28,400 @@
         <div class="row headerRegister">
           <div class="col-12 headLogoCol">
             <div class="headerLogo">
-              <h1 class="headerLogoLeft">BOOK</h1>
-              <h1 class="headerLogoRight">TALK</h1>
+              <a href="./index.html">
+                <h1 class="headerLogoLeft">BOOK</h1>
+                <h1 class="headerLogoRight">TALK</h1>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section id="registerAuthorCompleted">
+      <section id="meetDate">
         <div class="container">
-          <div class="row"></div>
+          <div class="row">
+            <div class="col-lg-12 meetDateTitle">
+              <h1>Görüş təyin edin</h1>
+            </div>
+          </div>
+
+          <!-- Progress -->
+          <div class="row">
+            <div class="meetDateProgressbar">
+              <div class="progress-section">
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow=""
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 22%"></div>
+                </div>
+                <div class="progress-steps">
+                  <span class="progress-step active" id="step1">Tarix</span>
+                  <span class="progress-step" id="step2">Saat</span>
+                  <span class="progress-step" id="step3">Müddət</span>
+                  <span class="progress-step" id="step4">Məkan</span>
+                  <span class="progress-step" id="step5">Ödəniş</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header -->
+          <div class="row meetDateReaderInfoRow">
+            <div class="col-lg-12 meetDateReaderInfo">
+              <div class="readerInfo">
+                <div class="meetDateReaderAvatar">
+                  <img
+                    src="./assets/Images/readerAvatar.jpg"
+                    alt="readerAvatar"
+                  />
+                </div>
+                <div class="readerDetails">
+                  <div class="readerName" id="readerName">Aynur Həsənova</div>
+                  <div class="readerWork">Peşəkar qiraətçi</div>
+                  <div class="readerStats">
+                    <span
+                      >5.0
+                      <img src="./assets/icons/starYellow.svg" alt="" />
+                    </span>
+
+                    <span class="readerCommentCount">22 rəy</span>
+                  </div>
+                </div>
+              </div>
+              <div class="priceInfo">
+                <p>45 azn / saat</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Choose -->
+          <div class="meetDateChoose">
+            <div class="bookingContent" id="bookingContent">
+              <form action="./test.html">
+                <!-- Günlər -->
+                <div class="meetTableRow">
+                  <div class="meetTableTitle">
+                    <h2>Tarix seçin</h2>
+                  </div>
+                  <div class="meetTableBox">
+                    <ul>
+                      <li class="day-label"><p>Bazar Ertəsi</p></li>
+                      <li class="day-label"><p>Çərşənbə</p></li>
+                      <li class="day-label"><p>Çərşənbə axşamı</p></li>
+                      <li class="day-label"><p>Cümə axşamı</p></li>
+                      <li class="day-label"><p>Cümə</p></li>
+                      <li class="day-label"><p>Şənbə</p></li>
+                      <li class="day-label"><p>Bazar</p></li>
+
+                      <!-- Günlər -->
+                      <li class="day">
+                        <input type="radio" id="d4" name="selectedDay" />
+                        <label for="d4">4</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d5" name="selectedDay" />
+                        <label for="d5">5</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d6" name="selectedDay" />
+                        <label for="d6">6</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d7" name="selectedDay" />
+                        <label for="d7">7</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d8" name="selectedDay" />
+                        <label for="d8">8</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d9" name="selectedDay" />
+                        <label for="d9">9</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d10" name="selectedDay" />
+                        <label for="d10">10</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d11" name="selectedDay" />
+                        <label for="d11">11</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d12" name="selectedDay" />
+                        <label for="d12">12</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d13" name="selectedDay" />
+                        <label for="d13">13</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d14" name="selectedDay" />
+                        <label for="d14">14</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d15" name="selectedDay" />
+                        <label for="d15">15</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d16" name="selectedDay" />
+                        <label for="d16">16</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d17" name="selectedDay" />
+                        <label for="d17">17</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d18" name="selectedDay" />
+                        <label for="d18">18</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d19" name="selectedDay" />
+                        <label for="d19">19</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d20" name="selectedDay" />
+                        <label for="d20">20</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d21" name="selectedDay" />
+                        <label for="d21">21</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d22" name="selectedDay" />
+                        <label for="d22">22</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d23" name="selectedDay" />
+                        <label for="d23">23</label>
+                      </li>
+                      <li class="day">
+                        <input type="radio" id="d24" name="selectedDay" />
+                        <label for="d24">24</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Saat -->
+                <div class="meetDateTime">
+                  <div class="col-lg-12">
+                    <h3 class="timeSlotTitle">Saat aralığı seçin</h3>
+                  </div>
+                  <div class="timeSlots" id="timeSlots">
+                    <ul>
+                      <li class="time">
+                        <input type="radio" id="t9" name="selectedTime" />
+                        <label for="t9">09:00</label>
+                      </li>
+                      <li class="time">
+                        <input type="radio" id="t11" name="selectedTime" />
+                        <label for="t11">11:00</label>
+                      </li>
+                      <li class="time">
+                        <input type="radio" id="t13" name="selectedTime" />
+                        <label for="t13">13:00</label>
+                      </li>
+                      <li class="time">
+                        <input type="radio" id="t15" name="selectedTime" />
+                        <label class="disabled" for="t15">15:00</label>
+                      </li>
+                      <li class="time">
+                        <input type="radio" id="t17" name="selectedTime" />
+                        <label class="disabled" for="t17">17:00</label>
+                      </li>
+                      <li class="time">
+                        <input type="radio" id="t19" name="selectedTime" />
+                        <label class="disabled" for="t19">19:00</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Vaxt və Pul -->
+                <div class="meetDateDuration">
+                  <div class="col-lg-12">
+                    <h3 class="DurationTitle">Görüş müddətini təyin et</h3>
+                  </div>
+                  <div class="durationOptions" id="durationOptions">
+                    <ul>
+                      <!-- durationMoney -->
+                      <li class="durationMoney">
+                        <input type="radio" id="45" name="selectedDuration" />
+                        <label for="45">
+                          <p class="duration">1 saat</p>
+                          <p class="money">45 AZN</p>
+                        </label>
+                      </li>
+                      <!-- durationMoney -->
+                      <li class="durationMoney">
+                        <input type="radio" id="85" name="selectedDuration" />
+                        <label for="85">
+                          <p class="duration">2 saat</p>
+                          <p class="money">85 AZN</p>
+                        </label>
+                      </li>
+                      <!-- durationMoney -->
+                      <li class="durationMoney">
+                        <input type="radio" id="120" name="selectedDuration" />
+                        <label for="120">
+                          <p class="duration">3 saat</p>
+                          <p class="money">120 AZN</p>
+                        </label>
+                      </li>
+                      <!-- durationMoney -->
+                      <li class="durationMoney">
+                        <input type="radio" id="200" name="selectedDuration" />
+                        <label for="200">
+                          <p class="duration">4 saat</p>
+                          <p class="money">200 AZN</p>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Məkan -->
+                <div class="meetDateLocation">
+                  <div class="col-lg-12">
+                    <h3 class="LocationTitle">Məkan seçin</h3>
+                  </div>
+                  <div class="locationOptions" id="locationOptions">
+                    <ul>
+                      <!-- Location - 1 -->
+                      <li class="location">
+                        <input
+                          type="radio"
+                          id="kitabxana"
+                          name="selectedLocation"
+                        />
+                        <label for="kitabxana">
+                          <p class="locationTitle" id="locationTitle">
+                            Kitabxana
+                          </p>
+                          <p class="locationDesc">Milli kitabxana, Bakı</p>
+                        </label>
+                      </li>
+
+                      <!-- Location - 2 -->
+                      <li class="location">
+                        <input
+                          type="radio"
+                          id="kofesop"
+                          name="selectedLocation"
+                        />
+                        <label for="kofesop">
+                          <p class="locationTitle" id="locationTitle">
+                            Kofeşop
+                          </p>
+                          <p class="locationDesc">Libraff Cafe, Bakı</p>
+                          <span class="d-none" id="priceAdd">+5</span>
+                        </label>
+                      </li>
+
+                      <!-- Location - 3 -->
+                      <li class="location">
+                        <input
+                          type="radio"
+                          id="onlayn"
+                          name="selectedLocation"
+                        />
+                        <label for="onlayn">
+                          <p class="locationTitle" id="locationTitle">Onlayn</p>
+                          <p class="locationDesc">Zoom, Google Meet və s.</p>
+                          <span class="d-none" id="priceAdd">-10%</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Seçimlər -->
+                <div class="summaryBox" id="summaryBox">
+                  <div class="summaryCard">
+                    <div class="col-lg-12">
+                      <h3 class="section-title">Seçiminiz:</h3>
+                    </div>
+                    <div class="summaryItems">
+                      <!-- Qiraətçi  & Müddət-->
+                      <div class="summaryItemCol">
+                        <div class="summaryItem">
+                          <span class="summaryLabel">Qiraətçi: </span>
+                          <span class="summaryValue" id="summaryReaderName">
+                            -
+                          </span>
+                        </div>
+                        <div class="summaryItem">
+                          <span class="summaryLabel">Müddət: </span>
+                          <span class="summaryValue" id="summaryDuration">
+                            -
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="summaryItemCol">
+                        <!-- Tarix: -->
+                        <div class="summaryItem">
+                          <span class="summaryLabel">Tarix: </span>
+                          <span class="summaryValue" id="summaryDate"> - </span>
+                        </div>
+                        <!-- Məkan -->
+                        <div class="summaryItem">
+                          <span class="summaryLabel">Məkan: </span>
+                          <span class="summaryValue" id="summaryLocation">
+                            -
+                          </span>
+                        </div>
+                      </div>
+                      <!-- Saat -->
+                      <div class="summaryItemCol">
+                        <div class="summaryItem">
+                          <span class="summaryLabel">Saat: </span>
+                          <span class="summaryValue" id="summaryTime"> - </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Ümumi məbləğ: -->
+                  <div class="summaryTotalRow">
+                    <span class="summaryLabel">Ümumi məbləğ: </span>
+                    <span class="summaryValue summaryTotal" id="summaryTotal">
+                      0 AZN
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="actionButtons">
+                  <a href="./index.html" class="btn btn-cancel">
+                    <img src="./assets/icons/leftArrow.svg" alt="" />Ləğv et
+                  </a>
+                  <button type="submit" class="btn btn-next" id="proceedButton">
+                    Ödənişə keç
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/meetDate.js"></script>
   </body>
 </html>

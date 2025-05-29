@@ -1,0 +1,98 @@
+#selectNovel {
+    margin-bottom: 40px;
+
+    .container {
+        .row {
+            .novelTitle {
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #000;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .novelBoxRow {
+            .novelBoxs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 35px;
+                justify-content: center;
+
+                .novelBox {
+                    max-width: 281px;
+                    max-height: 485px;
+
+                    .novelImageBox {
+                        margin-bottom: 8px;
+                        max-width: 281px;
+                        max-height: 401px;
+                        border-radius: 2px;
+
+                        img {
+                            border-radius: 2px;
+                            width: 281px;
+                            height: 401px;
+                        }
+                    }
+
+                    .novelContentBox {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 4px;
+
+                        .novelTitleDesc {
+                            h3 {
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #000;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #666;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .novelMoneyDate {
+                            span {
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #DB2200;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .novelAction {
+
+                        text-align: end;
+
+                        button {
+                            background-color: #666;
+                            border-radius: 4px;
+                            width: 100px;
+                            height: 30px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #f2f2f2;
+                            font-weight: 500;
+                            transition: all 0.4 ease;
+                        }
+
+                        button:hover {
+                            background-color: #DB2200;
+                            color: #f2f2f2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

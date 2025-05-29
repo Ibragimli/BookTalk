@@ -1,0 +1,29 @@
+#comingSoon {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox h1 {
+  font-weight: 700;
+  font-size: 70px;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox .headerLogoLeft {
+  color: #111111;
+  margin-right: 4px;
+}
+#comingSoon .comingSoonLogo .comingSoonLogoBox .headerLogoRight {
+  color: #FF3A00;
+}
+#comingSoon .comingSoonText h1 {
+  color: #111111;
+  font-size: 32px;
+  text-align: center;
+}

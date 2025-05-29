@@ -1,0 +1,305 @@
+#payment {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    .container {
+        max-width: 1000px;
+
+        .row {
+
+
+            .paymentTitle {
+                padding: 20px 30px 0px 30px;
+                margin-top: 20px;
+                background-color: #000;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #f2f2f2;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    background: none;
+                    border: none;
+                    color: #f2f2f2;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: color 0.2s;
+                }
+            }
+        }
+
+        // Progress
+        .paymentProgressbar {
+            width: 100%;
+            padding: 0px 30px 16px 30px;
+            background-color: #000;
+
+
+            .progress-section {
+                text-align: -webkit-center;
+                width: 100%;
+                padding: 5px 0px;
+
+                .progress {
+                    background-color: #F2F2F2;
+                    height: 7px;
+                    overflow: hidden;
+                    margin-bottom: 16px;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+
+                    .progress-bar {
+                        background-color: #FF3A00;
+                        transition: width 0.8s ease;
+
+                    }
+                }
+
+                .progress-steps {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+
+                    .progress-step {
+                        position: relative;
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        color: #B2B2B2;
+                        cursor: default;
+                        user-select: none;
+                        text-align: center;
+
+                        &.active {
+                            color: #FF3A00;
+                        }
+                    }
+                }
+            }
+        }
+
+        //   Header 
+        .paymentReaderInfoRow {
+            margin-bottom: 1px;
+            background-color: white;
+            padding: 20px 30px;
+
+            .paymentReaderInfo {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                .readerInfo {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
+                    .paymentReaderAvatar {
+                        span {
+                            font-size: 40px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            margin-right: 16px;
+                            padding: 15px;
+                            color: #666;
+                            background-color: #F0F0F0;
+                        }
+                    }
+
+                    .readerDetails {
+                        .readerName {
+                            color: #930100;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 500;
+                        }
+
+                        .readerWork {
+                            color: #666;
+
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: 400;
+                            margin-bottom: 14px;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            align-items: center;
+
+                            .readerStats {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                align-items: center;
+
+                                span {
+                                    color: #666;
+                                    font-size: 16px;
+                                    line-height: 18px;
+                                    font-weight: 500;
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    align-items: center;
+                                }
+
+                                .readerCommentCount {
+                                    color: #666;
+
+                                }
+
+                                .readerCommentRating {
+                                    color: #666;
+                                    margin-left: 8px;
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .priceInfo {
+                    p {
+                        color: #B70F00;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        //Payment Card
+        .paymentSection {
+            background-color: white;
+            padding: 30px 30px;
+
+            .bookingContent {
+                .sectionTitle {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: #000;
+                }
+
+                .paymentGrid {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    gap: 40px;
+
+                    .paymentInputs {
+                        .sectionTitle {}
+
+                        .paymentMethod {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            background-color: #FFFFFF;
+                            padding: 20px;
+                            border: 2px solid #eee;
+                            border-radius: 8px;
+                            margin-bottom: 15px;
+                            cursor: pointer;
+                            transition: all 0.2s;
+
+                            input {
+                                margin-right: 10px;
+                            }
+
+                            label {
+
+                                .paymentTitle {
+                                    font-weight: 500;
+                                    margin-bottom: 5px;
+                                    font-size: 22px;
+                                    line-height: 32px;
+                                }
+
+                                .paymentDesc {
+                                    font-size: 14px;
+                                    line-height: 18px;
+
+                                    color: #666;
+                                }
+                            }
+                        }
+
+                        .selected {
+                            border-color: #dd4814;
+                            background: #fff3ed;
+                        }
+
+
+                        .cardForm {
+                            margin-top: 20px;
+
+                            .formGrid {
+                                gap: 15px;
+                                display: flex;
+                            }
+
+                            .sectionTitle {}
+
+                            .formInput {
+                                width: 100%;
+                                padding: 12px;
+                                border: 1px solid #eee;
+                                border-radius: 8px;
+                                margin-bottom: 15px;
+                                font-size: 14px;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 15px;
+                            }
+
+                            .formInput:focus {
+                                outline: none;
+                                border-color: #dd4814;
+                            }
+                        }
+                    }
+
+                    .orderSummary {
+                        background: #f8f8f8;
+                        padding: 20px;
+                        border-radius: 8px;
+                        height: fit-content;
+
+                        .sectionTitle {}
+
+                        .orderItem {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+
+                            .orderLabel {
+                                color: #666;
+                            }
+
+                            .orderLabelName {}
+                        }
+
+                        .orderSummaryBtn {
+                            background-color: #c93d12;
+                            color: #f2f2f2;
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                .securityNote {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,53 +1,217 @@
+// #heroSection {
+//     background-color: #000000;
+//     margin: 51px 0px 40px 0px;
+
+//     .container {
+//         width: 1230px;
+
+//         .row {
+//             .heroSectionInput {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: start;
+
+//                 h1 {
+//                     color: #F2F2F2;
+//                 }
+
+//                 p {
+//                     color: #F2F2F2;
+//                 }
+
+//                 .input-group {
+//                     input {
+//                         max-width: 388px;
+//                         max-height: 60px;
+//                         padding-left: 16px;
+
+//                         border-top-right-radius: 3px;
+//                         border-bottom-right-radius: 3px;
+//                     }
+
+//                     button {
+//                         padding: 18px 24px 19px 24px;
+//                         background-color: #666666;
+//                         color: #F2F2F2;
+//                         font-size: 14px;
+//                         border-top-right-radius: 1px;
+//                         border-bottom-right-radius: 1px;
+//                     }
+//                 }
+//             }
+
+//             .heroSectionImage {
+
+//                 img {
+//                     object-fit: fill;
+//                     width: 100%;
+//                     height: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 #heroSection {
     background-color: #000000;
     margin: 51px 0px 40px 0px;
 
     .container {
-        width: 1230px;
+        max-width: 1230px;
+        padding: 0 15px;
 
         .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .heroSectionInput,
+            .heroSectionImage {
+                flex: 0 0 48%;
+            }
+
             .heroSectionInput {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: start;
 
-                h1 {
-                    color: #F2F2F2;
+                h1,
+                p {
+                    color: #f2f2f2;
                 }
 
                 p {
-                    color: #F2F2F2;
+                    margin-top: 8px;
+                    margin-bottom: 28px;
                 }
 
                 .input-group {
-                    input {
-                        max-width: 388px;
-                        max-height: 60px;
-                        padding-left: 16px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    max-width: 388px;
 
-                        border-top-right-radius: 3px;
-                        border-bottom-right-radius: 3px;
+                    input {
+                        flex: 1;
+                        height: 60px;
+                        padding-left: 16px;
+                        border: none;
+                        border-top-left-radius: 3px;
+                        border-bottom-left-radius: 3px;
                     }
 
                     button {
-                        padding: 18px 24px 19px 24px;
+                        padding: 0 24px;
                         background-color: #666666;
-                        color: #F2F2F2;
+                        color: #f2f2f2;
                         font-size: 14px;
-                        border-top-right-radius: 1px;
-                        border-bottom-right-radius: 1px;
+                        border: none;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
                     }
                 }
             }
 
             .heroSectionImage {
+                display: flex;
+                justify-content: center;
 
                 img {
-                    object-fit: fill;
+                    object-fit: cover;
                     width: 100%;
-                    height: 100%;
+                    max-width: 100%;
+                    height: auto;
                 }
+            }
+        }
+    }
+
+    // RESPONSIVE QIRILMA NÖQTƏLƏRİ
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 100%;
+        }
+
+        .row {
+
+            .heroSectionInput,
+            .heroSectionImage {
+                flex: 0 0 100%;
+            }
+
+            .heroSectionImage {
+                margin-top: 32px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .heroSectionInput {
+            align-items: center;
+            text-align: center;
+
+            .input-group {
+                max-width: 100%;
+                flex-direction: column;
+
+                input,
+                button {
+                    width: 100%;
+                    border-radius: 3px;
+                }
+
+                button {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .heroSectionInput {
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .heroSectionInput {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .input-group input {
+                height: 50px;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .container {
+            padding: 0 10px;
+        }
+
+        .heroSectionInput {
+            h1 {
+                font-size: 20px;
+            }
+
+            .input-group button {
+                font-size: 13px;
+                padding: 14px;
             }
         }
     }

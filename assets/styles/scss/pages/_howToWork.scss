@@ -1,3 +1,74 @@
+// #howToWork {
+//     margin-bottom: 40px;
+
+//     .container {
+//         .row {
+//             .howToWorkTitle {
+//                 h2 {
+//                     color: #000;
+//                     font-weight: 700;
+//                     margin-bottom: 24px;
+//                 }
+//             }
+
+//             .howToWorkBoxs {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: start;
+
+//                 .howToWorkBox {
+//                     ul {
+//                         display: flex;
+//                         align-items: center;
+
+//                         li {
+
+//                             p {}
+
+//                             .howToWorkNumber {
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 width: 56px;
+//                                 height: 56px;
+//                                 margin-right: 24px;
+//                                 font-size: 36px;
+//                                 background-color: #FF3A00;
+//                                 border-radius: 36px;
+//                             }
+
+//                             .howToWorkBoxDesc {
+//                                 color: #666;
+//                                 font-weight: 400;
+//                             }
+
+//                             h3 {
+//                                 color: #000;
+//                                 font-weight: 500;
+//                             }
+
+//                         }
+//                     }
+//                 }
+
+
+//             }
+
+//             .howToWorkButton {
+//                 button {
+//                     background-color: #666;
+//                     color: #F2F2F2;
+//                     border-radius: 10px;
+//                     width: 200px;
+//                     height: 40px;
+//                     margin-top: 24px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 #howToWork {
     margin-bottom: 40px;
 
@@ -8,13 +79,16 @@
                     color: #000;
                     font-weight: 700;
                     margin-bottom: 24px;
+                    font-size: 36px;
+                    line-height: 44px;
                 }
             }
 
             .howToWorkBoxs {
                 display: flex;
                 align-items: center;
-                justify-content: start;
+                justify-content: flex-start;
+                gap: 40px; // aralarda boşluq
 
                 .howToWorkBox {
                     ul {
@@ -22,46 +96,248 @@
                         align-items: center;
 
                         li {
-
-                            p {}
-
-                            .howToWorkNumber {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 56px;
-                                height: 56px;
-                                margin-right: 24px;
-                                font-size: 36px;
-                                background-color: #FF3A00;
-                                border-radius: 36px;
+                            &:first-child {
+                                .howToWorkNumber {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 56px;
+                                    height: 56px;
+                                    margin-right: 24px;
+                                    font-size: 36px;
+                                    background-color: #FF3A00;
+                                    border-radius: 50%; // tam dairə
+                                    color: white;
+                                }
                             }
 
-                            .howToWorkBoxDesc {
-                                color: #666;
-                                font-weight: 400;
-                            }
+                            &:last-child {
+                                h3 {
+                                    color: #000;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    margin-bottom: 8px;
+                                }
 
-                            h3 {
-                                color: #000;
-                                font-weight: 500;
+                                .howToWorkBoxDesc {
+                                    color: #666;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
                             }
-
                         }
                     }
                 }
-
-
             }
 
             .howToWorkButton {
+                margin-top: 40px;
+                text-align: center;
+
                 button {
                     background-color: #666;
                     color: #F2F2F2;
                     border-radius: 10px;
                     width: 200px;
                     height: 40px;
-                    margin-top: 24px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #FF3A00;
+                    }
+                }
+            }
+        }
+    }
+
+    // **RESPONSİV DÜZƏLİŞLƏR**
+
+    @media (max-width: 1200px) {
+        .howToWorkBoxs {
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 992px) {
+        margin-bottom: 30px;
+
+        .container {
+            .row {
+                .howToWorkTitle h2 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                .howToWorkBoxs {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .howToWorkBox {
+                        width: 100%;
+                        max-width: 450px;
+                        margin-bottom: 30px;
+
+                        ul {
+                            li:first-child .howToWorkNumber {
+                                width: 48px;
+                                height: 48px;
+                                font-size: 30px;
+                                margin-right: 18px;
+                            }
+
+                            li:last-child h3 {
+                                font-size: 18px;
+                            }
+
+                            li:last-child .howToWorkBoxDesc {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .howToWorkButton {
+                    margin-top: 30px;
+
+                    button {
+                        width: 180px;
+                        height: 38px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+
+        .container {
+            .row {
+                .howToWorkTitle h2 {
+                    font-size: 28px;
+                    line-height: 36px;
+                    text-align: center;
+                }
+
+                .howToWorkBoxs {
+                    .howToWorkBox {
+                        max-width: 100%;
+                        padding: 0 20px;
+                        margin-bottom: 25px;
+
+                        ul {
+                            li:first-child .howToWorkNumber {
+                                width: 42px;
+                                height: 42px;
+                                font-size: 26px;
+                                margin-right: 14px;
+                            }
+
+                            li:last-child h3 {
+                                font-size: 16px;
+                            }
+
+                            li:last-child .howToWorkBoxDesc {
+                                font-size: 13px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .howToWorkButton {
+                    button {
+                        width: 160px;
+                        height: 36px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+
+        .container {
+            .row {
+                .howToWorkTitle h2 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+
+                .howToWorkBoxs {
+                    .howToWorkBox {
+                        padding: 0 10px;
+
+                        ul {
+                            li:first-child .howToWorkNumber {
+                                width: 36px;
+                                height: 36px;
+                                font-size: 22px;
+                                margin-right: 12px;
+                            }
+
+                            li:last-child h3 {
+                                font-size: 14px;
+                            }
+
+                            li:last-child .howToWorkBoxDesc {
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .howToWorkButton {
+                    button {
+                        width: 140px;
+                        height: 34px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            .row {
+                .howToWorkBoxs {
+                    .howToWorkBox {
+                        ul {
+                            li:first-child .howToWorkNumber {
+                                width: 30px;
+                                height: 30px;
+                                font-size: 18px;
+                                margin-right: 10px;
+                            }
+
+                            li:last-child h3 {
+                                font-size: 13px;
+                            }
+
+                            li:last-child .howToWorkBoxDesc {
+                                font-size: 11px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .howToWorkButton {
+                    button {
+                        width: 120px;
+                        height: 32px;
+                        font-size: 12px;
+                    }
                 }
             }
         }
